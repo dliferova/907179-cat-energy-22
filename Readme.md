@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дарья Лиферова](https://up.htmlacademy.ru/adaptive/22/user/907179).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
