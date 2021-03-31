@@ -30,75 +30,75 @@
   </nav>
 </header>
 
-<main class="page-main">
-  <div class="choice-programs-content">
-    <div class="choice-programs-content__leading-section">
-      <h1 class="choice-programs-content__title">Подбор программы</h1>
-      <p class="choice-programs-content__lead">Заполните анкету, и мы подберем программу питания для вашего
-        кота</p>
+<main class="main-form">
+  <div class="form-content">
+    <div class="form-content__leading-section form-description">
+      <h1 class="form-description__title">Подбор программы</h1>
+      <p class="form-description__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
 
-    <form class="choice-programs-content__form programs-choice-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form-content__main-section form-partition" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="programs-choice-form__pet-information pet-information-fields">
-        <legend class="visually-hidden programs-choice-form__legend">Информация о Вашем питомце</legend>
-        <label class="pet-information-fields__label" for="name-field">Имя:*</label>
-        <input class="pet-information-fields__input" type="text" name="name" id="name-field" placeholder="Барсик" required>
-        <label class="pet-information-fields__label" for="weight-field">Вес (кг):*</label>
-        <input class="pet-information-fields__input" type="number" name="weight" id="weight-field" placeholder="7" required>
-        <label class="pet-information-fields__label" for="age-field">Возраст (лет):*</label>
-        <input class="pet-information-fields__input" type="number" name="age" id="age-field" placeholder="7" required>
+      <fieldset class="form-partition__fieldset fieldset-section">
+        <legend class="visually-hidden fieldset-section__legend">Информация о Вашем питомце</legend>
+        <label class="fieldset-section__label" for="name-field">Имя:*</label>
+        <input class="fieldset-section__input" type="text" name="name" id="name-field" placeholder="Барсик" required>
+        <label class="fieldset-section__label" for="weight-field">Вес (кг):*</label>
+        <input class="fieldset-section__input" type="number" name="weight" id="weight-field" placeholder="7" required>
+        <label class="fieldset-section__label" for="age-field">Возраст (лет):*</label>
+        <input class="fieldset-section__input" type="number" name="age" id="age-field" placeholder="7" required>
       </fieldset>
 
-      <fieldset class="programs-choice-form__goal goal-fields">
-        <legend class="visually-hidden programs-choice-form__legend">Цель программы</legend>
-        <label class="goal-fields__label" for="weightloss-field">Похудение</label>
-        <input class="goal-fields__input" type="radio" name="goal" value="weightloss" id="weightloss-field" checked>
-        <label class="goal-fields__label" for="weightgain-field">Набор массы</label>
-        <input class="goal-fields__input" type="radio" name="goal" value="weightgain" id="weightgain-field">
-        <label class="goal-fields__label" for="undecided-field">Не знаю (нужен ваш совет)</label>
-        <input class="goal-fields__input" type="radio" name="goal" value="undecided" id="undecided-field">
+      <fieldset class="form-partition__fieldset fieldset-section">
+        <legend class="visually-hidden fieldset-section__legend">Цель программы</legend>
+        <label class="fieldset-section__check-label" for="weightloss-field">Похудение</label>
+        <input class="fieldset-section__check-input" type="radio" name="goal" value="weightloss" id="weightloss-field" checked>
+        <label class="fieldset-section__check-label" for="weightgain-field">Набор массы</label>
+        <input class="fieldset-section__check-input" type="radio" name="goal" value="weightgain" id="weightgain-field">
+        <label class="fieldset-section__check-label" for="undecided-field">Не знаю (нужен ваш совет)</label>
+        <input class="fieldset-section__check-input" type="radio" name="goal" value="undecided" id="undecided-field">
       </fieldset>
 
-      <fieldset class="programs-choice-form__contacts contacts-fields">
-        <legend class="contacts-fields__legend programs-choice-form__legend">Контактные данные (владельца кота)</legend>
-        <label class="contacts-fields__label" for="email-field">E-mail:*</label>
-        <input class="contacts-fields__input" type="email" placeholder="kuklachev@gmail.com" id="email-field" name="email" required>
-        <label class="contacts-fields__label" for="phone-field">Телефон:*</label>
-        <input class="contacts-fields__input" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
+      <fieldset class="form-partition__fieldset fieldset-section">
+        <legend class="fieldset-section__legend">Контактные данные (владельца кота)</legend>
+        <label class="fieldset-section__label" for="email-field">E-mail:*</label>
+        <input class="fieldset-section__input" type="email" placeholder="kuklachev@gmail.com" id="email-field" name="email" required>
+        <label class="fieldset-section__label" for="phone-field">Телефон:*</label>
+        <input class="fieldset-section__input" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
       </fieldset>
 
-      <fieldset class="programs-choice-form__comment comment-fields">
-        <legend class="comment-fields__legend programs-choice-form__legend">Комментарий</legend>
-        <label class="comment-fields__label" for="comments-field"></label>
-        <textarea class="comment-fields__content" id="comments-field" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <fieldset class="form-partition__fieldset fieldset-section">
+        <legend class="fieldset-section__legend">Комментарий</legend>
+        <label class="fieldset-section__label" for="comments-field"></label>
+        <textarea class="fieldset-section__textarea-field" id="comments-field" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="programs-choice-form__additions additions-field">
-        <legend class="additions-field__legend programs-choice-form__legend">Дополнительно</legend>
-        <label class="additions-field__label" for="sugarfree-field">Сахарозаменитель</label>
-        <input class="additions-field__input" type="checkbox" id="sugarfree-field" name="additions" value="sugarfree" checked>
-        <label class="additions-field__label" for="water-field">Питьевая вода</label>
-        <input class="additions-field__input" type="checkbox" id="water-field" name="additions" value="water">
-        <label class="additions-field__label" for="milk-field">Молоко</label>
-        <input class="additions-field__input" type="checkbox" id="milk-field" name="additions" value="milk">
-        <label class="additions-field__label" for="vitamins-field">Витамины</label>
-        <input class="additions-field__input" type="checkbox" id="vitamins-field" name="additions" value="vitamins">
+      <fieldset class="form-partition__fieldset fieldset-section">
+        <legend class="fieldset-section__legend">Дополнительно</legend>
+        <label class="fieldset-section__check-label" for="sugarfree-field">Сахарозаменитель</label>
+        <input class="fieldset-section__check-input" type="checkbox" id="sugarfree-field" name="additions" value="sugarfree" checked>
+        <label class="fieldset-section__check-label" for="water-field">Питьевая вода</label>
+        <input class="fieldset-section__check-input" type="checkbox" id="water-field" name="additions" value="water">
+        <label class="fieldset-section__check-label" for="milk-field">Молоко</label>
+        <input class="fieldset-section__check-input" type="checkbox" id="milk-field" name="additions" value="milk">
+        <label class="fieldset-section__check-label" for="vitamins-field">Витамины</label>
+        <input class="fieldset-section__check-input" type="checkbox" id="vitamins-field" name="additions" value="vitamins">
       </fieldset>
 
-      <div class="programs-choice-form__submit form-submit">
-        <label class="form-submit__label" for="form-submit"></label>
-        <input class="form-submit__input" type="submit" value="Отправить форму" id="form-submit">
+      <div class="form-partition__footer form-submit-section">
+        <div class="form-submit-section__button">
+          <button class="ordinary-button ordinary-button--submit" type="submit" value="Отправить форму">Отправить форму</button>
+        </div>
+      <div class="form-submit-section__reminder">
+          <p class="reminder-paragraph">*&mdash;Обязательные поля</p>
       </div>
-
-      <p class="">*&mdash;Обязательные поля</p>
+      </div>
     </form>
   </div>
 </main>
 
 <footer class="page-footer">
   <div class="page-footer__content">
-
     <div class="page-footer__contacts-section contacts-section">
       <h2 class="visually-hidden">Мы на карте</h2>
       <p class="contacts-section__lead">Приглашаем к сотрудничеству дилеров!</p>
@@ -108,7 +108,6 @@
         <!--    Здесь будет карта-->
       </div>
     </div>
-
     <div class="page-footer__logo-text">
       <a class="cat-energy-text-icon">
         <img src="img/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
@@ -120,8 +119,7 @@
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-            Инстаграме</a>
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
@@ -135,6 +133,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>
