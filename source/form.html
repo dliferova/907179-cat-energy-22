@@ -29,71 +29,90 @@
     </div>
   </nav>
 </header>
+<main class="page-form">
+  <div class="container">
+    <h1 class="page__title">Подбор программы</h1>
+    <section class="program-selection-section">
+      <p class="program-selection-section__lead-text">Заполните анкету, и мы подберем программу питания для вашего
+        кота</p>
+      <form class="program-selection-section__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset fieldset-section">
+          <legend class="visually-hidden fieldset-section__legend">Информация о Вашем питомце</legend>
+          <p class="fieldset-section__field form-field">
+            <label class="form-field__label" for="name-field">Имя:*</label>
+            <input class="form-field__input form-input" type="text" name="name" id="name-field" placeholder="Барсик" required>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <label class="form-field__label" for="weight-field">Вес (кг):*</label>
+            <input class="form-field__input form-input" type="number" name="weight" id="weight-field" placeholder="7" required>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <label class="form-field__label" for="age-field">Возраст (лет):*</label>
+            <input class="form-field__input form-input" type="number" name="age" id="age-field" placeholder="7" required>
+          </p>
+        </fieldset>
 
-<main class="main-form">
-  <div class="form-content">
-    <div class="form-content__leading-section form-description">
-      <h1 class="form-description__title">Подбор программы</h1>
-      <p class="form-description__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    </div>
+        <fieldset class="form__fieldset fieldset-section">
+          <legend class="visually-hidden fieldset-section__legend">Цель программы</legend>
+          <p class="fieldset-section__field form-field">
+            <input class="form-field__input form-input" type="radio" name="goal" value="weightloss" id="weightloss-field" checked>
+            <label class="form-field__label" for="weightloss-field">Похудение</label>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <input class="form-field__input form-input" type="radio" name="goal" value="weightgain" id="weightgain-field">
+            <label class="form-field__label" for="weightgain-field">Набор массы</label>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <input class="form-field__input form-input" type="radio" name="goal" value="undecided" id="undecided-field">
+            <label class="form-field__label" for="undecided-field">Не знаю (нужен ваш совет)</label>
+          </p>
+        </fieldset>
 
-    <form class="form-content__main-section form-partition" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset fieldset-section">
+          <legend class="fieldset-section__legend">Контактные данные (владельца кота)</legend>
+          <p class="fieldset-section__field form-field">
+            <label class="form-field__label" for="email-field">E-mail:*</label>
+            <input class="form-field__input form-input" type="email" placeholder="kuklachev@gmail.com" id="email-field" name="email" required>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <label class="form-field__label" for="phone-field">Телефон:*</label>
+            <input class="form-field__input form-input" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
+          </p>
+        </fieldset>
 
-      <fieldset class="form-partition__fieldset fieldset-section">
-        <legend class="visually-hidden fieldset-section__legend">Информация о Вашем питомце</legend>
-        <label class="fieldset-section__label" for="name-field">Имя:*</label>
-        <input class="fieldset-section__input" type="text" name="name" id="name-field" placeholder="Барсик" required>
-        <label class="fieldset-section__label" for="weight-field">Вес (кг):*</label>
-        <input class="fieldset-section__input" type="number" name="weight" id="weight-field" placeholder="7" required>
-        <label class="fieldset-section__label" for="age-field">Возраст (лет):*</label>
-        <input class="fieldset-section__input" type="number" name="age" id="age-field" placeholder="7" required>
-      </fieldset>
+        <fieldset class="form__fieldset fieldset-section">
+          <legend class="fieldset-section__legend">Комментарий</legend>
+          <p class="fieldset-section__field form-field">
+            <label class="form-field__label" for="comments-field"></label>
+            <textarea class="form-field__textarea" id="comments-field" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </fieldset>
 
-      <fieldset class="form-partition__fieldset fieldset-section">
-        <legend class="visually-hidden fieldset-section__legend">Цель программы</legend>
-        <label class="fieldset-section__check-label" for="weightloss-field">Похудение</label>
-        <input class="fieldset-section__check-input" type="radio" name="goal" value="weightloss" id="weightloss-field" checked>
-        <label class="fieldset-section__check-label" for="weightgain-field">Набор массы</label>
-        <input class="fieldset-section__check-input" type="radio" name="goal" value="weightgain" id="weightgain-field">
-        <label class="fieldset-section__check-label" for="undecided-field">Не знаю (нужен ваш совет)</label>
-        <input class="fieldset-section__check-input" type="radio" name="goal" value="undecided" id="undecided-field">
-      </fieldset>
-
-      <fieldset class="form-partition__fieldset fieldset-section">
-        <legend class="fieldset-section__legend">Контактные данные (владельца кота)</legend>
-        <label class="fieldset-section__label" for="email-field">E-mail:*</label>
-        <input class="fieldset-section__input" type="email" placeholder="kuklachev@gmail.com" id="email-field" name="email" required>
-        <label class="fieldset-section__label" for="phone-field">Телефон:*</label>
-        <input class="fieldset-section__input" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
-      </fieldset>
-
-      <fieldset class="form-partition__fieldset fieldset-section">
-        <legend class="fieldset-section__legend">Комментарий</legend>
-        <label class="fieldset-section__label" for="comments-field"></label>
-        <textarea class="fieldset-section__textarea-field" id="comments-field" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
-      </fieldset>
-
-      <fieldset class="form-partition__fieldset fieldset-section">
-        <legend class="fieldset-section__legend">Дополнительно</legend>
-        <label class="fieldset-section__check-label" for="sugarfree-field">Сахарозаменитель</label>
-        <input class="fieldset-section__check-input" type="checkbox" id="sugarfree-field" name="additions" value="sugarfree" checked>
-        <label class="fieldset-section__check-label" for="water-field">Питьевая вода</label>
-        <input class="fieldset-section__check-input" type="checkbox" id="water-field" name="additions" value="water">
-        <label class="fieldset-section__check-label" for="milk-field">Молоко</label>
-        <input class="fieldset-section__check-input" type="checkbox" id="milk-field" name="additions" value="milk">
-        <label class="fieldset-section__check-label" for="vitamins-field">Витамины</label>
-        <input class="fieldset-section__check-input" type="checkbox" id="vitamins-field" name="additions" value="vitamins">
-      </fieldset>
-
-      <div class="form-partition__footer form-submit-section">
-        <div class="form-submit-section__button">
-          <button class="ordinary-button ordinary-button--submit" type="submit" value="Отправить форму">Отправить форму</button>
+        <fieldset class="form__fieldset fieldset-section">
+          <legend class="fieldset-section__legend">Дополнительно</legend>
+          <p class="fieldset-section__field form-field">
+            <input class="form-field__input form-input" type="checkbox" id="sugarfree-field" name="additions" value="sugarfree" checked>
+            <label class="form-field__label" for="sugarfree-field">Сахарозаменитель</label>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <input class="form-field__input form-input" type="checkbox" id="water-field" name="additions" value="water">
+            <label class="form-field__label" for="water-field">Питьевая вода</label>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <input class="form-field__input form-input" type="checkbox" id="milk-field" name="additions" value="milk">
+            <label class="form-field__label" for="milk-field">Молоко</label>
+          </p>
+          <p class="fieldset-section__field form-field">
+            <input class="form-field__input form-input" type="checkbox" id="vitamins-field" name="additions" value="vitamins">
+            <label class="form-field__label" for="vitamins-field">Витамины</label>
+          </p>
+        </fieldset>
+        <div class="form__button-section">
+          <button class="button form__button" type="submit" value="Отправить форму">Отправить форму</button>
+          <p class="form__reminder-text">*&mdash;Обязательные поля/p>
         </div>
-      <div class="form-submit-section__reminder">
-          <p class="reminder-paragraph">*&mdash;Обязательные поля</p>
-      </div>
-      </div>
-    </form>
+      </form>
+    </section>
   </div>
 </main>
 
@@ -119,7 +138,8 @@
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
