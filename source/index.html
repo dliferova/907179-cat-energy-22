@@ -8,23 +8,23 @@
 
 <header class="page-header">
   <a class="page-header__logo">
-    <!--    Здесь будет основной логотип-->
+    <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип кэт энерджи">
   </a>
   <a class="page-header__logo-text cat-energy-text-icon">
-    <!--    Здесь будет второй логотип-текст-->
+    <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Кэт энержди">
   </a>
   <nav class="page-header__navigation main-navigation">
     <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-navigation__wrapper">
+    <div class="main-navigation__content">
       <ul class="main-navigation__list">
-        <li class="main-navigation__item main-navigation__item--active">
-          <a class="main-navigation__link">Главная</a>
+        <li class="main-navigation__item">
+          <span class="main-navigation__item-content main-navigation__item-content--active">Главная</span>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Каталог продукции</a>
+          <a class="main-navigation__item-content" href="#">Каталог продукции</a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Подбор программы</a>
+          <a class="main-navigation__item-content" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </div>
@@ -33,97 +33,104 @@
 
 <main class="page-main">
 
-  <section class="advertisement">
-    <h1 class="advertisement__title">Функциональное питание для котов</h1>
-    <p class="advertisement__slogan">Занялся собой? Займись котом!</p>
+  <section class="advertisement-section">
+    <h1 class="advertisement-section__title">Функциональное питание для котов</h1>
+    <p class="advertisement-section__slogan">Занялся собой? Займись котом!</p>
     <!--    Здесь будет фото стаканчика с едой-->
-    <button class="advertisement__button button" type="button">Подобрать программу</button>
+    <a class="advertisement-section__action" href="#">Подобрать программу</a>
   </section>
 
-  <section class="program">
+  <section class="program-section">
     <h2 class="visually-hidden">Наши программы</h2>
-    <div class="program__content">
-      <h3 class="program__title">Похудение</h3>
+    <div class="program-section__content">
+      <h3 class="program-section__title">Похудение</h3>
       <!--      Здесь будет иконка программы-->
-      <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+      <p class="program-section__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+        деревьям?
         Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
       </p>
-      <a class="program__link" href="#">Каталог slim</a>
+      <a class="program-section__action" href="#">Каталог slim</a>
     </div>
-    <div class="program__content">
-      <h3 class="program__title">Набор массы</h3>
+    <div class="program-section__content">
+      <h3 class="program-section__title">Набор массы</h3>
       <!--      Здесь будет иконка программы-->
       <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
         поможет вашему коту нарастить необходимые мышцы!
       </p>
-      <a class="program__link" href="#">Каталог pro</a>
+      <a class="program-section__link" href="#">Каталог pro</a>
     </div>
   </section>
 
-  <section class="advantages">
-    <h2 class="advantages__title">Как это работает</h2>
-    <ul class="advantages__list">
-      <li class="advantages__item">
+  <section class="advantages-section">
+    <h2 class="advantages-section__title">Как это работает</h2>
+    <ul class="advantages-section__list">
+      <li class="advantages-section__item">
         <!--        Здесь будет svg -->
-        <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+        <p class="advantages-section__description">Функциональное питание содержит только полезные питательные
+          вещества.</p>
       </li>
-      <li class="advantages__item">
+      <li class="advantages-section__item">
         <!--        Здесь будет svg -->
-        <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        <p class="advantages-section__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
+          готово.</p>
       </li>
-      <li class="advantages__item">
+      <li class="advantages-section__item">
         <!--        Здесь будет svg -->
-        <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        <p class="advantages-section__description">Замените один-два приема обычной еды на наше функциональное
+          питание.</p>
       </li>
-      <li class="advantages__item">
+      <li class="advantages-section__item">
         <!--        Здесь будет svg -->
-        <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <p class="advantages-section__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+          питомца!</p>
       </li>
     </ul>
   </section>
 
-  <section class="promo-example">
-    <h2 class="promo-example__title">Живой пример</h2>
-    <p class="promo-example__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+  <section class="promo-example-section">
+    <h2 class="promo-example-section__title">Живой пример</h2>
+    <p class="promo-example-section__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+      Energy Slim.
       Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
       в день.</p>
+    <dl class="promo-example-section__description-list">
+      <dt class="promo-example-section__description-term">Снижение веса</dt>
+      <dd class="promo-example-section__description-definition">5 кг</dd>
 
-    <div class="promo-example__case diet-example">
-      <div class="diet-example__content">
-        <div class="diet-example__description">
-          <p class="diet-example__purpose">Снижение веса</p>
-          <p class="diet-example__purpose-result">5 кг</p>
-        </div>
-        <div class="diet-example__description">
-          <p class="diet-example__duration">Затрачено времени</p>
-          <p class="diet-example__duration__result">60 дней</p>
-        </div>
-        <p class="diet-example__total-price">Затраты на питание: 15 000 руб.</p>
-      </div>
-      <div class="diet-example__range result-range">
-        <!--        Здесь будет фото котов-->
-        <span class="result-range__before">Было</span>
-        <span class="result-range__after">Стало</span>
-      </div>
-    </div>
-  </section>
+      <dt class="promo-example-section__description-term">Затрачено времени</dt>
+      <dd class="promo-example-section__description-definition">60 дней</dd>
 
-  <section class="contact">
-    <h2 class="visually-hidden">Мы на карте</h2>
-    <p class="contact__lead">Приглашаем к сотрудничеству дилеров!</p>
-    <a class="contacts__link-address" href="https://goo.gl/maps/NEP4mJQAmSQXopsi9">ул. Большая Конюшенная, д. 19/8
-      Санкт-Петербург</a>
-    <div class="contact__map-wrapper">
-      <!--    Здесь будет карта-->
+      <dt class="promo-example-section__description-term">Затраты на питание:</dt>
+      <dd class="promo-example-section__description-definition">15 000 руб.</dd>
+    </dl>
+
+    <div class="promo-example-section___range result-range">
+      <!--        Здесь будет фото котов-->
+      <span class="result-range__before-text">Было</span>
+      <label class="result-range__label" for="slider-result">
+        <input class="result-range__input" type="range" id="slider-result" min="1" max="100">
+      </label>
+      <span class="result-range__after-text">Стало</span>
     </div>
   </section>
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="page-footer__content">
+
+    <div class="page-footer__contacts-section contacts-section">
+      <h2 class="visually-hidden">Мы на карте</h2>
+      <p class="contacts-section__lead">Приглашаем к сотрудничеству дилеров!</p>
+      <a class="contacts-section__link-address" href="https://goo.gl/maps/NEP4mJQAmSQXopsi9">ул. Большая Конюшенная, д.
+        19/8 Санкт-Петербург</a>
+      <div class="contacts-section__map-content">
+        <!--    Здесь будет карта-->
+      </div>
+    </div>
+
     <div class="page-footer__logo-text">
       <a class="cat-energy-text-icon">
-        <!--    Здесь будет второй логотип-текст-->
+        <img src="img/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
       </a>
     </div>
     <div class="page-footer__social social">
