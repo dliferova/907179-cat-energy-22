@@ -25,8 +25,8 @@
   padding: 27px 20px 25px;
 
   @media (min-width: $tablet-width) {
-    color: $basic-black;
     @include font-settings(60px, 60px);
+    color: $basic-black;
     text-align: start;
     font-weight: 400;
     max-width: 414px;

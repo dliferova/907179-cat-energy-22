@@ -22,8 +22,8 @@
 }
 
 .example-section__description-definition {
-  margin: 0;
   @include font-settings(24px, 24px);
+  margin: 0;
 }
 
 .example-section__description-term {
