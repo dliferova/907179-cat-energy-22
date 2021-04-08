@@ -1,0 +1,46 @@
+.programs-section__card {
+  background-color: $basic-grey;
+  padding: 22px 33px 18px 15px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 53px 52px;
+  }
+}
+
+.programs-section__card-title {
+  @include font-family-oswald;
+  @include font-settings(24px, 37px);
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(36px, 36px);
+  }
+}
+
+.programs-section__description {
+  margin: 0;
+  padding: 0 0 23px;
+  border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(16px, 24px);
+    max-width: 377px;
+    border: none;
+  }
+}
+
+.programs-section__action {
+  @include font-settings(16px, 16px);
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(20px, 29px);
+  }
+}

@@ -1,0 +1,24 @@
+.advantages-section__title {
+  margin: 0;
+  padding-bottom: 38px;
+}
+
+.advantages-section__list {
+  @include resetting-styles-list;
+}
+
+.advantages-section__item {
+  margin-bottom: 20px;
+}
+
+.advantages-section__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages-section__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(16px, 24px);
+  }
+}

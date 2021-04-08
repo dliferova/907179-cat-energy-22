@@ -1,0 +1,32 @@
+.page-footer__container {
+  background-color: $basic-grey;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  align-self: center;
+  padding: 40px 0 32px;
+}
+
+.page-footer__social {
+  width: 100%;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 200px;
+  }
+}
+

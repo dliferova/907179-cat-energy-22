@@ -1,0 +1,20 @@
+.result-range {
+  width: 228px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 590px;
+  }
+}
+
+.result-range__text {
+  @include font-family-oswald;
+  @include font-settings(16px, 20px);
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.result-range__label {
+  display: inline-block;
+  cursor: pointer;
+}
