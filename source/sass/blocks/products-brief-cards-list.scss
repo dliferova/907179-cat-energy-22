@@ -1,0 +1,17 @@
+.products-brief-cards-list {
+  @include resetting-styles-list;
+}
+
+.products-brief-cards-list__item {
+  padding: 13px 0 19px;
+  border-top: 1px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-grey;
+    padding: 26px 20px 28px;
+  }
+}
+
+.products-brief-cards-list__item:last-child {
+  border-bottom: 1px solid $basic-grey;
+}

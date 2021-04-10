@@ -10,10 +10,20 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
-  min-width: 280px;
   padding: 10px 40px;
+}
+
+.button--secondary {
+  background-color: $basic-grey;
+  color: $basic-black;
+}
+
+.product-full-card__button {
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
 
   @media (min-width: $desktop-width) {
-    min-width: 568px;
+    width: 168px;
   }
 }

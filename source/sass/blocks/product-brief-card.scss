@@ -1,0 +1,55 @@
+.product-brief-card {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+}
+
+.product-brief-card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 13px 10px 13px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
+}
+
+.product-brief-card__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    justify-content: end;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.product-brief-card__description-definition {
+  margin: 0;
+}
+
+.product-brief-card__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / - 1;
+  }
+}
+
+.product-brief-card__description-term {
+  margin-right: 50px;
+}
