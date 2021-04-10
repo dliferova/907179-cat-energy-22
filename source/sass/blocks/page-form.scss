@@ -1,0 +1,40 @@
+.page-form {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.page-form__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.page-form__lead-text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: start;
+  max-width: 226px;
+  padding: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+  }
+}

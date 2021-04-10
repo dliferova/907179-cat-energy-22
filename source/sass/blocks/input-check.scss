@@ -1,0 +1,12 @@
+.input-check {
+  grid-column: 1 / 2;
+  width: 26px;
+  height: 26px;
+  margin: 0 18px 0 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}

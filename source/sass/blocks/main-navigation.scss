@@ -63,6 +63,12 @@
   }
 }
 
+.main-navigation__item-content:last-child {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $basic-grey;
+  }
+}
+
 .main-navigation__item-content--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;
