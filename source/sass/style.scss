@@ -5,15 +5,16 @@
 @import "global/mixins.scss";
 
 //Blocks
-@import "blocks/page";
-@import "blocks/container";
-@import "blocks/page-header";
-@import "blocks/main-navigation";
-@import "blocks/page-main";
-@import "blocks/advertisment-section";
-@import "blocks/programs-section";
-@import "blocks/advantages-section";
-@import "blocks/example-section";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/page-main.scss";
+@import "blocks/advertisment-section.scss";
+@import "blocks/programs-section.scss";
+@import "blocks/program-card.scss";
+@import "blocks/advantages-section.scss";
+@import "blocks/advantage-card.scss";
+@import "blocks/example-section.scss";
 @import "blocks/result-range.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/map.scss";

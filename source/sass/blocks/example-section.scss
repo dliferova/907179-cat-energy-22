@@ -7,7 +7,8 @@
   margin: 0 0 25px;
 
   @media (min-width: $tablet-width) {
-    @include font-settings(16px, 24px);
+    font-size: 16px;
+    line-height: 24px;
     margin: 0 0 54px;
   }
 
@@ -22,30 +23,35 @@
 }
 
 .example-section__description-definition {
-  @include font-settings(24px, 24px);
+  font-size: 24px;
+  line-height: 24px;
   margin: 0;
 }
 
 .example-section__description-term {
-  @include font-settings(12px, 12px);
+  font-size: 12px;
+  line-height: 12px;
 
   @media (min-width: $desktop-width) {
-    @include font-settings(14px, 14px);
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
 .example-section__description-term-inline,
 .example-section__description-definition-inline {
-  @include font-settings(14px, 20px);
+  font-size: 14px;
+  line-height: 20px;
   text-transform: uppercase;
   display: inline-flex;
 
   @media (min-width: $desktop-width) {
-    @include font-settings(20px, 20px);
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
-.example-section___range {
+.example-section__range {
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {

@@ -8,8 +8,9 @@
 }
 
 .result-range__text {
-  @include font-family-oswald;
-  @include font-settings(16px, 20px);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   display: inline-block;
 }

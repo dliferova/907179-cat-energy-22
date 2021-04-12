@@ -1,4 +1,4 @@
-.map__information-block {
+.map__contacts {
   padding: 28px 20px;
   display: flex;
   justify-content: space-between;
@@ -31,24 +31,28 @@
 }
 
 .map__lead {
-  @include font-family-oswald;
-  @include font-settings(16px, 20px);
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    @include font-settings(16px, 20px);
+    font-size: 16px;
+    line-height: 20px;
     width: 171px;
   }
 }
 
 .map__link-address {
-  @include font-settings(20px, 21px);
+  font-size: 14px;
+  line-height: 20px;
   text-decoration: none;
   color: inherit;
 
   @media (min-width: $tablet-width) {
-    @include font-settings(16px, 20px);
+    font-size: 16px;
+    line-height: 20px;
     width: 159px;
     text-align: end;
   }

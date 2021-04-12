@@ -1,0 +1,50 @@
+.program-card {
+  background-color: #f2f2f2;
+  padding: 22px 33px 18px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 53px 52px;
+  }
+}
+
+.program-card__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.program-card__description {
+  margin: 0;
+  padding: 0 0 23px;
+  border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 377px;
+    border: none;
+  }
+}
+
+.program-card__action {
+  font-size: 16px;
+  line-height: 16px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
