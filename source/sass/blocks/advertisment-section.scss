@@ -1,0 +1,81 @@
+.advertisement-section {
+  font-family: "Oswald", sans-serif;
+  background: url("../../img/index-background.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/index-background.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+}
+
+.advertisement-section__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+  text-align: center;
+  margin: 0;
+  padding: 27px 15px 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    text-align: start;
+    font-weight: 400;
+    max-width: 414px;
+    padding: 0 0 41px;
+  }
+}
+
+.advertisement-section__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-align: start;
+    padding-bottom: 20px;
+  }
+}
+
+.advertisement-section__action {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $basic-green;
+  display: block;
+  box-sizing: border-box;
+  color: $basic-white;
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 8px 44px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 245px;
+    margin: 0;
+    padding: 17px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 12px;
+  }
+}

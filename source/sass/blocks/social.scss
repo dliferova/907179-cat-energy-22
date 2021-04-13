@@ -1,0 +1,10 @@
+.social__list {
+  @include resetting-styles-list;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+}
+
+.social__link {
+  display: block;
+}

@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+//Global
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+
+//Blocks
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/page-main.scss";
+@import "blocks/advertisment-section.scss";
+@import "blocks/programs-section.scss";
+@import "blocks/program-card.scss";
+@import "blocks/advantages-section.scss";
+@import "blocks/advantage-card.scss";
+@import "blocks/example-section.scss";
+@import "blocks/result-range.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/map.scss";
+@import "blocks/social.scss";

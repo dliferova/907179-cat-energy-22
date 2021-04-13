@@ -1,0 +1,47 @@
+.page-main__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.page-main__advertisement-section {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto 82px;
+    padding: 0;
+  }
+}
+
+.page-main__programs-section {
+  margin-bottom: 27px;
+}
+
+.page-main__advantages-section {
+  margin-bottom: 42px;
+}
+
+.page-main__example-section {
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $border-grey;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}

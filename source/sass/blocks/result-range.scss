@@ -1,0 +1,21 @@
+.result-range {
+  width: 228px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 590px;
+  }
+}
+
+.result-range__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.result-range__label {
+  display: inline-block;
+  cursor: pointer;
+}
