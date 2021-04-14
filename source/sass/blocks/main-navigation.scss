@@ -13,7 +13,7 @@
 
 .main-navigation__list {
   @include resetting-styles-list;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
 
   @media (min-width: $tablet-width) {

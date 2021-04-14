@@ -55,7 +55,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 70px;
+    margin: 0 0 65px;
   }
 }
 
@@ -66,6 +66,8 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $basic-grey;
+    margin: 0 auto 65px;
+    max-width: 630px;
     padding: 25px 20px 29px 27px;
   }
 }
