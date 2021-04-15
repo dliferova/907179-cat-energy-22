@@ -13,7 +13,7 @@
 
 .main-navigation__list {
   @include resetting-styles-list;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
 
   @media (min-width: $tablet-width) {
@@ -60,6 +60,12 @@
     color: $basic-white;
     padding: 10px 0;
     margin-right: 10px;
+  }
+}
+
+.main-navigation__item-content:last-child {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $basic-grey;
   }
 }
 

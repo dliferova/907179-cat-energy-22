@@ -1,0 +1,19 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  box-sizing: border-box;
+  color: $basic-white;
+  background-color: $basic-green;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  min-width: 280px;
+  padding: 10px 40px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
+}

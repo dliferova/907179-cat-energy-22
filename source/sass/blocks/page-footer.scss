@@ -29,3 +29,9 @@
     max-width: 200px;
   }
 }
+
+.page-footer__map-container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}

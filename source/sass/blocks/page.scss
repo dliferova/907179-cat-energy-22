@@ -6,12 +6,26 @@
 }
 
 .page__body {
-  min-width: 320px;
   margin: 0;
   padding: 0;
   min-height: 100%;
   background-color: $basic-white;
   color: $special-dark-grey;
+}
+
+.page__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  padding: 27px 0 37px;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page__container {
