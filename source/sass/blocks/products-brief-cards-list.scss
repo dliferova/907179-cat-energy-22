@@ -10,6 +10,12 @@
     border: 1px solid $basic-grey;
     padding: 26px 20px 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-top: 1px solid $basic-grey;
+    padding: 15px 20px 17px;
+  }
 }
 
 .products-brief-cards-list__item:last-child {

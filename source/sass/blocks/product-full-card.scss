@@ -1,10 +1,10 @@
 .product-full-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "image title"
-                        "image description"
-                        "button button";
+  grid-template-areas:
+    "image title"
+    "image description"
+    "button button";
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,62 +15,56 @@
   }
 }
 
-.product-full-card picture {
-  padding: 14px 36px;
+.product-full-card__img-wrapper {
   grid-area: image;
-}
-
-.product-full-card__img {
-  width: 68px;
-  height: 86px;
-
+  padding: 14px 30px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 200px;
+    margin: -50px 0 34px;
+
   }
 }
 
 .product-full-card__title {
   @include font-family-oswald;
   @include font-settings(16px, 20px);
+  color: $color-mine-shaft;
   font-weight: 400;
-  color: $color-for-subtitle;
-  margin: 0 0 18px;
   text-transform: uppercase;
+  margin: 0 0 18px;
   max-width: 76px;
   grid-area: title;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
-    max-width: 155px;
-    text-align: center;
-  }
+  //@media (min-width: $tablet-width) {
+  //  font-size: 20px;
+  //  line-height: 24px;
+  //  max-width: 155px;
+  //  text-align: center;
+  //}
 }
 
 .product-full-card__description {
-  grid-area: description;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 6px;
   margin: 0 0 13px;
-  grid-column: 2 / 3;
+  grid-area: description;
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 125px);
-    margin: 0 0 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, 79px);
-    margin: 0 0 35px;
-  }
+  //@media (min-width: $tablet-width) {
+  //  grid-template-columns: repeat(2, 125px);
+  //  margin: 0 0 35px;
+  //}
+  //
+  //@media (min-width: $desktop-width) {
+  //  grid-template-columns: repeat(2, 79px);
+  //  margin: 0 0 35px;
+  //}
 }
 
 .product-full-card__description-definition {
-  justify-self: end;
   margin: 0;
+  justify-self: end;
 }
 
 .product-full-card__button {

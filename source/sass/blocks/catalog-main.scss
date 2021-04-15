@@ -8,6 +8,13 @@
   }
 }
 
+.catalog-main__section {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .catalog-main__title {
   @include font-family-oswald;
   @include font-settings(24px, 24px);

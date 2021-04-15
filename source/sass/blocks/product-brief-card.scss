@@ -2,7 +2,16 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title goods-descpiptions"
+      "button button";
     row-gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 244px;
+    column-gap: 40px;
+    grid-template-areas: "title goods-descpiptions button";
   }
 }
 
@@ -19,6 +28,7 @@
     font-size: 20px;
     line-height: 20px;
     padding: 0;
+    grid-area: title;
   }
 }
 
@@ -29,12 +39,17 @@
   display: flex;
   justify-content: space-between;
 
+
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    justify-content: end;
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+    grid-area: goods-descpiptions;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
 
@@ -43,10 +58,14 @@
 }
 
 .product-brief-card__button {
-  width: 280px;
+  //width: 280px;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / - 1;
+    grid-area: button;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
