@@ -60,8 +60,9 @@
 }
 
 .show-more-card__title {
-  @include font-family-oswald;
-  @include font-settings(16px, 20px);
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;

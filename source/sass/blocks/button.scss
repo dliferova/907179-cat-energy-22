@@ -4,8 +4,6 @@
   line-height: 20px;
   display: block;
   box-sizing: border-box;
-  color: $basic-white;
-  background-color: $basic-green;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
@@ -13,17 +11,12 @@
   padding: 10px 30px;
 }
 
+.button--primary {
+  color: $basic-white;
+  background-color: $basic-green;
+}
+
 .button--secondary {
   background-color: $basic-grey;
   color: $basic-black;
-}
-
-.product-full-card__button {
-  @media (min-width: $tablet-width) {
-    width: 248px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 168px;
-  }
 }

@@ -1,41 +1,43 @@
 .catalog-main {
-  @include font-family-arial;
-  @include font-settings(12px, 16px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    @include font-settings(16px, 16px);
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
-.catalog-main__section {
+.catalog-main__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 1220px;
+    padding: 0 10px;
     margin: 0 auto;
   }
 }
 
-.catalog-main__title {
-  @include font-family-oswald;
-  @include font-settings(24px, 24px);
+.catalog-main__container_for_mobile {
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.catalog-main__subtitle {
+  margin: 0 0 36px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px;
+  }
 }
 
 .catalog-main__special-offer-wrapper {
   padding: 43px 0 35px;
-}
-
-.catalog-main__products-card-container {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 708px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
 }
