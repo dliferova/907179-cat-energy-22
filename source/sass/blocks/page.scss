@@ -19,12 +19,55 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  padding: 27px 0 37px;
+  padding: 27px 0 37px 20px;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.page__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.page__subtitle_decorated_with-lines {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  width: 100%;
+
+  &::after {
+    content: "";
+    height: 2px;
+    background: $basic-green;
+    margin-left: 25px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      height: 2px;
+      background: $basic-green;
+      margin-right: 39px;
+      width: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 70px;
+    }
   }
 }
 

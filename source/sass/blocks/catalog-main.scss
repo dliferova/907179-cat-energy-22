@@ -1,0 +1,46 @@
+.catalog-main {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.catalog-main__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+    max-width: 1220px;
+  }
+}
+
+.catalog-main__section {
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 0;
+  }
+}
+
+.catalog-main__subtitle {
+  margin: 25px 0 36px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px;
+  }
+}
+
+.catalog-main__special-offer-wrapper {
+  padding: 43px 0 35px;
+}

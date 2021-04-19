@@ -1,0 +1,70 @@
+.product-brief-card {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title goods-descpiptions"
+      "button button";
+    row-gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 244px;
+    column-gap: 40px;
+    grid-template-areas: "title goods-descpiptions button";
+  }
+}
+
+.product-brief-card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 13px 10px 13px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    grid-area: title;
+  }
+}
+
+.product-brief-card__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    grid-area: goods-descpiptions;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.product-brief-card__description-definition {
+  margin: 0;
+}
+
+.product-brief-card__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+  }
+}
+
+.product-brief-card__description-term {
+  margin-right: 50px;
+}

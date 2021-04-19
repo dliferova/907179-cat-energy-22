@@ -1,0 +1,30 @@
+.promotional-offer-content {
+  background: url("../../img/catalog-special-offer-mobile.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  min-height: 289px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    background: url("../../img/catalog-special-offer-tablet.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 200px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
+}
+
+.promotional-offer-content__description {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-white;
+  max-width: 161px;
+  align-self: flex-end;
+  padding-bottom: 43px;
+}

@@ -30,6 +30,8 @@ const server = (done) => {
     server: {
       baseDir: 'source'
     },
+    open: false,
+    ghostMode: false,
     cors: true,
     notify: false,
     ui: false,

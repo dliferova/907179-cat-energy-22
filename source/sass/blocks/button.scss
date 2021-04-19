@@ -4,16 +4,19 @@
   line-height: 20px;
   display: block;
   box-sizing: border-box;
-  color: $basic-white;
-  background-color: $basic-green;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
   border: none;
-  min-width: 280px;
-  padding: 10px 40px;
+  padding: 10px 30px;
 
-  @media (min-width: $desktop-width) {
-    min-width: 568px;
+  &_primary {
+    color: $basic-white;
+    background-color: $basic-green;
+  }
+
+  &_secondary {
+    background-color: $basic-grey;
+    color: $basic-black;
   }
 }
