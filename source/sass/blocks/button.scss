@@ -9,14 +9,14 @@
   text-align: center;
   border: none;
   padding: 10px 30px;
-}
 
-.button--primary {
-  color: $basic-white;
-  background-color: $basic-green;
-}
+  &_primary {
+    color: $basic-white;
+    background-color: $basic-green;
+  }
 
-.button--secondary {
-  background-color: $basic-grey;
-  color: $basic-black;
+  &_secondary {
+    background-color: $basic-grey;
+    color: $basic-black;
+  }
 }

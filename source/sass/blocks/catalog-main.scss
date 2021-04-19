@@ -18,20 +18,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
     padding: 0 10px;
-    margin: 0 auto;
+    max-width: 1220px;
   }
 }
 
-.catalog-main__container_for_mobile {
-  @media (max-width: 768px) {
-    padding: 0 20px;
+.catalog-main__section {
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 0;
   }
 }
 
 .catalog-main__subtitle {
-  margin: 0 0 36px 20px;
+  margin: 25px 0 36px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 80px;

@@ -24,7 +24,7 @@
         <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Кэт энержди">
       </a>
     </div>
-    <nav class="page-header__navigation main-navigation main-navigation_closed main-navigation_theme_light_background">
+    <nav class="page-header__navigation main-navigation main-navigation_closed main-navigation_theme_light">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -35,7 +35,7 @@
             <a class="main-navigation__item-content" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
-          <span class="main-navigation__item-content main-navigation__item-content--active">Каталог продукции</span>
+          <span class="main-navigation__item-content main-navigation__item-content_active">Каталог продукции</span>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__item-content" href="form.html">Подбор программы</a>
@@ -46,7 +46,7 @@
   </div>
 </header>
 <main class="catalog-main">
-  <div class="catalog-main__container catalog-main__container_for_mobile">
+  <div class="catalog-main__container">
     <h1 class="page__title">Каталог продукции</h1>
   </div>
   <section class="catalog-main__section">
@@ -78,7 +78,7 @@
                 <dd class="product-full-card__description-definition">700 P.</dd>
               </div>
             </dl>
-            <button class="product-full-card__button button button--primary">Заказать</button>
+            <button class="product-full-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-cards-list__item">
@@ -106,7 +106,7 @@
                 <dd class="product-full-card__description-definition">1000 P.</dd>
               </div>
             </dl>
-            <button class="product-full-card__button button button--primary">Заказать</button>
+            <button class="product-full-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-cards-list__item">
@@ -133,7 +133,7 @@
                 <dd class="product-full-card__description-definition">700 P.</dd>
               </div>
             </dl>
-            <button class="product-full-card__button button button--primary">Заказать</button>
+            <button class="product-full-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-cards-list__item">
@@ -160,7 +160,7 @@
                 <dd class="product-full-card__description-definition">1000 P.</dd>
               </div>
             </dl>
-            <button class="product-full-card__button button button--primary">Заказать</button>
+            <button class="product-full-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-cards-list__item">
@@ -188,7 +188,7 @@
                 <dd class="product-full-card__description-definition">400 P.</dd>
               </div>
             </dl>
-            <button class="product-full-card__button button button--primary">Заказать</button>
+            <button class="product-full-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-cards-list__item">
@@ -216,7 +216,7 @@
                 <dd class="product-full-card__description-definition">700 P.</dd>
               </div>
             </dl>
-            <button class="product-full-card__button button button--primary">Заказать</button>
+            <button class="product-full-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-cards-list__item">
@@ -242,22 +242,23 @@
                 <dd class="product-full-card__description-definition">500 P.</dd>
               </div>
             </dl>
-            <button class="product-full-card__button button button--primary">Заказать</button>
+            <button class="product-full-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-cards-list__item">
           <div class="show-more-card">
-            <div class="show-more-card__plus-icon"></div>
+            <!-- TODO перенести в css в задании декоративные элементы-->
+<!--            <div class="show-more-card__plus-icon"></div>-->
             <h3 class="show-more-card__title">Показать еще 100500 товаров</h3>
             <p class="show-more-card__description">На самом деле вкусов гораздо больше!</p>
-            <button class="show-more-card__button button button--secondary">Показать все</button>
+            <button class="show-more-card__button button button_secondary">Показать все</button>
           </div>
         </li>
       </ul>
     </div>
   </section>
   <section class="catalog-main__section">
-    <h2 class="page__subtitle page__subtitle_decorated catalog-main__subtitle">Дополнительные товары</h2>
+    <h2 class="page__subtitle page__subtitle_decorated_with-lines catalog-main__subtitle">Дополнительные товары</h2>
     <div class="catalog-main__container catalog-main__container_for_mobile">
       <ul class="products-brief-cards-list">
         <li class="products-brief-cards-list__item">
@@ -267,7 +268,7 @@
               <dt class="product-brief-card__description-term">1 упаковка (100 г)</dt>
               <dd class="product-brief-card__description-definition">200 P.</dd>
             </dl>
-            <button class="product-brief-card__button button button--primary">Заказать</button>
+            <button class="product-brief-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-brief-cards-list__item">
@@ -277,7 +278,7 @@
               <dt class="product-brief-card__description-term">5 литров</dt>
               <dd class="product-brief-card__description-definition">50 P.</dd>
             </dl>
-            <button class="product-brief-card__button button button--primary">Заказать</button>
+            <button class="product-brief-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-brief-cards-list__item">
@@ -287,7 +288,7 @@
               <dt class="product-brief-card__description-term">1 литр</dt>
               <dd class="product-brief-card__description-definition">100 P.</dd>
             </dl>
-            <button class="product-brief-card__button button button--primary">Заказать</button>
+            <button class="product-brief-card__button button button_primary">Заказать</button>
           </div>
         </li>
         <li class="products-brief-cards-list__item">
@@ -297,7 +298,7 @@
               <dt class="product-brief-card__description-term">1 упаковка (30г)</dt>
               <dd class="product-brief-card__description-definition">300 P.</dd>
             </dl>
-            <button class="product-brief-card__button button button--primary">Заказать</button>
+            <button class="product-brief-card__button button button_primary">Заказать</button>
           </div>
         </li>
       </ul>
@@ -339,14 +340,14 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            <a class="social__link social__link_instagram" href="https://www.instagram.com/htmlacademy">Мы в
               Инстаграме</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
         </ul>
       </div>
