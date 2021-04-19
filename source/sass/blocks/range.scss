@@ -1,0 +1,135 @@
+.range {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+
+.range__description-list {
+  margin: 0 0 42px 0;
+  display: grid;
+  row-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.range__group-elements {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.range__group-elements_with-border {
+  border: 1px solid $border-range;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+.range__group-elements_inline {
+  grid-column: 1 / -1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: -2 / -1;
+    text-align: end;
+  }
+}
+
+.range__term {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  background-color: $basic-grey;
+  position: absolute;
+  padding: 0 15px;
+  bottom: -15px;
+  transform: translateX(-50%);
+  left: 50%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.range__definition {
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.range__term-inline,
+.range__definition-inline {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.range__example-image-wrapper {
+  text-align: center;
+  margin: 0 0 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.range__slider {
+  width: 228px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 579px;
+  }
+}
+
+.range__slider-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.range__example {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+    padding-bottom: 64px;
+  }
+}
+

@@ -9,14 +9,14 @@
 <body class="page__body">
 
 <header class="page-header">
-  <div class="page-header__container">
+  <div class="page-header__container page-header__container_position">
     <div class="page-header__logos-wrapper">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип кэт энерджи">
       </a>
       <a class="page-header__logo-text">
         <img class="page-header__logo-text-image" src="img/logo-text-mobile.svg" width="101" height="18"
-              alt="Кэт энержди">
+             alt="Кэт энержди">
       </a>
     </div>
     <nav class="page-header__navigation main-navigation">
@@ -26,7 +26,7 @@
           <span class="main-navigation__item-content main-navigation__item-content--active">Главная</span>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__item-content" href="#">Каталог продукции</a>
+          <a class="main-navigation__item-content" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__item-content" href="form.html">Подбор программы</a>
@@ -39,13 +39,20 @@
 <main class="page-main">
   <section class="page-main__advertisement-section">
     <div class="advertisement-section">
-      <h1 class="advertisement-section__title">Функциональное питание для котов</h1>
-      <p class="advertisement-section__slogan">Занялся собой? Займись котом!</p>
-      <picture>
-        <img class="advertisement-section__image" src="../../img/index-promo-mobile.png" width="280" height="270">
-      </picture>
+      <div class="advertisement-section__wrapper">
+        <h1 class="advertisement-section__title">Функциональное питание для котов</h1>
+        <p class="advertisement-section__slogan">Занялся собой? Займись котом!</p>
+        <a class="advertisement-section__action" href="form.html">Подобрать программу</a>
+        <p class="advertisement-section__image-group">
+          <picture class="advertisement-section__picture-group">
+            <source media="(min-width: 1440px)" srcset="img/promo-box-desktop.png 1x, img/promo-box-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo-box-tablet.png 1x, img/promo-box-tablet@2x.png 2x">
+            <img class="advertisement-section__image" src="img/promo-box-mobile.png"
+                 srcset="img/promo-box-mobile@2x.png 2x" alt="Образец нашего продукта">
+          </picture>
+        </p>
+      </div>
     </div>
-    <a class="advertisement-section__action" href="#">Подобрать программу</a>
   </section>
   <div class="page__container">
     <section class="page-main__programs-section">
@@ -53,8 +60,14 @@
         <h2 class="visually-hidden">Наши программы</h2>
         <div class="programs-section__card-container">
           <div class="program-card">
+            <p class="program-card__icons-wrapper">
+              <picture class="program-card__icons-group">
+                <source media="(min-width: 1440px)" srcset="img/program-icon-1-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/program-icon-1-tablet.svg">
+                <img class="program-card__icon" src="img/program-icon-1-mobile.svg">
+              </picture>
+            </p>
             <h3 class="program-card__title">Похудение</h3>
-            <!--      Здесь будет иконка программы-->
             <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
@@ -63,8 +76,14 @@
         </div>
         <div class="programs-section__card-container">
           <div class="program-card">
+            <p class="program-card__icons-wrapper">
+              <picture class="program-card__icons-group">
+                <source media="(min-width: 1440px)" srcset="img/program-icon-2-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/program-icon-2-tablet.svg">
+                <img class="program-card__icon" src="img/program-icon-2-mobile.svg">
+              </picture>
+            </p>
             <h3 class="program-card__title">Набор массы</h3>
-            <!--      Здесь будет иконка программы-->
             <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
@@ -79,29 +98,25 @@
         <ul class="advantages-section__list">
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <!--        Здесь будет svg -->
               <p class="advantage-card__description">Функциональное питание содержит только полезные питательные
                 вещества.</p>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <!--        Здесь будет svg -->
               <p class="advantage-card__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.</p>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <!--        Здесь будет svg -->
               <p class="advantage-card__description">Замените один-два приема обычной еды на наше функциональное
                 питание.</p>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <!--        Здесь будет svg -->
-              <p class="advantages-section__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              <p class="advantage-card__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
                 питомца!</p>
             </div>
           </li>
@@ -111,36 +126,46 @@
   </div>
   <section class="page-main__example-section">
     <div class="example-section">
-      <div class="page__container">
-        <h2 class="page-main__title example-section__title">Живой пример</h2>
-        <p class="example-section__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-          Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-          спит по 16 часов
-          в день.</p>
-        <dl class="example-section__description-list">
-          <dt class="example-section__description-term">Снижение веса</dt>
-          <dd class="example-section__description-definition">5 кг</dd>
-          <dt class="example-section__description-term">Затрачено времени</dt>
-          <dd class="example-section__description-definition">60 дней</dd>
-
-          <dt class="example-section__description-term-inline">Затраты на питание:</dt>
-          <dd class="example-section__description-definition-inline">15 000 руб.</dd>
-        </dl>
-      </div>
-
-      <div class="example-section__range">
-        <p>
-          <img class="example-section__image" src="../img/before-mobile.png">
-        </p>
-        <!--          Это временное p для того, чтобы изображение вело себя нормально-->
-        <div class="result-range">
-          <span class="result-range__text">Было</span>
-          <label class="result-range__label" for="slider-result">
-            <input class="result-range__input" type="range" id="slider-result" min="1" max="100">
-          </label>
-          <span class="result-range__text">Стало</span>
+      <h2 class="page-main__title example-section__title">Живой пример</h2>
+        <div class="example-section__range-content">
+          <div class="range">
+            <p class="example-section__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+              Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+              спит по 16 часов в день.</p>
+            <dl class="range__description-list">
+              <div class="range__group-elements range__group-elements_with-border">
+                <dd class="range__definition">5 кг</dd>
+                <dt class="range__term">Снижение веса</dt>
+              </div>
+              <div class="range__group-elements range__group-elements_with-border">
+                <dd class="range__definition">60 дней</dd>
+                <dt class="range__term">Затрачено времени</dt>
+              </div>
+              <div class="range__group-elements range__group-elements_inline">
+                <dt class="range__term-inline">Затраты на питание:</dt>
+                <dd class="range__definition-inline">15 000 руб.</dd>
+              </div>
+            </dl>
+            <div class="range__example">
+              <p class="range__example-image-wrapper">
+                <picture class="range__example-image-group">
+                  <source media="(min-width: 768px)" srcset="img/cat-before-after-tablet.png 1x, img/cat-cat-before-after@2x.png">
+                  <img class="example-section__image" src="img/fat-cat-promo-mobile.png 1x"
+                       srcset="img/fat-cat-promo-mobile@2x.png 2x">
+                </picture>
+              </p>
+              <div class="range__slider">
+                <span class="range__slider-text">Было</span>
+                <label class="range__slider-label" for="slider-result">
+                  <input class="range__slider-input" type="range" id="slider-result" min="1" max="100">
+                </label>
+                <span class="range__slider-text">Стало</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
   </div>
@@ -156,7 +181,6 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </a>
       </div>
-      <img class="map__photo" src="../../img/map-mobile-test.png">
     </div>
   </div>
   <div class="page-footer__container">
@@ -186,7 +210,7 @@
         <!--      Здесь будет логотип html academy-->
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Перейти на сайт HTML Academy"></a>
+           aria-label="Перейти на сайт HTML Academy"></a>
       </div>
     </div>
   </div>

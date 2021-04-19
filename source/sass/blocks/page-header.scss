@@ -9,8 +9,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    margin: 0 auto 30px;
+    width: 1220px;
+    margin: 0 auto;
+    position: absolute;
   }
 }
 

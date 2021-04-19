@@ -1,8 +1,28 @@
+.advantage-card {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
 .advantage-card__description {
   margin: 0;
+  position: relative;
+  padding-left: 45px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
   }
 }

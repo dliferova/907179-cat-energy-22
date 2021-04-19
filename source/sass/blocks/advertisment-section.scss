@@ -1,24 +1,42 @@
 .advertisement-section {
   font-family: "Oswald", "Arial", sans-serif;
-  background: url("../../img/index-background.png");
+  background: url("../../img/lead-back-mobile.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
-  width: 100%;
 
   @media (min-width: $tablet-width) {
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../img/index-background.png");
+    background: url("../../img/lead-back-desktop.jpg");
     background-repeat: no-repeat;
     background-position-x: right;
+  }
+}
+
+.advertisement-section__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    position: relative;
+    min-height: 810px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    min-height: 694px;
+    padding-top: 200px;
   }
 }
 
 .advertisement-section__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: $basic-white;
   text-align: center;
   margin: 0;
@@ -31,7 +49,11 @@
     text-align: start;
     font-weight: 400;
     max-width: 414px;
-    padding: 0 0 41px;
+    padding: 0 0 40px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -48,7 +70,11 @@
     line-height: 20px;
     color: $basic-black;
     text-align: start;
-    padding-bottom: 20px;
+    padding: 0 0 20px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -66,16 +92,39 @@
   max-width: 280px;
   margin: 0 auto;
   padding: 8px 44px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    order: 1;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     max-width: 245px;
-    margin: 0;
     padding: 17px 26px;
+    margin: 0 0 0 90px;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     padding: 16px 12px;
+    margin-left: 0;
+  }
+}
+
+.advertisement-section__image-group {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 5%;
+    left: 30%;
   }
 }
