@@ -4,26 +4,31 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page__body">
-
 <header class="page-header">
-  <div class="page-header__container page-header__container_position">
+  <div class="page-header__container">
     <div class="page-header__logos-wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип кэт энерджи">
+      <a class="page-header__logo" href="index.html">
+        <picture class="page-header__logo-group">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип кэт энерджи">
+        </picture>
       </a>
-      <a class="page-header__logo-text">
-        <img class="page-header__logo-text-image" src="img/logo-text-mobile.svg" width="101" height="18"
-             alt="Кэт энержди">
+      <a class="page-header__logo-text" href="index.html">
+        <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Кэт энержди">
       </a>
     </div>
-    <nav class="page-header__navigation main-navigation">
+    <nav class="page-header__navigation main-navigation_closed main-navigation_theme_dark">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <span class="main-navigation__item-content main-navigation__item-content--active">Главная</span>
+          <span class="main-navigation__item-content main-navigation__item-content_active">Главная</span>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__item-content" href="catalog.html">Каталог продукции</a>
@@ -35,7 +40,6 @@
     </nav>
   </div>
 </header>
-
 <main class="page-main">
   <section class="page-main__advertisement-section">
     <div class="advertisement-section">
@@ -48,7 +52,7 @@
             <source media="(min-width: 1440px)" srcset="img/promo-box-desktop.png 1x, img/promo-box-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/promo-box-tablet.png 1x, img/promo-box-tablet@2x.png 2x">
             <img class="advertisement-section__image" src="img/promo-box-mobile.png"
-                 srcset="img/promo-box-mobile@2x.png 2x" alt="Образец нашего продукта">
+                  srcset="img/promo-box-mobile@2x.png 2x" alt="Образец нашего продукта">
           </picture>
         </p>
       </div>
@@ -98,6 +102,12 @@
         <ul class="advantages-section__list">
           <li class="advantages-section__item">
             <div class="advantage-card">
+<!--              <p class="advantage-card__img-wrapper">-->
+<!--                <picture class="advantage-card__img-group">-->
+<!--                  <source media="(min-width:1400px)" srcset="img/number-1-desktop.svg">-->
+<!--                  <img src="img/number-1-desktop.svg">-->
+<!--                </picture>-->
+<!--              </p>-->
               <p class="advantage-card__description">Функциональное питание содержит только полезные питательные
                 вещества.</p>
             </div>
@@ -127,48 +137,46 @@
   <section class="page-main__example-section">
     <div class="example-section">
       <h2 class="page-main__title example-section__title">Живой пример</h2>
-        <div class="example-section__range-content">
-          <div class="range">
-            <p class="example-section__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-              Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-              спит по 16 часов в день.</p>
-            <dl class="range__description-list">
-              <div class="range__group-elements range__group-elements_with-border">
-                <dd class="range__definition">5 кг</dd>
-                <dt class="range__term">Снижение веса</dt>
-              </div>
-              <div class="range__group-elements range__group-elements_with-border">
-                <dd class="range__definition">60 дней</dd>
-                <dt class="range__term">Затрачено времени</dt>
-              </div>
-              <div class="range__group-elements range__group-elements_inline">
-                <dt class="range__term-inline">Затраты на питание:</dt>
-                <dd class="range__definition-inline">15 000 руб.</dd>
-              </div>
-            </dl>
-            <div class="range__example">
-              <p class="range__example-image-wrapper">
-                <picture class="range__example-image-group">
-                  <source media="(min-width: 768px)" srcset="img/cat-before-after-tablet.png 1x, img/cat-cat-before-after@2x.png">
-                  <img class="example-section__image" src="img/fat-cat-promo-mobile.png 1x"
-                       srcset="img/fat-cat-promo-mobile@2x.png 2x">
-                </picture>
-              </p>
-              <div class="range__slider">
-                <span class="range__slider-text">Было</span>
-                <label class="range__slider-label" for="slider-result">
-                  <input class="range__slider-input" type="range" id="slider-result" min="1" max="100">
-                </label>
-                <span class="range__slider-text">Стало</span>
-              </div>
+      <div class="example-section__range-content">
+        <div class="range">
+          <p class="range__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+            спит по 16 часов в день.</p>
+          <dl class="range__description-list">
+            <div class="range__group-final-values range__group-final-values_with-border">
+              <dd class="range__definition">5 кг</dd>
+              <dt class="range__term">Снижение веса</dt>
+            </div>
+            <div class="range__group-final-values range__group-final-values_with-border">
+              <dd class="range__definition">60 дней</dd>
+              <dt class="range__term">Затрачено времени</dt>
+            </div>
+            <div class="range__group-final-values range__group-final-values_inline">
+              <dt class="range__term-inline">Затраты на питание:</dt>
+              <dd class="range__definition-inline">15 000 руб.</dd>
+            </div>
+          </dl>
+          <div class="range__example">
+            <p class="range__example-image-wrapper">
+              <picture class="range__example-image-group">
+                <source media="(min-width: 768px)"
+                        srcset="img/cat-before-after-tablet.png 1x, img/cat-cat-before-after@2x.png">
+                <img class="example-section__image" src="img/fat-cat-promo-mobile.png 1x"
+                      srcset="img/fat-cat-promo-mobile@2x.png 2x">
+              </picture>
+            </p>
+            <div class="range__slider">
+              <span class="range__slider-text">Было</span>
+              <label class="range__slider-label" for="slider-result">
+                <input class="range__slider-input" type="range" id="slider-result" min="1" max="100">
+              </label>
+              <span class="range__slider-text">Стало</span>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
-  </div>
 </main>
 
 <footer class="page-footer">
@@ -181,6 +189,13 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </a>
       </div>
+      <p class="map__photo-wrapper">
+        <picture class="map__photo-group">
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2px.jpg 2x">
+          <img class="map__photo" src="img/map-mobile.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Кэт Энерджи на карте">
+        </picture>
+      </p>
     </div>
   </div>
   <div class="page-footer__container">
@@ -210,7 +225,7 @@
         <!--      Здесь будет логотип html academy-->
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-           aria-label="Перейти на сайт HTML Academy"></a>
+            aria-label="Перейти на сайт HTML Academy"></a>
       </div>
     </div>
   </div>

@@ -1,28 +1,19 @@
 .example-section__range-content {
   @media (min-width: $desktop-width) {
     background-color: $basic-grey;
-  }
-}
-
-.example-section__lead {
-  margin: 0 0 25px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 40px 0 30px;
-    margin: 0 0 54px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 436px;
-    margin: 0 0 69px;
+    padding: 70px 0 54px;
   }
 }
 
 .example-section__title {
+  padding: 0 0 33px;
+
   @media (min-width: $tablet-width) {
-    padding: 0 30px 30px;
+    padding: 0 30px 76px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px 80px;
+    margin: 0 90px;
   }
 }
-

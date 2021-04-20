@@ -11,30 +11,58 @@
   }
 }
 
-.main-navigation {
-  &_theme_dark {
-    .main-navigation__item-content {
-      @media (min-width: $desktop-width) {
-        color: $basic-white;
-      }
-    }
+.main-navigation_theme_dark .main-navigation__item-content {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
   }
+}
 
-  &_theme_light {
-    .main-navigation__item-content {
-      @media (min-width: $desktop-width) {
-        color: $basic-black;
-      }
-
-      &:hover {
-        color: rgba(0, 0, 0, 0.7);
-      }
-
-      &:active {
-        color: rgba(0, 0, 0, 0.4);
-      }
-    }
+.main-navigation_theme_dark .main-navigation__item-content:hover {
+  @media (min-width: $desktop-width) {
+    color: rgba(255, 255, 255, 0.6);
   }
+}
+
+.main-navigation_theme_dark .main-navigation__item-content:active {
+  @media (min-width: $desktop-width) {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.main-navigation_theme_dark .main-navigation__item-content_active {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-white;
+  }
+}
+
+.main-navigation_theme_dark .main-navigation__item-content_active:hover {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  }
+}
+
+.main-navigation_theme_light .main-navigation__item-content {
+  @media (min-width: $desktop-width) {
+    color: $basic-black;
+  }
+}
+
+.main-navigation_theme_light .main-navigation__item-content:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main-navigation_theme_light .main-navigation__item-content:active {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.main-navigation_theme_light .main-navigation__item-content_active:hover {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  }
+}
+
+.main-navigation_theme_light .main-navigation__item-content_active:active {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 .main-navigation__list {
@@ -90,15 +118,5 @@
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $basic-green;
     }
-  }
-
-  &_active:hover {
-    @media (min-width: $desktop-width) {
-      border-bottom: 2px solid rgba(0, 0, 0, 0.7);
-    }
-  }
-
-  &_active:active {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   }
 }

@@ -1,19 +1,29 @@
 .advertisement-section {
   font-family: "Oswald", "Arial", sans-serif;
-  background: url("../../img/lead-back-mobile.jpg");
+  background-image: url("../../img/lead-back-mobile.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
+
+  // TODO Продумать, чтобы картинка фона выглядела нормально до tablet версии, а не только на 320
 
   @media (min-width: $tablet-width) {
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../img/lead-back-desktop.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../../img/lead-back-desktop.jpg");
     background-position-x: right;
+    background-repeat: no-repeat;
   }
 }
+
+//@media (min-resolution: 2dppx) and (max-width: 767px) {
+//  background-image: url("../../img/lead-back-mobile@2x.jpg");
+//
+
+//@media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+//  background-image: url("../../img/lead-back-desktop@2x.jpg");
+//}
 
 .advertisement-section__wrapper {
   display: flex;
@@ -63,18 +73,19 @@
   color: $basic-white;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 29px;
+  margin: 0;
+  padding: 0 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
     text-align: start;
-    padding: 0 0 20px 90px;
+    padding: 0 0 49px 90px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding: 0 0 52px;
   }
 }
 
