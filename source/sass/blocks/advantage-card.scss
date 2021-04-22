@@ -4,17 +4,17 @@
   @media (min-width: $tablet-width) {
     display: grid;
   }
-}
 
-.advantage-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 60px;
-  height: 60px;
-  background-color: $basic-green;
-  margin-bottom: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    margin-bottom: 10px;
+  }
 }
 
 .advantage-card__img-wrapper {

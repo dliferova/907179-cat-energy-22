@@ -52,7 +52,7 @@
             <source media="(min-width: 1440px)" srcset="img/promo-box-desktop.png 1x, img/promo-box-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/promo-box-tablet.png 1x, img/promo-box-tablet@2x.png 2x">
             <img class="advertisement-section__image" src="img/promo-box-mobile.png"
-                  srcset="img/promo-box-mobile@2x.png 2x" alt="Образец нашего продукта">
+                 srcset="img/promo-box-mobile@2x.png 2x" alt="Образец нашего продукта">
           </picture>
         </p>
       </div>
@@ -102,12 +102,12 @@
         <ul class="advantages-section__list">
           <li class="advantages-section__item">
             <div class="advantage-card">
-<!--              <p class="advantage-card__img-wrapper">-->
-<!--                <picture class="advantage-card__img-group">-->
-<!--                  <source media="(min-width:1400px)" srcset="img/number-1-desktop.svg">-->
-<!--                  <img src="img/number-1-desktop.svg">-->
-<!--                </picture>-->
-<!--              </p>-->
+              <!--              <p class="advantage-card__img-wrapper">-->
+              <!--                <picture class="advantage-card__img-group">-->
+              <!--                  <source media="(min-width:1400px)" srcset="img/number-1-desktop.svg">-->
+              <!--                  <img src="img/number-1-desktop.svg">-->
+              <!--                </picture>-->
+              <!--              </p>-->
               <p class="advantage-card__description">Функциональное питание содержит только полезные питательные
                 вещества.</p>
             </div>
@@ -138,40 +138,47 @@
     <div class="example-section">
       <h2 class="page-main__title example-section__title">Живой пример</h2>
       <div class="example-section__range-content">
-        <div class="range">
-          <p class="range__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+        <div class="range-content">
+          <div class="range-content__wrapper">
+          <p class="range-content__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
             Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
             спит по 16 часов в день.</p>
-          <dl class="range__description-list">
-            <div class="range__group-final-values range__group-final-values_with-border">
-              <dd class="range__definition">5 кг</dd>
-              <dt class="range__term">Снижение веса</dt>
+          <dl class="range-content__description-list-container diet-totals-indicators-list">
+            <div class="diet-totals-indicators-list__group-values diet-indicators-block">
+              <dd class="diet-indicators-block__definition">5 кг</dd>
+              <dt class="diet-indicators-block__term">Снижение веса</dt>
             </div>
-            <div class="range__group-final-values range__group-final-values_with-border">
-              <dd class="range__definition">60 дней</dd>
-              <dt class="range__term">Затрачено времени</dt>
+            <div class="diet-totals-indicators-list__group-values diet-indicators-block">
+              <dd class="diet-indicators-block__definition">60 дней</dd>
+              <dt class="diet-indicators-block__term">Затрачено времени</dt>
             </div>
-            <div class="range__group-final-values range__group-final-values_inline">
-              <dt class="range__term-inline">Затраты на питание:</dt>
-              <dd class="range__definition-inline">15 000 руб.</dd>
+            <div class="diet-totals-indicators-list__group-values">
+              <dt class="diet-totals-indicators-list__definition">Затраты на питание:</dt>
+              <dd class="diet-totals-indicators-list__term">15 000 руб.</dd>
             </div>
           </dl>
-          <div class="range__example">
-            <p class="range__example-image-wrapper">
-              <picture class="range__example-image-group">
-                <source media="(min-width: 768px)"
-                        srcset="img/cat-before-after-tablet.png 1x, img/cat-cat-before-after@2x.png">
-                <img class="example-section__image" src="img/fat-cat-promo-mobile.png 1x"
-                      srcset="img/fat-cat-promo-mobile@2x.png 2x">
-              </picture>
-            </p>
-            <div class="range__slider">
-              <span class="range__slider-text">Было</span>
-              <label class="range__slider-label" for="slider-result">
-                <input class="range__slider-input" type="range" id="slider-result" min="1" max="100">
-              </label>
-              <span class="range__slider-text">Стало</span>
+          <div class="range-content__demo-part-wrapper">
+            <div class="range-demo-example">
+              <div class="range-demo-example__container">
+              <p class="range-demo-example__image-wrapper">
+                <picture class="range-demo-example__image-group">
+                  <source media="(min-width: 768px)" srcset="img/cat-before-after-tablet.png 1x, img/cat-cat-before-after@2x.png">
+                  <img class="range-demo-example__image" src="img/fat-cat-promo-mobile.png 1x"
+                        srcset="img/fat-cat-promo-mobile@2x.png 2x">
+                </picture>
+              </p>
+              <div class="range-demo-example__slider-wrapper">
+                <div class="range-demo-slider">
+                  <span class="range-demo-slider__text">Было</span>
+                  <label class="range-demo-slider__label" for="slider-result">
+                    <input class="range-demo-slider__input" type="range" id="slider-result" min="1" max="100">
+                  </label>
+                  <span class="range-demo-slider__text">Стало</span>
+                </div>
+              </div>
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -225,7 +232,7 @@
         <!--      Здесь будет логотип html academy-->
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Перейти на сайт HTML Academy"></a>
+           aria-label="Перейти на сайт HTML Academy"></a>
       </div>
     </div>
   </div>
