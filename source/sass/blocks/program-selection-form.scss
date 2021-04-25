@@ -1,7 +1,11 @@
-.program-selection-form__form {
+.form-section__wrapper {
   margin: 30px 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 56px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 56px 0 80px 0;
   }
 }

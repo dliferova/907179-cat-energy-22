@@ -1,0 +1,11 @@
+.purpose-data-list {
+  border-top: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
+  padding: 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-grey;
+    box-sizing: border-box;
+    padding: 23px 17px 19px 26px;
+  }
+}

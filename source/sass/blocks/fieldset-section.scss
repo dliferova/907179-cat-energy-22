@@ -1,0 +1,21 @@
+.fieldset-section__issue-list {
+  @include resetting-styles-list;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.fieldset-section__radio-list {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

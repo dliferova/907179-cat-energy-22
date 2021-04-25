@@ -7,6 +7,11 @@
   text-align: center;
   border: none;
 
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    padding: 17px 30px;
+  }
+
   &_primary {
     color: $basic-white;
     background-color: $basic-green;

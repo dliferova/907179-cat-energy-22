@@ -1,0 +1,17 @@
+.additional-data-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 80px;
+
+    .form__field {
+      margin-bottom: 0;
+    }
+  }
+}
