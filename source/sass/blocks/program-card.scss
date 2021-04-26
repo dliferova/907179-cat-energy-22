@@ -1,40 +1,74 @@
 .program-card {
   background-color: #f2f2f2;
   padding: 22px 33px 18px 15px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas:
+    "icon title"
+    "description description"
+    "link link";
+
 
   @media (min-width: $tablet-width) {
-    padding: 77px 62px 53px 52px;
+    padding: 56px 62px 53px 52px;
+    grid-template-areas:
+      "title icon"
+      "description icon"
+      "link link";
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 62px 53px 52px;
+    grid-template-areas:
+      "icon title"
+      "description description"
+      "link link";
   }
 }
 
 .program-card__title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 0 0 0 20px;
+  grid-area: title;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 20px;
+  }
+}
+
+.program-card__icons-wrapper {
+  margin: 0;
+  grid-area: icon;
+  place-self: center;
 }
 
 .program-card__description {
   margin: 0;
-  padding: 0 0 23px;
+  padding: 22px 0 23px;
   border-bottom: 1px solid $border-grey;
+  grid-area: description;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    max-width: 377px;
+    max-width: 343px;
     border: none;
   }
 }
 
 .program-card__action {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: inherit;
@@ -42,6 +76,7 @@
   text-transform: uppercase;
   display: block;
   padding-top: 19px;
+  grid-area: link;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

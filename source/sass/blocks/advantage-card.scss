@@ -1,8 +1,37 @@
+.advantage-card {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    margin-bottom: 10px;
+  }
+}
+
+.advantage-card__img-wrapper {
+  margin: 0;
+}
+
 .advantage-card__description {
   margin: 0;
+  padding-left: 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 0 0;
   }
 }

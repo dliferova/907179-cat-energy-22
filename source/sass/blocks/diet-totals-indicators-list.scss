@@ -1,0 +1,53 @@
+.diet-totals-indicators-list {
+  display: grid;
+  row-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 45px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.diet-totals-indicators-list__group-values {
+  box-sizing: border-box;
+  padding: 10px;
+
+  &:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      grid-column: -2 / -1;
+      text-align: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.diet-totals-indicators-list__definition,
+.diet-totals-indicators-list__term {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
