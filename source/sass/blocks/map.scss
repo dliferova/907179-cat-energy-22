@@ -1,8 +1,7 @@
-.map__contacts {
+.map__contacts-details {
   padding: 28px 20px;
   display: flex;
   justify-content: space-between;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
@@ -21,6 +20,14 @@
     transform: translateY(-50%);
     left: 7%;
   }
+}
+
+.map__contacts-details_theme_light {
+  background-color: $basic-white;
+}
+
+.map__contacts-details_theme_grey {
+  background-color: $basic-grey;
 }
 
 .map__lead {

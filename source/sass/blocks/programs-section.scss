@@ -1,5 +1,9 @@
 .programs-section__card-container {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .programs-section {

@@ -8,5 +8,45 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    text-decoration: dotted;
   }
+}
+
+.copyright__link {
+  color: $basic-black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  min-width: 163px;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover .copyright__icon {
+    fill: $basic-green;
+  }
+
+  &:active .copyright__icon {
+    fill: $basic-green;
+    opacity: 0.2;
+  }
+
+  &:active .copyright__text {
+    opacity: 0.2;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.copyright__icon {
+  fill: #666666;
+}
+
+.footer__logo-image {
+  width: 128px;
+  height: 24px;
 }

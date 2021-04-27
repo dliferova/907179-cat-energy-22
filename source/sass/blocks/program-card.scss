@@ -1,6 +1,6 @@
 .program-card {
   background-color: #f2f2f2;
-  padding: 22px 33px 18px 15px;
+  //padding: 21px 33px 21px 13px;
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-areas:
@@ -10,7 +10,7 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 56px 62px 53px 52px;
+    padding: 55px 0 56px 52px;
     grid-template-areas:
       "title icon"
       "description icon"
@@ -32,14 +32,14 @@
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  margin: 0 0 0 20px;
-  grid-area: title;
+  margin: 0;
   align-self: center;
+  grid-area: title;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
+    margin: 21px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,22 +48,35 @@
 }
 
 .program-card__icons-wrapper {
-  margin: 0;
   grid-area: icon;
-  place-self: center;
+  place-self: self-start;
+  margin: 0;
+}
+
+.program-card__icon-1 {
+  width: 50px;
+  height: 53px;
+  padding: 21px 19px 19px 22px;
+}
+
+.program-card__icon-2 {
+  width: 67px;
+  height: 50px;
+  padding: 24px 11px 20px 13px;
 }
 
 .program-card__description {
-  margin: 0;
-  padding: 22px 0 23px;
+  margin: 0 20px;
+  padding: 0 0 22px;
   border-bottom: 1px solid $border-grey;
   grid-area: description;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    max-width: 343px;
+    max-width: 373px;
     border: none;
+    padding: 0;
   }
 }
 
@@ -74,12 +87,31 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;
-  padding-top: 19px;
+  padding: 19px 20px 21px;
   grid-area: link;
+
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29px;
+    padding: 0;
+  }
+
+  &:hover .program-card__icon-arrow {
+    width: 32px;
+  }
+
+  &:active {
+    color: $grey-color;
+  }
+}
+
+.program-card__icon-arrow {
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
   }
 }

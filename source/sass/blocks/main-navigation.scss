@@ -112,7 +112,7 @@
 
   &:last-child {
     @media (max-width: 767px) {
-      border-bottom: 1px solid $basic-grey;
+      border-bottom: none;
     }
   }
 

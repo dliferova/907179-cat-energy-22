@@ -30,3 +30,45 @@
     max-width: 366px;
   }
 }
+
+.range-demo-slider {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.range-controls {
+  position: relative;
+  padding: 15px 0;
+}
+
+.range-controls__scale {
+  height: 6px;
+}
+
+.range-controls__bar {
+  height: 6px;
+  background: $border-table;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+  }
+}
+
+.range-controls__toggle {
+  position: absolute;
+  left: 46%;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 12px solid $basic-white;
+  background-color: $basic-green;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}

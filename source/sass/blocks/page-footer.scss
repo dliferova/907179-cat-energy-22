@@ -8,6 +8,8 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    min-height: 150px;
+    padding: 0 30px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -22,15 +24,15 @@
 
 .page-footer__logo-wrapper {
   align-self: center;
-  padding: 40px 0 32px;
+  padding: 36px 0 28px;
 }
 
 .page-footer__social {
-  width: 100%;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
+    width: 129px;
     border: none;
   }
 

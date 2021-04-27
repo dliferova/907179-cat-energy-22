@@ -32,6 +32,10 @@
 
 .page-main__advantages-section {
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .page-main__example-section {
