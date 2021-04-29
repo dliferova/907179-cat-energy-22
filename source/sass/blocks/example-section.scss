@@ -1,7 +1,9 @@
 .example-section__range-content {
   @media (min-width: $desktop-width) {
     background-color: $basic-grey;
-    padding: 70px 0 54px;
+    box-sizing: border-box;
+    min-height: 462px;
+    padding: 70px 0 0;
   }
 }
 
@@ -13,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 20px 80px;
+    padding: 0 20px 74px;
     margin: 0 90px;
   }
 }

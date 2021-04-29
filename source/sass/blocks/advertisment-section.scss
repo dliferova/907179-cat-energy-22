@@ -3,8 +3,7 @@
   background-image: url("../../img/lead-back-mobile.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
-
-  // TODO Продумать, чтобы картинка фона выглядела нормально до tablet версии, а не только на 320
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -29,9 +28,21 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
     min-height: 694px;
-    padding-top: 200px;
+  }
+}
+
+.advertisement-section__content {
+  @media (min-width: $tablet-width) {
+    z-index: 3;
+    padding: 0 0 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 223px 0 0 190px;
   }
 }
 
@@ -49,9 +60,8 @@
     line-height: 60px;
     color: $basic-black;
     text-align: start;
-    font-weight: 400;
     max-width: 414px;
-    padding: 0 0 40px 90px;
+    padding: 0 40px 40px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,6 +72,7 @@
 .advertisement-section__slogan {
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   color: $basic-white;
   text-align: center;
   text-transform: uppercase;
@@ -73,32 +84,30 @@
     line-height: 20px;
     color: $basic-black;
     text-align: start;
-    padding: 0 0 49px 90px;
+    padding: 0 40px 49px 0;
   }
 
   @media (min-width: $desktop-width) {
+    letter-spacing: -0.9px;
     padding: 0 0 52px;
   }
 }
 
 .advertisement-section__action {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  background-color: $basic-green;
-  display: block;
-  box-sizing: border-box;
-  color: $basic-white;
+  @include action-style;
   font-size: 14px;
   line-height: 18px;
-  max-width: 280px;
-  margin: 0 auto;
+  text-decoration: none;
+  color: $basic-white;
+  background-color: $basic-green;
+  width: 280px;
   padding: 11px 44px;
-  width: 100%;
 
   @media (max-width: 767px) {
-    order: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
@@ -106,7 +115,6 @@
     line-height: 20px;
     max-width: 245px;
     padding: 17px 26px;
-    margin: 0 0 0 85px;
     z-index: 2;
   }
 
@@ -117,17 +125,19 @@
 }
 
 .advertisement-section__image-group {
-  margin: 0;
+  margin: 0 0 30px;
   display: flex;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 5%;
-    left: 30%;
+    bottom: 7%;
+    left: 58%;
+    transform: translateX(-50%);
   }
 }

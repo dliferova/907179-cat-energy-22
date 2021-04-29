@@ -38,6 +38,9 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    padding: 0 10px;
+    bottom: -5px;
+    min-width: 128px;
     background-color: $basic-white;
   }
 

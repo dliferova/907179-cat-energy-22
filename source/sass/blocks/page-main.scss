@@ -18,16 +18,17 @@
     margin: 0 30px;
   }
 
-  //TODO что можно сделать вместо этой конструкции
-
   @media (min-width: $desktop-width) {
-    margin: 0 0 90px 100px;
-    padding: 0 0 0 90px;
+    margin: 0 0 84px;
   }
 }
 
 .page-main__programs-section {
   margin-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .page-main__advantages-section {
@@ -35,6 +36,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -50,6 +55,13 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+    padding: 0;
     margin: 0;
+    max-height: 656px;
   }
+}
+
+.page-main__map-section {
+  width: 100%;
+  position: relative;
 }

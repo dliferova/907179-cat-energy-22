@@ -1,0 +1,53 @@
+.range-example__container {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+    padding-bottom: 64px;
+    min-height: 462px;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    position: absolute;
+    background-color: inherit;
+    top: -84%;
+    left: 36%;
+  }
+}
+
+.range-example__image-wrapper {
+  text-align: center;
+  margin: 0 0 23px;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    margin: 0;
+    position: absolute;
+    top: -42%;
+    left: 4%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.range-example__slider-wrapper {
+  width: 228px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 67px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 579px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 584px;
+    left: 65%;
+    bottom: -14%;
+  }
+}
