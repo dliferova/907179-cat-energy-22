@@ -2,17 +2,21 @@
   color: $special-dark-grey;
 }
 
-.form__questionnaire-group-core-data {
+.form__group-fieldsets {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 34px 0;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 1220px;
     column-gap: 82px;
     margin: 0 auto 70px;
   }
 }
 
-.form__questionnaire-group-core-data .form__fieldset {
+.form__group-fieldsets .form__fieldset {
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
@@ -22,11 +26,11 @@
 .form__fieldset {
   border: none;
   box-sizing: border-box;
+  padding: 0;
   margin: 0 0 24px;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px;
+    margin: 0;
     padding: 0 70px;
     position: relative;
   }
@@ -40,17 +44,24 @@
 
 .form__fieldset-wrapper {
   @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
     border-top: 1px solid green;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .form__field {
   margin: 0 0 13px;
 
-  @media (min-width: $desktop-width) {
-    &:last-child {
-      margin: 0;
-    }
+  &:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
   }
 }
 
@@ -65,7 +76,7 @@
   text-align: start;
   width: 100%;
   padding: 0;
-  margin: 0 0 37px;
+  margin: 0 0 34px;
 
   @media (max-width: 767px) {
     &::after {
@@ -91,6 +102,8 @@
 }
 
 .form__subtitle-wrapper {
+  padding: 0 0 0 20px;
+
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
     position: absolute;
@@ -102,25 +115,6 @@
   @media (min-width: $desktop-width) {
     left: -44px;
   }
-}
-
-//
-//&::before {
-//  @media (min-width: $tablet-width) {
-//    content: "";
-//    height: 2px;
-//    background: $basic-green;
-//    margin-right: 39px;
-//    width: 30px;
-//  }
-//
-//  @media (min-width: $desktop-width) {
-//    min-width: 70px;
-//  }
-//}
-
-.form__subtitle_small_margin {
-  margin-bottom: 54px;
 }
 
 .form__button-section {
@@ -168,4 +162,9 @@
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.form__contacts-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
