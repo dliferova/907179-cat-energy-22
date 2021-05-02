@@ -8,7 +8,10 @@
     <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
     <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
   </symbol>
-  <symbol viewBox="0 0 20 20" id="icon-cross"></symbol>
+  <symbol viewBox="0 0 20 20" id="icon-cross">
+    <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+    <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+  </symbol>
   <symbol viewBox="0 0 30 22" id="icon-vk">
     <path d="M0.0914307 5.48964C0.0914307 4.63461 0.643326 4.17356 1.74712 4.1065L6.00052 4.13165C6.28599
       4.13165 6.47629 4.25739 6.57145 4.50887C7.00916 5.76626 7.4992 6.85182 8.04158 7.76552C8.58397 8.67923

@@ -13,6 +13,12 @@
 
 //TODO после завершения стилизации в header добавить амперсанд
 
+.main-navigation_closed {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
 .main-navigation_theme_dark .main-navigation__item-content {
   @media (min-width: $desktop-width) {
     color: $basic-white;
@@ -143,35 +149,26 @@
   padding: 0;
   border: none;
   background-color: transparent;
-
   position: absolute;
   top: 15px;
   right: 20px;
   cursor: pointer;
   z-index: 3;
-  //
-  //&_hidden {
-  //  display: none;
-  //}
-}
-
-//icon
-.main-navigation__icon-menu {
-  display: block;
-}
-
-.main-navigation__icon-menu,
-.main-navigation__icon-cross {
-  width: 18px;
-  height: 18px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.main-navigation__icon-menu,
 .main-navigation__icon-cross {
   display: none;
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__button_closed .main-navigation__icon-menu,

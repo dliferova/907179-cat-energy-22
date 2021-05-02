@@ -28,18 +28,18 @@
         </picture>
       </a>
     </div>
-    <nav class="page-header__navigation main-navigation_opened main-navigation_theme_dark">
-      <button
-        class="main-navigation__button main-navigation__button_hidden main-navigation__button_opened main-navigation__button_closed"
-        type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <!--       <svg class="main-navigation__icon-menu" width="24" height="18">-->
-        <!--          <use xlink:href="sprite.svg#icon-menu"></use>-->
-        <!--        </svg>-->
-        <!--        <svg class="main-navigation__icon-cross" width="20" height="20">-->
-        <!--         <use xlink:href="sprite.svg#icon-cross"></use>-->
-        <!--        </svg>-->
-      </button>
+    <button
+      class="main-navigation__button"
+      type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <svg class="main-navigation__icon-menu" width="24" height="18">
+        <use xlink:href="sprite.svg#icon-menu"></use>
+      </svg>
+      <svg class="main-navigation__icon-cross" width="20" height="20">
+        <use xlink:href="sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <nav class="page-header__navigation main-navigation main-navigation_theme_dark">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <span class="main-navigation__item-content main-navigation__item-content_active">Главная</span>
@@ -305,7 +305,18 @@
   </div>
 </footer>
 <script>
+  let nav = document.querySelector(".main-navigation");
+  let button = document.querySelector(".main-navigation__button");
+  // инициализация меню
+  nav.classList.toggle("main-navigation_closed");
+  button.classList.toggle("main-navigation__button_closed");
 
+  // переключение состояний меню по кнопке
+  button.addEventListener('click', function (e) {
+    nav.classList.toggle("main-navigation_closed")
+    button.classList.toggle("main-navigation__button_closed");
+    button.classList.toggle("main-navigation__button_opened");
+  })
 </script>
 </body>
 </html>
