@@ -5,14 +5,3 @@
   padding: 0;
   margin: 0;
 }
-
-//Global action
-
-@mixin action-style {
-  display: block;
-  box-sizing: border-box;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-}

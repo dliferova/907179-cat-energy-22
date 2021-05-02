@@ -94,7 +94,12 @@
 }
 
 .advertisement-section__action {
-  @include action-style;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;

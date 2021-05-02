@@ -22,8 +22,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .range-demo-slider {
+.range-demo-slider {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,24 +31,6 @@
     max-width: 228px;
   }
 
-  .range-controls__bar {
-    background-color: $basic-white;
-    border: 1px solid #cdcdcd;
-    width: 84px;
-    height: 14px;
-    border-radius: 8px;
-  }
-
-  .range-controls__toggle {
-    width: 35px;
-    height: 6px;
-    border-radius: 6px;
-    margin: 4px 6px;
-    background-color: $basic-green;
-  }
-}
-
-.range-demo-slider {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -71,6 +53,14 @@
 }
 
 .range-controls__bar {
+  @media (max-width: 767px) {
+    background-color: $basic-white;
+    border: 1px solid #cdcdcd;
+    width: 84px;
+    height: 14px;
+    border-radius: 8px;
+  }
+
   @media (min-width: $tablet-width) {
     height: 6px;
     background: $border-table;
@@ -83,6 +73,14 @@
 }
 
 .range-controls__toggle {
+  @media (max-width: 767px) {
+    width: 35px;
+    height: 6px;
+    border-radius: 6px;
+    margin: 4px 6px;
+    background-color: $basic-green;
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 46%;
