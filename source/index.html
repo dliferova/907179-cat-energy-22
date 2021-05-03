@@ -21,11 +21,25 @@
         </picture>
       </a>
       <a class="page-header__logo-text" href="index.html">
-        <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Кэт энержди">
+        <picture class="page-header__logo-text-group">
+          <source media="(min-width: 1440px)" srcset="img/logo-text-desk.svg" width="121" height="22">
+          <img class="page-header__logo-text-img" src="img/logo-text-mobile.svg" width="101" height="18"
+                alt="Кэт энержди">
+        </picture>
       </a>
     </div>
-    <nav class="page-header__navigation main-navigation_closed main-navigation_theme_dark">
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button
+      class="main-navigation__button"
+      type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <svg class="main-navigation__icon-menu" width="24" height="18">
+        <use xlink:href="sprite.svg#icon-menu"></use>
+      </svg>
+      <svg class="main-navigation__icon-cross" width="20" height="20">
+        <use xlink:href="sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <nav class="page-header__navigation main-navigation main-navigation_theme_dark">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <span class="main-navigation__item-content main-navigation__item-content_active">Главная</span>
@@ -44,9 +58,11 @@
   <section class="page-main__advertisement-section">
     <div class="advertisement-section">
       <div class="advertisement-section__wrapper">
-        <h1 class="advertisement-section__title">Функциональное питание для котов</h1>
-        <p class="advertisement-section__slogan">Занялся собой? Займись котом!</p>
-        <a class="advertisement-section__action" href="form.html">Подобрать программу</a>
+        <div class="advertisement-section__content">
+          <h1 class="advertisement-section__title">Функциональное питание для котов</h1>
+          <p class="advertisement-section__slogan">Занялся собой? Займись котом!</p>
+          <a class="advertisement-section__action" href="form.html">Подобрать программу</a>
+        </div>
         <p class="advertisement-section__image-group">
           <picture class="advertisement-section__picture-group">
             <source media="(min-width: 1440px)" srcset="img/promo-box-desktop.png 1x, img/promo-box-desktop@2x.png 2x">
@@ -63,35 +79,43 @@
       <div class="programs-section">
         <h2 class="visually-hidden">Наши программы</h2>
         <div class="programs-section__card-container">
-          <div class="program-card">
+          <div class="program-card program-card_weight_loss">
             <p class="program-card__icons-wrapper">
               <picture class="program-card__icons-group">
                 <source media="(min-width: 1440px)" srcset="img/program-icon-1-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/program-icon-1-tablet.svg">
-                <img class="program-card__icon" src="img/program-icon-1-mobile.svg">
+                <img class="program-card__weight-loss-icon" src="img/program-icon-1-mobile.svg">
               </picture>
             </p>
             <h3 class="program-card__title">Похудение</h3>
             <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="program-card__action" href="#">Каталог slim</a>
+            <a class="program-card__action" href="#">Каталог slim
+              <svg class="program-card__icon-arrow" width="24" height="12">
+                <use xlink:href="sprite.svg#arrow"></use>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="programs-section__card-container">
-          <div class="program-card">
+          <div class="program-card program-card_weight_gain">
             <p class="program-card__icons-wrapper">
               <picture class="program-card__icons-group">
                 <source media="(min-width: 1440px)" srcset="img/program-icon-2-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/program-icon-2-tablet.svg">
-                <img class="program-card__icon" src="img/program-icon-2-mobile.svg">
+                <img class="program-card__weight-gain-icon" src="img/program-icon-2-mobile.svg">
               </picture>
             </p>
             <h3 class="program-card__title">Набор массы</h3>
             <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="program-card__action" href="#">Каталог pro</a>
+            <a class="program-card__action" href="#">Каталог pro
+              <svg class="program-card__icon-arrow" width="24" height="12">
+                <use xlink:href="sprite.svg#arrow"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -102,84 +126,131 @@
         <ul class="advantages-section__list">
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <!--              <p class="advantage-card__img-wrapper">-->
-              <!--                <picture class="advantage-card__img-group">-->
-              <!--                  <source media="(min-width:1400px)" srcset="img/number-1-desktop.svg">-->
-              <!--                  <img src="img/number-1-desktop.svg">-->
-              <!--                </picture>-->
-              <!--              </p>-->
+              <img class="advantage-card__icon" src="img/icon_leaf.svg" width="30" height="32">
               <p class="advantage-card__description">Функциональное питание содержит только полезные питательные
                 вещества.</p>
+              <picture class="advantage-card__icon-number-group">
+                <source media="(min-wdth: 768px)" src="img/1.svg">
+                <img class="advantage-card__icon-number" src="img/1.svg" width="136" height="280">
+              </picture>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
+              <img class="advantage-card__icon" src="img/icon_tub.svg" width="30" height="32">
               <p class="advantage-card__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.</p>
+
+              <picture class="advantage-card__icon-number-group">
+                <source media="(min-wdth: 768px)" src="img/2.svg">
+                <img class="advantage-card__icon-number" src="img/2.svg" width="136" height="280">
+              </picture>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
+              <img class="advantage-card__icon" src="img/icon_eat.svg" width="30" height="32">
               <p class="advantage-card__description">Замените один-два приема обычной еды на наше функциональное
                 питание.</p>
+              <picture class="advantage-card__icon-number-group">
+                <source media="(min-wdth: 768px)" src="img/3.svg">
+                <img class="advantage-card__icon-number" src="img/3.svg" width="136" height="280">
+              </picture>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
+              <img class="advantage-card__icon" src="img/icon_alarm.svg" width="30" height="32">
               <p class="advantage-card__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
                 питомца!</p>
+              <picture class="advantage-card__icon-number-group">
+                <source media="(min-wdth: 768px)" src="img/4.svg">
+                <img class="advantage-card__icon-number" src="img/4.svg" width="136" height="280">
+              </picture>
             </div>
           </li>
         </ul>
       </div>
     </section>
   </div>
+
   <section class="page-main__example-section">
     <div class="example-section">
       <h2 class="page-main__title example-section__title">Живой пример</h2>
+
       <div class="example-section__range-content">
         <div class="range-content">
           <div class="range-content__wrapper">
-          <p class="range-content__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-            спит по 16 часов в день.</p>
-          <dl class="range-content__description-list-container diet-totals-indicators-list">
-            <div class="diet-totals-indicators-list__group-values diet-indicators-block">
-              <dd class="diet-indicators-block__definition">5 кг</dd>
-              <dt class="diet-indicators-block__term">Снижение веса</dt>
+            <p class="range-content__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+              Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+              по-прежнему
+              спит по 16 часов в день.</p>
+            <div class="range-content__description-list-container">
+              <dl class="diet-totals-indicators-list">
+                <div class="diet-totals-indicators-list__group-values diet-indicators-block">
+                  <dd class="diet-indicators-block__definition">5 кг</dd>
+                  <dt class="diet-indicators-block__term">Снижение веса</dt>
+                </div>
+                <div class="diet-totals-indicators-list__group-values diet-indicators-block">
+                  <dd class="diet-indicators-block__definition">60 дней</dd>
+                  <dt class="diet-indicators-block__term">Затрачено времени</dt>
+                </div>
+                <div class="diet-totals-indicators-list__value">
+                  <dt class="diet-totals-indicators-list__definition">Затраты на питание:</dt>
+                  <dd class="diet-totals-indicators-list__term">15 000 руб.</dd>
+                </div>
+              </dl>
             </div>
-            <div class="diet-totals-indicators-list__group-values diet-indicators-block">
-              <dd class="diet-indicators-block__definition">60 дней</dd>
-              <dt class="diet-indicators-block__term">Затрачено времени</dt>
-            </div>
-            <div class="diet-totals-indicators-list__group-values">
-              <dt class="diet-totals-indicators-list__definition">Затраты на питание:</dt>
-              <dd class="diet-totals-indicators-list__term">15 000 руб.</dd>
-            </div>
-          </dl>
-          <div class="range-content__demo-part-wrapper">
-            <div class="range-demo-example">
-              <div class="range-demo-example__container">
-              <p class="range-demo-example__image-wrapper">
-                <picture class="range-demo-example__image-group">
-                  <source media="(min-width: 768px)" srcset="img/cat-before-after-tablet.png 1x, img/cat-cat-before-after@2x.png">
-                  <img class="range-demo-example__image" src="img/fat-cat-promo-mobile.png 1x"
-                        srcset="img/fat-cat-promo-mobile@2x.png 2x">
-                </picture>
-              </p>
-              <div class="range-demo-example__slider-wrapper">
-                <div class="range-demo-slider">
-                  <span class="range-demo-slider__text">Было</span>
-                  <label class="range-demo-slider__label" for="slider-result">
-                    <input class="range-demo-slider__input" type="range" id="slider-result" min="1" max="100">
-                  </label>
-                  <span class="range-demo-slider__text">Стало</span>
+            <div class="range-content__demo-part-wrapper">
+              <div class="range-example">
+                <div class="range-example__container">
+                  <p class="range-example__image-wrapper">
+                    <picture class="range-demo-example__image-group">
+                      <source media="(min-width: 1440px)" srcset="img/cat-before-after-desktop.png 1x">
+                      <source media="(min-width: 768px)" srcset="img/cat-before-after-tablet.png 1x, img/cat-cat-before-after@2x.png">
+                      <img class="range-demo-example__image" src="img/fat-cat-promo-mobile.png 1x"
+                            srcset="img/fat-cat-promo-mobile@2x.png 2x">
+                    </picture>
+                  </p>
+                  <div class="range-example__slider-wrapper">
+                    <div class="range-demo-slider">
+                      <span class="range-demo-slider__text">Было</span>
+                      <div class="range-controls">
+                        <div class="range-controls__bar">
+                          <div class="range-controls__toggle"></div>
+                        </div>
+                      </div>
+                      <span class="range-demo-slider__text">Стало</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-main__map-section">
+    <div class="map">
+      <h2 class="visually-hidden">Кэт Энерджи на карте</h2>
+        <div class="map__contacts-block map__contacts-block_theme_light">
+            <p class="map__contacts-block__lead">Приглашаем к сотрудничеству дилеров!</p>
+            <a class="map__contacts-block__link-address" href="https://goo.gl/maps/NEP4mJQAmSQXopsi9">
+              ул. Большая Конюшенная, д. 19/8
+              <span class="map__contacts-block__city">Санкт-Петербург</span>
+            </a>
           </div>
+        <div class="map__iframe-block">
+          <iframe class="map__iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz"
+                  width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <picture class="map__img-group">
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2px.jpg 2x">
+            <img class="map__img" src="img/map-mobile.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Кэт Энерджи на карте">
+          </picture>
         </div>
       </div>
     </div>
@@ -187,27 +258,9 @@
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__map-container">
-    <div class="map">
-      <div class="map__contacts">
-        <h2 class="visually-hidden">Мы на карте</h2>
-        <p class="map__lead">Приглашаем к сотрудничеству дилеров!</p>
-        <a class="map__link-address" href="https://goo.gl/maps/NEP4mJQAmSQXopsi9">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </a>
-      </div>
-      <p class="map__photo-wrapper">
-        <picture class="map__photo-group">
-          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2px.jpg 2x">
-          <img class="map__photo" src="img/map-mobile.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Кэт Энерджи на карте">
-        </picture>
-      </p>
-    </div>
-  </div>
   <div class="page-footer__container">
     <div class="page-footer__logo-wrapper">
-      <a class="footer__logo">
+      <a class="page-footer__logo">
         <img class="footer__logo-image" src="img/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
       </a>
     </div>
@@ -215,27 +268,55 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
+              <svg class="social__link-icon social__link-icon_vk" width="23" height="16">
+                <use xlink:href="sprite.svg#icon-vk" x="0" y="0"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
+            <a class="social__link social__link_instagram" href="https://www.instagram.com/htmlacademy">
+              <svg class="social__link-icon social__link-icon_inst" width="16" height="16">
+                <use xlink:href="sprite.svg#icon-inst" x="0" y="0"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">
+              <svg class="social__link-icon social__link-icon_fb" width="11" height="18">
+                <use xlink:href="sprite.svg#icon-fb" x="0" y="0"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </div>
     <div class="page-footer__copyright">
       <div class="copyright">
-        <!--      Здесь будет логотип html academy-->
-        <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Перейти на сайт HTML Academy"></a>
+            aria-label="Перейти на сайт HTML Academy">
+          <p class="copyright__text">HTML Academy</p>
+          <svg class="copyright__icon" width="27" height="34" fill="none">
+            <use xlink:href="sprite.svg#academy-icon"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
 </footer>
+<script>
+  let nav = document.querySelector(".main-navigation");
+  let button = document.querySelector(".main-navigation__button");
+  // инициализация меню
+  nav.classList.toggle("main-navigation_closed");
+  button.classList.toggle("main-navigation__button_closed");
+
+  // переключение состояний меню по кнопке
+  button.addEventListener('click', function (e) {
+    nav.classList.toggle("main-navigation_closed")
+    button.classList.toggle("main-navigation__button_closed");
+    button.classList.toggle("main-navigation__button_opened");
+  })
+</script>
 </body>
 </html>

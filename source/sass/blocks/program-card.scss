@@ -1,6 +1,6 @@
 .program-card {
   background-color: #f2f2f2;
-  padding: 22px 33px 18px 15px;
+  //padding: 21px 33px 21px 13px;
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-areas:
@@ -10,7 +10,9 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 56px 62px 53px 52px;
+    padding: 78px 28px 52px 52px;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: min-content 1fr min-content;
     grid-template-areas:
       "title icon"
       "description icon"
@@ -18,11 +20,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 62px 53px 52px;
+    padding: 41px 51px 60px 52px;
+    grid-template-columns: max-content 1fr;
     grid-template-areas:
       "icon title"
       "description description"
       "link link";
+  }
+}
+
+.program-card_weight_gain {
+  @media (min-width: $desktop-width) {
+    padding: 45px 61px 63px 33px;
+
+    .program-card__action {
+      margin-left: 19px;
+    }
   }
 }
 
@@ -32,14 +45,13 @@
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  margin: 0 0 0 20px;
-  grid-area: title;
+  margin: 0;
   align-self: center;
+  grid-area: title;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,22 +60,76 @@
 }
 
 .program-card__icons-wrapper {
-  margin: 0;
   grid-area: icon;
-  place-self: center;
+  place-self: self-start;
+  margin: 0;
+}
+
+.program-card__weight-loss-icon {
+  width: 50px;
+  height: 53px;
+  padding: 21px 19px 22px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px 21px;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    padding: 0 41px 0 0;
+  }
+}
+
+.program-card__weight-gain-icon {
+  width: 67px;
+  height: 50px;
+  padding: 24px 11px 20px 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    padding: 13px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 27px 0 0;
+    width: 134px;
+    height: 100px;
+  }
 }
 
 .program-card__description {
-  margin: 0;
-  padding: 22px 0 23px;
+  margin: 0 20px;
+  padding: 0 0 22px;
   border-bottom: 1px solid $border-grey;
   grid-area: description;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    max-width: 343px;
+    max-width: 377px;
     border: none;
+    padding: 24px 0 0 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 467px;
+    padding: 36px 0 30px 0;
+  }
+}
+
+.program-card_weight_gain .program-card__description {
+  @media (min-width: $tablet-width) {
+    max-width: 344px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 457px;
+    padding-left: 19px;
   }
 }
 
@@ -74,12 +140,41 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;
-  padding-top: 19px;
+  padding: 19px 20px 21px;
   grid-area: link;
+
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 29px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  &:hover .program-card__icon-arrow {
+    width: 32px;
+    height: 10px;
+  }
+
+  &:active {
+    color: $grey-color;
+  }
+
+  &:active .program-card__icon-arrow {
+    stroke: $grey-color;
+    fill: $grey-color;
+  }
+}
+
+.program-card__icon-arrow {
+  stroke: $basic-black;
+  fill: $basic-black;
+  width: 24px;
+  height: 12px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
   }
 }

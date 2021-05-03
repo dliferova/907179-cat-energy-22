@@ -1,13 +1,57 @@
-.map__contacts {
-  padding: 28px 20px;
-  display: flex;
-  justify-content: space-between;
-  background-color: $basic-grey;
+.map__iframe-block {
+  min-height: 362px;
 
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
-    height: 201px;
-    padding: 60px 70px;
+    min-height: 400px;
+  }
+}
+
+.map__iframe {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  border: none;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+}
+
+.map__img-group {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  display: block;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+  }
+}
+
+.map__img {
+  width: 100%;
+}
+
+.map__contacts-block {
+  min-height: 114px;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 201px;
+    padding: 10px 70px;
+
+    .map__contacts-block__city {
+      display: block;
+      margin-top: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -15,29 +59,24 @@
     box-sizing: border-box;
     width: 570px;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     background-color: $basic-white;
     top: 50%;
     transform: translateY(-50%);
     left: 7%;
+    padding: 68px 70px;
   }
 }
 
-.map__lead {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-    width: 171px;
-  }
+.map__contacts-block_theme_light {
+  background-color: $basic-white;
 }
 
-.map__link-address {
+.map__contacts-block_theme_grey {
+  background-color: $basic-grey;
+}
+
+.map__contacts-block__link-address {
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
@@ -45,18 +84,26 @@
   text-align: start;
 
   @media (min-width: $tablet-width) {
+    justify-content: stretch;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
     width: 159px;
     text-align: end;
   }
 }
 
-.map__photo-wrapper {
+.map__contacts-block__lead {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
   margin: 0;
-}
 
-.map__photo {
-  display: block;
-  width: 100%;
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    justify-self: stretch;
+    font-size: 20px;
+    line-height: 24px;
+    width: 171px;
+  }
 }

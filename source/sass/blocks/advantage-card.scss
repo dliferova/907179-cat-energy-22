@@ -1,19 +1,26 @@
 .advantage-card {
-  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    grid-template-columns: repeat(2, 124px);
+    grid-template-rows: 113px max-content;
+    grid-template-areas:
+      "icon number"
+      "description number";
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 60px;
-    height: 60px;
-    background-color: $basic-green;
-    margin-bottom: 10px;
+.advantage-card__icon {
+  width: 30px;
+  height: 32px;
+  background-color: $basic-green;
+  padding: 14px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 25px;
   }
 }
 
@@ -23,15 +30,36 @@
 
 .advantage-card__description {
   margin: 0;
-  padding-left: 70px;
+  padding-left: 20px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-left: 75px;
+    grid-area: description;
+    padding: 0;
+    min-width: 248px;
+    z-index: 3;
+
+    br {
+      display: block;
+    }
   }
+}
+
+.advantage-card__icon-number-group {
+  display: none;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 0 0;
+    display: block;
+    grid-area: number;
   }
+}
+
+.advantage-card__icon-number {
+  width: 112px;
+  height: 226px;
 }

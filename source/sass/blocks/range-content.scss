@@ -20,13 +20,20 @@
   @media (min-width: $desktop-width) {
     max-width: 436px;
     margin: 0 0 69px;
+    padding: 0;
   }
 }
 
 .range-content__description-list-container {
   margin: 0 0 42px 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-bottom: 245px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 366px;
+    padding-bottom: 0;
   }
 }

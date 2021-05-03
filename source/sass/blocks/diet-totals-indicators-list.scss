@@ -1,38 +1,43 @@
 .diet-totals-indicators-list {
   display: grid;
-  row-gap: 25px;
+  column-gap: 33px;
+  row-gap: 34px;
   grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    grid-template-columns: repeat(2, max-content) 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    row-gap: 45px;
+    padding: 0;
+    row-gap: 60px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .diet-totals-indicators-list__group-values {
   box-sizing: border-box;
-  padding: 10px;
+  padding: 16px;
+}
 
-  &:last-child {
+.diet-totals-indicators-list__value {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    grid-column: -2 / -1;
+    display: block;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      grid-column: -2 / -1;
-      text-align: end;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-column: 1 / -1;
-      text-align: center;
-      display: flex;
-      justify-content: space-between;
-    }
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -43,11 +48,16 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-left: 5px;
-  display: inline-block;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.diet-totals-indicators-list__definition {
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
   }
 }

@@ -11,8 +11,10 @@
 }
 
 .diet-indicators-block__definition {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
   color: $basic-black;
   margin: 0;
 
@@ -36,6 +38,9 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    padding: 0 10px;
+    bottom: -5px;
+    min-width: 128px;
     background-color: $basic-white;
   }
 
