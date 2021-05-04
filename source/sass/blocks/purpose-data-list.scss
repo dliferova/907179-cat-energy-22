@@ -1,0 +1,18 @@
+.purpose-data-list {
+  border-top: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-grey;
+    box-sizing: border-box;
+    padding: 23px 17px 25px 26px;
+  }
+}
+
+.purpose-data-list__field {
+  margin: 0 0 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}

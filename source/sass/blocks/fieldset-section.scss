@@ -1,0 +1,26 @@
+.fieldset-section__items-list {
+  @include resetting-styles-list;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 87px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.fieldset-section__radio-list {
+  @include resetting-styles-list;
+  padding: 22px 20px 17px 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

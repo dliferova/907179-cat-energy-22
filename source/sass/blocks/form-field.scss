@@ -8,44 +8,98 @@
   text-transform: uppercase;
 }
 
+.form-field__input-container {
+  margin-left: 14px;
+  grid-column: 2 / - 1;
+  position: relative;
+}
+
 .form-field__input {
+  width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: inherit;
   border: 1px solid $basic-grey;
-  box-sizing: content-box;
+  box-sizing: border-box;
   text-transform: uppercase;
-  margin-left: 14px;
-  padding: 14px 14px;
-  grid-column: 2 / - 1;
+  padding: 14px 48px 14px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 48px 17px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 29px;
+    padding: 10px 21px;
+  }
+
+  &:hover {
+    outline: 1px solid $border-input-hover;
+  }
+
+  &:invalid {
+    outline: 1px solid $border-input-error;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within,
+  &:active {
+    outline: 1px solid $border-input-focus;
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
 }
 
 .form-field__input-check {
   margin: 0 15px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .form-field__textarea {
   box-sizing: border-box;
   resize: none;
   overflow: auto;
-  width: 100%;
+  width: 280px;
+  margin: 0 20px;
   min-height: 151px;
   border: 1px solid $basic-grey;
   font-family: inherit;
   color: inherit;
-  padding: 10px 12px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 176px;
+    margin: 86px 0 0 0;
+  }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
+    min-height: 169px;
+    margin-top: 70px;
+    margin-bottom: 11px;
   }
-}
 
-.form-field__textarea::placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-grey;
-  text-transform: uppercase;
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    padding: 10px 12px 0 15px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
