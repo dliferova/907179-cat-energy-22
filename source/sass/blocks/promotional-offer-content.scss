@@ -31,10 +31,10 @@
     background-image: url("../../img/gift-photo-desktop.jpg");
     margin: 0;
     width: 245px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/gift-photo-desktop@2x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 

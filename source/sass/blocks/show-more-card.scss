@@ -31,10 +31,10 @@
 
 .show-more-card__title {
   font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: $basic-black;
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 8px;
@@ -66,7 +66,7 @@
 .show-more-card__button {
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
+  color: $special-dark-grey;
   padding: 10px;
   width: 100%;
 

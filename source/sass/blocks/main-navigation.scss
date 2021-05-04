@@ -113,7 +113,7 @@
   text-transform: uppercase;
   display: block;
   padding: 22px 0 24px;
-  border-top: 1px solid $basic-grey;
+  border-top: 1px solid $border-mobile-menu;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -150,8 +150,8 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 22px;
+  right: 13px;
   cursor: pointer;
   z-index: 3;
 
