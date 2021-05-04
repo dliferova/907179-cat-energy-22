@@ -21,33 +21,42 @@
         </picture>
       </a>
       <a class="page-header__logo-text" href="index.html">
-        <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Кэт энержди">
+        <picture class="page-header__logo-text-group">
+          <source media="(min-width: 1440px)" srcset="img/logo-text-desk.svg">
+          <img class="page-header__logo-text-img" src="img/logo-text-mobile.svg" width="101" height="18"
+               alt="Кэт энержди">
+        </picture>
       </a>
     </div>
-    <nav class="page-header__navigation main-navigation main-navigation_closed main-navigation_theme_light">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <!-- TODO подумать, если нужен отдельный div блок-->
-      <div class="main-navigation__content">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__item-content" href="index.html">Главная</a>
-          </li>
-          <li class="main-navigation__item">
+    <button
+      class="main-navigation__button"
+      type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <svg class="main-navigation__icon-menu" width="24" height="18">
+        <use xlink:href="sprite.svg#icon-menu"></use>
+      </svg>
+      <svg class="main-navigation__icon-cross" width="20" height="20">
+        <use xlink:href="sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <nav class="page-header__navigation main-navigation main-navigation_theme_light">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__item-content" href="index.html">Главная</a>
+        </li>
+        <li class="main-navigation__item">
           <span class="main-navigation__item-content main-navigation__item-content_active">Каталог продукции</span>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__item-content" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__item-content" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
 <main class="catalog-main">
   <div class="catalog-main__container">
-    <h1 class="page__title">Каталог продукции</h1>
+    <h1 class="page__title catalog-main__title">Каталог продукции</h1>
   </div>
   <section class="catalog-main__section">
     <div class="catalog-main__container">
@@ -60,7 +69,7 @@
                 <source media="(min-width: 768px)"
                         srcset="img/chicken-500-tablet.png 1x, img/chicken-500-tablet@2x.png 2x">
                 <img class="product-full-card__img" src="img/chicken-500-mobile.png"
-                      srcset="img/chicken-500-mobile@2x.png 2x">
+                     srcset="img/chicken-500-mobile@2x.png 2x">
               </picture>
             </p>
             <h3 class="product-full-card__title">Cat Energy PRO 500 г</h3>
@@ -88,7 +97,7 @@
                 <source media="(min-width: 768px)"
                         srcset="img/chicken-1000-tablet.png 1x, img/chicken-1000-tablet@2x.png 2x">
                 <img class="product-full-card__img" src="img/chicken-1000-mobile.png"
-                      srcset="img/chicken-1000-mobile@2x.png 2x">
+                     srcset="img/chicken-1000-mobile@2x.png 2x">
               </picture>
             </p>
             <h3 class="product-full-card__title">Cat Energy PRO 1000 г</h3>
@@ -115,7 +124,7 @@
               <picture class="product-full-card__img-group">
                 <source media="(min-width: 768px)" srcset="img/fish-500-tablet.png 1x, img/fish-500-tablet@2x.png 2x">
                 <img class="product-full-card__img" src="img/fish-500-mobile.png"
-                      srcset="img/fish-500-mobile@2x.png 2x">
+                     srcset="img/fish-500-mobile@2x.png 2x">
               </picture>
             </p>
             <h3 class="product-full-card__title">Cat Energy PRO 500 г</h3>
@@ -142,7 +151,7 @@
               <picture class="product-full-card__img-group">
                 <source media="(min-width: 768px)" srcset="img/fish-1000-tablet.png 1x, img/fish-1000-tablet@2x.png 2x">
                 <img class="product-full-card__img" src="img/fish-1000-mobile.png"
-                      srcset="img/fish-1000-mobile@2x.png 2x">
+                     srcset="img/fish-1000-mobile@2x.png 2x">
               </picture>
             </p>
             <h3 class="product-full-card__title">Cat Energy PRO 1000 г</h3>
@@ -170,7 +179,7 @@
                 <source media="(min-width: 768px)"
                         srcset="img/buckwheat-500-tablet.png 1x, img/buckwheat-500-tablet@2x.png 2x">
                 <img class="product-full-card__img" src="img/buckwheat-500-mobile.png"
-                      srcset="img/buckwheat-500-mobile@2x.png 2x">
+                     srcset="img/buckwheat-500-mobile@2x.png 2x">
               </picture>
             </p>
             <h3 class="product-full-card__title">Cat Energy SLIM 500 г</h3>
@@ -198,7 +207,7 @@
                 <source media="(min-width: 768px)"
                         srcset="img/buckwheat-1000-tablet.png 1x, img/buckwheat-1000-tablet@2x.png 2x">
                 <img class="product-full-card__img" src="img/buckwheat-1000-mobile.png"
-                      srcset="img/buckwheat-1000-mobile@2x.png 2x">
+                     srcset="img/buckwheat-1000-mobile@2x.png 2x">
               </picture>
             </p>
             <h3 class="product-full-card__title">Cat Energy SLIM 1000 г</h3>
@@ -247,8 +256,9 @@
         </li>
         <li class="products-cards-list__item">
           <div class="show-more-card">
-            <!-- TODO перенести в css в задании декоративные элементы-->
-<!--            <div class="show-more-card__plus-icon"></div>-->
+            <svg class="show-more-card__icon" width="30" height="30">
+              <use xlink:href="sprite.svg#icon-plus" x="0" y="0"></use>
+            </svg>
             <h3 class="show-more-card__title">Показать еще 100500 товаров</h3>
             <p class="show-more-card__description">На самом деле вкусов гораздо больше!</p>
             <button class="show-more-card__button button button_secondary">Показать все</button>
@@ -259,80 +269,91 @@
   </section>
   <section class="catalog-main__section">
     <h2 class="page__subtitle page__subtitle_decorated_with-lines catalog-main__subtitle">Дополнительные товары</h2>
-    <div class="catalog-main__container catalog-main__container_for_mobile">
-      <ul class="products-brief-cards-list">
-        <li class="products-brief-cards-list__item">
-          <div class="product-brief-card">
-            <h3 class="product-brief-card__title">Сахарозаменитель</h3>
-            <dl class="product-brief-card__description">
-              <dt class="product-brief-card__description-term">1 упаковка (100 г)</dt>
-              <dd class="product-brief-card__description-definition">200 P.</dd>
-            </dl>
-            <button class="product-brief-card__button button button_primary">Заказать</button>
+    <div class="catalog-main__container">
+      <div class="catalog-main__additional-goods-wrapper">
+        <ul class="products-brief-cards-list">
+          <li class="products-brief-cards-list__item">
+            <div class="product-brief-card">
+              <h3 class="product-brief-card__title">Сахарозаменитель</h3>
+              <dl class="product-brief-card__description">
+                <dt class="product-brief-card__description-term">1 упаковка (100 г)</dt>
+                <dd class="product-brief-card__description-definition">200 P.</dd>
+              </dl>
+              <button class="product-brief-card__button button button_primary">Заказать</button>
+            </div>
+          </li>
+          <li class="products-brief-cards-list__item">
+            <div class="product-brief-card">
+              <h3 class="product-brief-card__title">Питьевая вода</h3>
+              <dl class="product-brief-card__description">
+                <dt class="product-brief-card__description-term">5 литров</dt>
+                <dd class="product-brief-card__description-definition">50 P.</dd>
+              </dl>
+              <button class="product-brief-card__button button button_primary">Заказать</button>
+            </div>
+          </li>
+          <li class="products-brief-cards-list__item">
+            <div class="product-brief-card">
+              <h3 class="product-brief-card__title">Молоко</h3>
+              <dl class="product-brief-card__description">
+                <dt class="product-brief-card__description-term">1 литр</dt>
+                <dd class="product-brief-card__description-definition">100 P.</dd>
+              </dl>
+              <button class="product-brief-card__button button button_primary">Заказать</button>
+            </div>
+          </li>
+          <li class="products-brief-cards-list__item">
+            <div class="product-brief-card">
+              <h3 class="product-brief-card__title">Витамины</h3>
+              <dl class="product-brief-card__description">
+                <dt class="product-brief-card__description-term">1 упаковка (30г)</dt>
+                <dd class="product-brief-card__description-definition">300 P.</dd>
+              </dl>
+              <button class="product-brief-card__button button button_primary">Заказать</button>
+            </div>
+          </li>
+        </ul>
+        <div class="catalog-main__special-offer-wrapper">
+          <div class="promotional-offer-content">
+            <svg class="promotional-offer-content__icon" width="78" height="80">
+              <use xlink:href="sprite.svg#gift-icon" x="0" y="0"></use>
+            </svg>
+            <p class="promotional-offer-content__description">Закажите все и получите чехол для кота в подарок!</p>
           </div>
-        </li>
-        <li class="products-brief-cards-list__item">
-          <div class="product-brief-card">
-            <h3 class="product-brief-card__title">Питьевая вода</h3>
-            <dl class="product-brief-card__description">
-              <dt class="product-brief-card__description-term">5 литров</dt>
-              <dd class="product-brief-card__description-definition">50 P.</dd>
-            </dl>
-            <button class="product-brief-card__button button button_primary">Заказать</button>
-          </div>
-        </li>
-        <li class="products-brief-cards-list__item">
-          <div class="product-brief-card">
-            <h3 class="product-brief-card__title">Молоко</h3>
-            <dl class="product-brief-card__description">
-              <dt class="product-brief-card__description-term">1 литр</dt>
-              <dd class="product-brief-card__description-definition">100 P.</dd>
-            </dl>
-            <button class="product-brief-card__button button button_primary">Заказать</button>
-          </div>
-        </li>
-        <li class="products-brief-cards-list__item">
-          <div class="product-brief-card">
-            <h3 class="product-brief-card__title">Витамины</h3>
-            <dl class="product-brief-card__description">
-              <dt class="product-brief-card__description-term">1 упаковка (30г)</dt>
-              <dd class="product-brief-card__description-definition">300 P.</dd>
-            </dl>
-            <button class="product-brief-card__button button button_primary">Заказать</button>
-          </div>
-        </li>
-      </ul>
-      <div class="catalog-main__special-offer-wrapper">
-        <div class="promotional-offer-content">
-          <p class="promotional-offer-content__description">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="page-main__map-section">
+    <div class="map">
+      <h2 class="visually-hidden">Кэт Энерджи на карте</h2>
+      <div class="map__contacts-block map__contacts-block_theme_grey">
+        <p class="map__contacts-block__lead">Приглашаем к сотрудничеству дилеров!</p>
+        <a class="map__contacts-block__link-address" href="https://goo.gl/maps/NEP4mJQAmSQXopsi9">
+          ул. Большая Конюшенная, д. 19/8
+          <span class="map__contacts-block__city">Санкт-Петербург</span>
+        </a>
+      </div>
+      <div class="map__iframe-block">
+        <iframe class="map__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz"
+                width="100%" style="border: none;" allowfullscreen=""></iframe>
+        <picture class="map__img-group">
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2px.jpg 2x">
+          <img class="map__img" src="img/map-mobile.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Кэт Энерджи на карте">
+        </picture>
+      </div>
+    </div>
     </div>
   </section>
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__map-container">
-    <div class="map">
-      <div class="map__contacts">
-        <h2 class="visually-hidden">Мы на карте</h2>
-        <p class="map__lead">Приглашаем к сотрудничеству дилеров!</p>
-        <a class="map__link-address" href="https://goo.gl/maps/NEP4mJQAmSQXopsi9">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </a>
-      </div>
-      <p class="map__photo-wrapper">
-        <picture class="map__photo-group">
-          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2px.jpg 2x">
-          <img class="map__photo" src="img/map-mobile.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Кэт Энерджи на карте">
-        </picture>
-      </p>
-    </div>
-  </div>
   <div class="page-footer__container">
     <div class="page-footer__logo-wrapper">
-      <a class="footer__logo">
+      <a class="page-footer__logo">
         <img class="footer__logo-image" src="img/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
       </a>
     </div>
@@ -340,27 +361,55 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
+              <svg class="social__link-icon social__link-icon_vk" width="23" height="16">
+                <use xlink:href="sprite.svg#icon-vk" x="0" y="0"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link_instagram" href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
+            <a class="social__link social__link_instagram" href="https://www.instagram.com/htmlacademy">
+              <svg class="social__link-icon social__link-icon_inst" width="16" height="16">
+                <use xlink:href="sprite.svg#icon-inst" x="0" y="0"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">
+              <svg class="social__link-icon social__link-icon_fb" width="11" height="18">
+                <use xlink:href="sprite.svg#icon-fb" x="0" y="0"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </div>
     <div class="page-footer__copyright">
       <div class="copyright">
-        <!--      Здесь будет логотип html academy-->
-        <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Перейти на сайт HTML Academy"></a>
+           aria-label="Перейти на сайт HTML Academy">
+          <p class="copyright__text">HTML Academy</p>
+          <svg class="copyright__icon" width="27" height="34" fill="none">
+            <use xlink:href="sprite.svg#academy-icon"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
 </footer>
+<script>
+  let nav = document.querySelector(".main-navigation");
+  let button = document.querySelector(".main-navigation__button");
+  // инициализация меню
+  nav.classList.toggle("main-navigation_closed");
+  button.classList.toggle("main-navigation__button_closed");
+
+  // переключение состояний меню по кнопке
+  button.addEventListener('click', function (e) {
+    nav.classList.toggle("main-navigation_closed")
+    button.classList.toggle("main-navigation__button_closed");
+    button.classList.toggle("main-navigation__button_opened");
+  })
+</script>
 </body>
 </html>

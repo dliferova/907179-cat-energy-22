@@ -10,6 +10,10 @@
   }
 }
 
+.catalog-main__title {
+  padding: 0 0 37px;
+}
+
 .catalog-main__container {
   @media (min-width: $tablet-width) {
     padding: 0 20px;
@@ -43,4 +47,17 @@
 
 .catalog-main__special-offer-wrapper {
   padding: 43px 0 35px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.catalog-main__additional-goods-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    column-gap: 80px;
+    grid-template-columns: 1fr 245px;
+    margin-bottom: 86px;
+  }
 }
