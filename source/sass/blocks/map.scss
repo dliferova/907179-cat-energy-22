@@ -38,11 +38,11 @@
 
 .map__contacts-block {
   min-height: 114px;
-  padding: 26px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 19px;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-height: 201px;

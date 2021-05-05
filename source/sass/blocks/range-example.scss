@@ -19,7 +19,8 @@
 
 .range-example__image-wrapper {
   text-align: center;
-  margin: 0 0 23px;
+  margin: 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     margin: 0;

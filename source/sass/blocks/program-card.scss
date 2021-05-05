@@ -102,8 +102,8 @@
 }
 
 .program-card__description {
-  margin: 0 20px;
-  padding: 0 0 22px;
+  margin: 0;
+  padding: 0 20px 20px;
   border-bottom: 1px solid $border-grey;
   grid-area: description;
 
@@ -170,7 +170,7 @@
 .program-card__icon-arrow {
   stroke: $basic-black;
   fill: $basic-black;
-  width: 24px;
+  width: 31px;
   height: 12px;
   margin-left: 15px;
 

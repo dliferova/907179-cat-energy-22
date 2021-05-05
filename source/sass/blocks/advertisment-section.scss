@@ -153,9 +153,9 @@
 }
 
 .advertisement-section__image-group {
-  margin: 0 0 30px;
   display: flex;
   justify-content: center;
+  margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     position: absolute;

@@ -52,7 +52,7 @@
   align-items: center;
   max-width: 190px;
   margin: 0;
-  padding: 0 70px 0 20px;
+  padding: 15px 70px 12px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -65,7 +65,6 @@
 
 .page-header__logo {
   display: block;
-  padding: 10px 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 12px;
@@ -74,6 +73,18 @@
   @media (min-width: $desktop-width) {
     padding: 0 13px 0 10px;
     margin: 0;
+  }
+}
+
+.page-header__logo-text {
+  display: block;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 126px;
+    height: 26px;
+    padding: 0;
   }
 }
 
@@ -93,15 +104,3 @@
   }
 }
 
-.page-header__logo-text {
-  display: block;
-  width: 101px;
-  height: 18px;
-  padding: 10px 0;
-
-  @media (min-width: $desktop-width) {
-    width: 126px;
-    height: 26px;
-    padding: 0;
-  }
-}

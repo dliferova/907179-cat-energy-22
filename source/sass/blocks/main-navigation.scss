@@ -89,7 +89,7 @@
 }
 
 .main-navigation__item {
-  text-align: center;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     margin-right: 35px;
@@ -110,10 +110,10 @@
   line-height: 20px;
   color: $basic-black;
   text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
   display: block;
-  padding: 22px 0 24px;
-  border-top: 1px solid $border-mobile-menu;
+  padding: 21px 0 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -151,7 +151,7 @@
   background-color: transparent;
   position: absolute;
   top: 22px;
-  right: 13px;
+  right: 23px;
   cursor: pointer;
   z-index: 3;
 
@@ -169,6 +169,11 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-navigation__icon-menu {
+  width: 21px;
+  height: 18px;
 }
 
 .main-navigation__button_closed .main-navigation__icon-menu,
