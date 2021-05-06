@@ -2,8 +2,8 @@
   background-color: #68b738;
   background-image: url("../../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
   background-position-x: center;
-  margin: 0 20px;
   min-height: 289px;
   display: flex;
   flex-direction: column;
@@ -15,12 +15,11 @@
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     background-image: url("../../img/gift-photo-tablet.jpg");
-    background-repeat: no-repeat;
     min-height: 200px;
     margin: 0;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 124px 0 66px;
+    padding: 0 124px 0 76px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");
@@ -50,8 +49,21 @@
   @media (min-width: $tablet-width) {
     text-align: start;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .promotional-offer-content__icon {
   align-self: center;
+  margin: 20px 0 49px;
+
+  @media (min-width: $tablet-width) {
+    margin: 42px 0 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 20px 0 49px;
+  }
 }

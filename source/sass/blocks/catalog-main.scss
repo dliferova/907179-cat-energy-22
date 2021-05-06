@@ -46,7 +46,11 @@
 }
 
 .catalog-main__special-offer-wrapper {
-  padding: 43px 0 35px;
+  padding: 43px 20px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 75px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;

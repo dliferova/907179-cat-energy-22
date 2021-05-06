@@ -32,3 +32,9 @@
     border: none;
   }
 }
+
+.products-cards-list__item_additional_card {
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+}
