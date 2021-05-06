@@ -10,9 +10,11 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 78px 28px 52px 52px;
+    box-sizing: border-box;
     grid-template-columns: 1fr max-content;
     grid-template-rows: min-content 1fr min-content;
+    padding: 78px 28px 34px 52px;
+    height: 372px;
     grid-template-areas:
       "title icon"
       "description icon"

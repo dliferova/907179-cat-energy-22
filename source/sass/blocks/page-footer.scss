@@ -25,6 +25,10 @@
 .page-footer__logo-wrapper {
   align-self: center;
   padding: 36px 0 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0 28px;
+  }
 }
 
 .page-footer__logo-image {

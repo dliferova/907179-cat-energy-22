@@ -6,11 +6,11 @@
 
 .page-header__container {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: max-content 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 17px 10px 0 10px;
-    margin: 0 20px 54px;
+    padding: 27px 0 0 0;
+    margin: 0 30px 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,20 +29,6 @@
     position: absolute;
     margin: 0;
     left: 100px;
-  }
-}
-
-.page-header__navigation {
-  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
-    grid-column: 2 / -1;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0 0 95px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 0 132px;
   }
 }
 
@@ -104,3 +90,8 @@
   }
 }
 
+.page-header__navigation {
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 132px;
+  }
+}

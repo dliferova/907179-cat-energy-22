@@ -30,6 +30,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     grid-column: -2 / -1;
+    padding-top: 10px;
     display: block;
     text-align: end;
   }
@@ -48,11 +49,12 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-bottom: 10px;
   }
 }
 

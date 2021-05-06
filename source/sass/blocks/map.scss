@@ -38,6 +38,7 @@
 
 .map__contacts-block {
   min-height: 114px;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 19px;
@@ -45,7 +46,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    min-height: 201px;
+    height: 201px;
     padding: 10px 70px;
 
     .map__contacts-block__city {
@@ -85,10 +86,10 @@
   text-align: start;
 
   @media (min-width: $tablet-width) {
-    justify-content: stretch;
+    max-width: 159px;
+    justify-self: end;
     font-size: 16px;
     line-height: 18px;
-    width: 159px;
     text-align: end;
   }
 }
