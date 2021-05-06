@@ -12,23 +12,17 @@
     padding: 27px 0 0 0;
     margin: 0 30px 63px;
   }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    padding: 55px 0 10px;
-    width: 1240px;
-    margin: 0;
-  }
 }
 
 .page-header__container_position_absolute {
   @media (min-width: $desktop-width) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 55px 0 10px;
-    width: 1240px;
+    width: 1230px;
     position: absolute;
     margin: 0;
-    left: 100px;
+    left: 7%;
   }
 }
 
@@ -57,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 13px 0 10px;
+    padding: 0;
     margin: 0;
   }
 }
@@ -87,11 +81,5 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 60px;
-  }
-}
-
-.page-header__navigation {
-  @media (min-width: $desktop-width) {
-    padding: 0 0 0 132px;
   }
 }

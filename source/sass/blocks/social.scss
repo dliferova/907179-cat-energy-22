@@ -1,14 +1,15 @@
 .social__list {
   @include resetting-styles-list;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-wrap: wrap;
-  padding: 14px 0;
+  justify-content: space-between;
+  align-items: center;
   width: 148px;
+  padding: 14px 0 12px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 143px;
   }
 
@@ -81,14 +82,3 @@
   }
 }
 
-.social__item {
-  margin-right: 18px;
-
-  @media (min-width: $desktop-width) {
-    margin-right: 19px;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-}

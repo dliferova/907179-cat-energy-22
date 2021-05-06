@@ -11,7 +11,7 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-  <div class="page-header__container">
+  <div class="page-header__container page-header__container_position_absolute">
     <div class="page-header__logos-wrapper">
       <a class="page-header__logo" href="index.html">
         <picture class="page-header__logo-group">
@@ -84,7 +84,7 @@
               <picture class="program-card__icons-group">
                 <source media="(min-width: 1440px)" srcset="img/svg/program-icon-1-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/svg/program-icon-1-tablet.svg">
-                <img class="program-card__weight-loss-icon" src="img/svg/program-icon-1-mobile.svg">
+                <img class="program-card__weight-loss-icon" src="img/svg/program-icon-1-mobile.svg" alt="Логотип программы похудения">
               </picture>
             </p>
             <h3 class="program-card__title">Похудение</h3>
@@ -104,7 +104,7 @@
               <picture class="program-card__icons-group">
                 <source media="(min-width: 1440px)" srcset="img/svg/program-icon-2-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/svg/program-icon-2-tablet.svg">
-                <img class="program-card__weight-gain-icon" src="img/svg/program-icon-2-mobile.svg">
+                <img class="program-card__weight-gain-icon" src="img/svg/program-icon-2-mobile.svg" alt="Логотип программы набора веса">
               </picture>
             </p>
             <h3 class="program-card__title">Набор массы</h3>
@@ -126,46 +126,45 @@
         <ul class="advantages-section__list">
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <img class="advantage-card__icon" src="img/svg/icon-leaf.svg" width="30" height="32">
+              <img class="advantage-card__icon" src="img/svg/icon-leaf.svg" width="30" height="32" alt="Логотип преимущества">
               <p class="advantage-card__description">Функциональное питание содержит только полезные питательные
                 вещества.</p>
               <picture class="advantage-card__icon-number-group">
                 <source media="(min-wdth: 768px)" srcset="img/svg/1.svg">
-                <img class="advantage-card__icon-number" src="img/svg/1.svg" width="136" height="280">
+                <img class="advantage-card__icon-number" src="img/svg/1.svg" width="136" height="280" alt="Первое преимущество">
               </picture>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <img class="advantage-card__icon" src="img/svg/icon-tub.svg" width="30" height="32">
+              <img class="advantage-card__icon" src="img/svg/icon-tub.svg" width="30" height="32" alt="Логотип преимущества">
               <p class="advantage-card__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.</p>
-
               <picture class="advantage-card__icon-number-group">
                 <source media="(min-wdth: 768px)" srcset="img/svg/2.svg">
-                <img class="advantage-card__icon-number" src="img/svg/2.svg" width="136" height="280">
+                <img class="advantage-card__icon-number" src="img/svg/2.svg" width="136" height="280" alt="Второе преимущество">
               </picture>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <img class="advantage-card__icon" src="img/svg/icon-eat.svg" width="30" height="32">
+              <img class="advantage-card__icon" src="img/svg/icon-eat.svg" width="30" height="32" alt="Логотип преимущества">
               <p class="advantage-card__description">Замените один-два приема обычной еды на наше функциональное
                 питание.</p>
               <picture class="advantage-card__icon-number-group">
                 <source media="(min-wdth: 768px)" srcset="img/svg/3.svg">
-                <img class="advantage-card__icon-number" src="img/svg/3.svg" width="136" height="280">
+                <img class="advantage-card__icon-number" src="img/svg/3.svg" width="136" height="280" alt="Третье преимущество">
               </picture>
             </div>
           </li>
           <li class="advantages-section__item">
             <div class="advantage-card">
-              <img class="advantage-card__icon" src="img/svg/icon-alarm.svg" width="30" height="32">
-              <p class="advantage-card__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              <img class="advantage-card__icon" src="img/svg/icon-alarm.svg" width="30" height="32" alt="Логотип преимущества">
+              <p class="advantage-card__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего
                 питомца!</p>
               <picture class="advantage-card__icon-number-group">
                 <source media="(min-wdth: 768px)" srcset="img/svg/4.svg">
-                <img class="advantage-card__icon-number" src="img/svg/4.svg" width="136" height="280">
+                <img class="advantage-card__icon-number" src="img/svg/4.svg" width="136" height="280" alt="Четвертое преимущество">
               </picture>
             </div>
           </li>
@@ -177,7 +176,6 @@
   <section class="page-main__example-section">
     <div class="example-section">
       <h2 class="page-main__title example-section__title">Живой пример</h2>
-
       <div class="example-section__range-content">
         <div class="range-content">
           <div class="range-content__wrapper">
@@ -208,7 +206,7 @@
                     <picture class="range-demo-example__image-group">
                       <source media="(min-width: 1440px)" srcset="img/cat-promo-desktop.png 1x, img/cat-promo-desktop@2x.png">
                       <source media="(min-width: 768px)" srcset="img/cat-promo-tablet.png 1x, img/cat-promo-tablet@2x.png">
-                      <img class="range-demo-example__image" src="img/cat-promo-mobile.png" srcset="img/cat-promo-mobile@2x.png 2x">
+                      <img class="range-demo-example__image" src="img/cat-promo-mobile.png" srcset="img/cat-promo-mobile@2x.png 2x" alt="Преображение кота после диеты">
                     </picture>
                   </p>
                   <div class="range-example__slider-wrapper">
@@ -243,8 +241,7 @@
           </div>
         <div class="map__iframe-block">
           <iframe class="map__iframe"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz"
-                  width="100%" style="border: 0;" allowfullscreen=""></iframe>
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz" style="border: 0;" allowfullscreen=""></iframe>
           <picture class="map__img-group">
             <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2px.jpg 2x">
@@ -252,7 +249,6 @@
           </picture>
         </div>
       </div>
-    </div>
   </section>
 </main>
 
