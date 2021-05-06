@@ -1,0 +1,41 @@
+.diet-results-list {
+  @include resetting-styles-list;
+  display: grid;
+  column-gap: 33px;
+  row-gap: 34px;
+  margin: 0;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    column-gap: 40px;
+    grid-template-columns: repeat(2, max-content) 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    row-gap: 55px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.diet-results-list__value {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: -2 / -1;
+    padding-top: 10px;
+    display: block;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+

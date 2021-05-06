@@ -1,14 +1,16 @@
 .range-content__wrapper {
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    padding: 0 10px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    row-gap: 69px;
     position: relative;
   }
 }
 
 .range-content__lead {
-  margin: 0 0 25px;
+  margin: 0;
+  padding: 0 0 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -19,12 +21,21 @@
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
-    margin: 0 0 69px;
+    margin: 0;
     padding: 0;
   }
 }
 
-.range-content__description-list-container {
+.range-content__demo-part-wrapper {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    position: absolute;
+    top: -74%;
+  }
+}
+
+.range-content__results-list {
   margin: 0 0 42px 0;
 
   @media (min-width: $tablet-width) {
@@ -33,6 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 1 /2;
     max-width: 366px;
     padding-bottom: 0;
   }
