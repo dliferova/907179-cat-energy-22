@@ -19,14 +19,16 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  color: inherit;
+  color: #444444;
   border: 1px solid $basic-grey;
   box-sizing: border-box;
   text-transform: uppercase;
   padding: 14px 48px 14px 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 48px 17px 14px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 14px 48px 17px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,9 +41,9 @@
     outline: 1px solid $border-input-hover;
   }
 
-  &:invalid {
-    outline: 1px solid $border-input-error;
-  }
+  //&:invalid {
+  //  outline: 1px solid $border-input-error;
+  //}
 
   &:focus,
   &:focus-visible,
@@ -67,10 +69,10 @@
 }
 
 .form-field__textarea {
-  box-sizing: border-box;
+  box-sizing: content-box;
   resize: none;
   overflow: auto;
-  width: 280px;
+  width: 278px;
   margin: 0 20px;
   min-height: 151px;
   border: 1px solid $basic-grey;
@@ -85,8 +87,8 @@
 
   @media (min-width: $desktop-width) {
     min-height: 169px;
-    margin-top: 70px;
-    margin-bottom: 11px;
+    margin: 70px 0 0;
+    padding: 15px 12px;
   }
 
   &::placeholder {
@@ -96,6 +98,11 @@
     color: $special-dark-grey;
     text-transform: uppercase;
     padding: 10px 12px 0 15px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
 
     @media (min-width: $desktop-width) {
       font-size: 20px;
