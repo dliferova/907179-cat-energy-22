@@ -65,6 +65,9 @@
         </div>
         <p class="advertisement-section__image-group">
           <picture class="advertisement-section__picture-group">
+            <source type="image/webp" media="(min-width:1440px)" srcset="img/promo-box-desktop.webp 1x, img/promo-box-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/promo-box-tablet.webp 1x, img/promo-box-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/promo-box-mobile.webp 1x, img/promo-box-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/promo-box-desktop.png 1x, img/promo-box-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/promo-box-tablet.png 1x, img/promo-box-tablet@2x.png 2x">
             <img class="advertisement-section__image" src="img/promo-box-mobile.png"
@@ -129,10 +132,7 @@
               <img class="advantage-card__icon" src="img/svg/icon-leaf.svg" width="30" height="32" alt="Логотип преимущества">
               <p class="advantage-card__description">Функциональное питание содержит только полезные питательные
                 вещества.</p>
-              <picture class="advantage-card__icon-number-group">
-                <source media="(min-wdth: 768px)" srcset="img/svg/1.svg">
-                <img class="advantage-card__icon-number" src="img/svg/1.svg" width="136" height="280" alt="Первое преимущество">
-              </picture>
+              <div class="advantage-card__counter"></div>
             </div>
           </li>
           <li class="advantages-section__item">
@@ -140,10 +140,7 @@
               <img class="advantage-card__icon" src="img/svg/icon-tub.svg" width="30" height="32" alt="Логотип преимущества">
               <p class="advantage-card__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.</p>
-              <picture class="advantage-card__icon-number-group">
-                <source media="(min-wdth: 768px)" srcset="img/svg/2.svg">
-                <img class="advantage-card__icon-number" src="img/svg/2.svg" width="136" height="280" alt="Второе преимущество">
-              </picture>
+              <div class="advantage-card__counter"></div>
             </div>
           </li>
           <li class="advantages-section__item">
@@ -151,10 +148,7 @@
               <img class="advantage-card__icon" src="img/svg/icon-eat.svg" width="30" height="32" alt="Логотип преимущества">
               <p class="advantage-card__description">Замените один-два приема обычной еды на наше функциональное
                 питание.</p>
-              <picture class="advantage-card__icon-number-group">
-                <source media="(min-wdth: 768px)" srcset="img/svg/3.svg">
-                <img class="advantage-card__icon-number" src="img/svg/3.svg" width="136" height="280" alt="Третье преимущество">
-              </picture>
+              <div class="advantage-card__counter"></div>
             </div>
           </li>
           <li class="advantages-section__item">
@@ -162,10 +156,7 @@
               <img class="advantage-card__icon" src="img/svg/icon-alarm.svg" width="30" height="32" alt="Логотип преимущества">
               <p class="advantage-card__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего
                 питомца!</p>
-              <picture class="advantage-card__icon-number-group">
-                <source media="(min-wdth: 768px)" srcset="img/svg/4.svg">
-                <img class="advantage-card__icon-number" src="img/svg/4.svg" width="136" height="280" alt="Четвертое преимущество">
-              </picture>
+              <div class="advantage-card__counter"></div>
             </div>
           </li>
         </ul>
@@ -203,8 +194,11 @@
                 <div class="range-example__container">
                   <p class="range-example__image-wrapper">
                     <picture class="range-demo-example__image-group">
-                      <source media="(min-width: 1440px)" srcset="img/cat-promo-desktop.png 1x, img/cat-promo-desktop@2x.png">
-                      <source media="(min-width: 768px)" srcset="img/cat-promo-tablet.png 1x, img/cat-promo-tablet@2x.png">
+                      <source type="image/webp" media="(min-width:1440px)" srcset="img/cat-promo-desktop.webp 1x, img/cat-promo-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width:768px)" srcset="img/cat-promo-tablet.webp 1x, img/cat-promo-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/cat-promo-mobile.webp 1x, img/cat-promo-mobile@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/cat-promo-desktop.png 1x, img/cat-promo-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/cat-promo-tablet.png 1x, img/cat-promo-tablet@2x.png 2x">
                       <img class="range-demo-example__image" src="img/cat-promo-mobile.png" srcset="img/cat-promo-mobile@2x.png 2x" alt="Преображение кота после диеты">
                     </picture>
                   </p>
