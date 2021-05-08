@@ -1,6 +1,10 @@
 .products-brief-cards-list {
   @include resetting-styles-list;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 70px;
+  }
 }
 
 .products-brief-cards-list__item {
@@ -8,17 +12,17 @@
   border-top: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid $basic-grey;
+    border: 1px solid #cdcdcd;
     padding: 26px 20px 28px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    border-top: 1px solid $basic-grey;
+    border-top: 1px solid #cdcdcd;
     padding: 15px 20px 17px;
   }
 
   &:last-child {
-    border-bottom: 1px solid $basic-grey;
+    border-bottom: 1px solid #cdcdcd;
   }
 }

@@ -6,6 +6,7 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -16,14 +17,32 @@
     font-size: 20px;
     padding: 17px 30px;
   }
+}
 
-  &_primary {
-    color: $basic-white;
-    background-color: $basic-green;
+.button_primary {
+  color: $basic-white;
+  background-color: $basic-green;
+
+  &:hover {
+    background-color: #5eaa2f;
   }
 
-  &_secondary {
-    background-color: $basic-grey;
-    color: $basic-black;
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button_secondary {
+  background-color: $basic-grey;
+  color: $basic-black;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
   }
 }

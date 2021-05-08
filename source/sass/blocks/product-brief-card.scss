@@ -20,6 +20,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  color: $color-mine-shaft;
   text-transform: uppercase;
   margin: 0;
   padding: 13px 10px 13px 0;
@@ -42,6 +43,7 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
+    justify-content: flex-end;
     font-size: 16px;
     line-height: 20px;
     margin: 0;
@@ -58,6 +60,9 @@
 }
 
 .product-brief-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
