@@ -14,7 +14,7 @@
   }
 }
 
-.page-header__container_position_absolute {
+.page-header__container_floating {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
