@@ -8,23 +8,28 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     min-height: 150px;
     padding: 0 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    padding: 0 20px;
+    padding: 0 10px;
+    max-width: 1230px;
     margin: 0 auto;
   }
 }
 
 .page-footer__logo-wrapper {
   align-self: center;
-  padding: 36px 0 28px;
+  padding: 39px 0 28px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+    padding: 0;
+  }
 }
 
 .page-footer__logo-image {
@@ -37,6 +42,7 @@
   border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
+    justify-self: center;
     width: 129px;
     border: none;
   }
@@ -54,4 +60,9 @@
 
 .page-footer__copyright {
   padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-self: end;
+  }
 }

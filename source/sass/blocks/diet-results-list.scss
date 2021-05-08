@@ -1,7 +1,9 @@
-.diet-totals-indicators-list {
+.diet-results-list {
+  @include resetting-styles-list;
   display: grid;
   column-gap: 33px;
   row-gap: 34px;
+  margin: 0;
   grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-width) {
@@ -12,52 +14,27 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    row-gap: 60px;
+    row-gap: 55px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.diet-totals-indicators-list__group-values {
-  box-sizing: border-box;
-  padding: 16px;
-}
-
-.diet-totals-indicators-list__value {
+.diet-results-list__value {
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     grid-column: -2 / -1;
+    padding-top: 10px;
     display: block;
     text-align: end;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     grid-column: 1 / -1;
     display: flex;
     justify-content: flex-start;
-  }
-}
-
-.diet-totals-indicators-list__definition,
-.diet-totals-indicators-list__term {
-  font-family: "Oswald", "Arial", sans-serif;
-  color: $basic-black;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
-.diet-totals-indicators-list__definition {
-  @media (min-width: $desktop-width) {
-    margin-right: 63px;
   }
 }

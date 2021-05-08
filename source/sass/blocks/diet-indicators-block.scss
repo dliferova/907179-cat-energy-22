@@ -1,9 +1,11 @@
 .diet-indicators-block {
-  border: 1px solid $border-range;
-  border-radius: 5px;
   position: relative;
   text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
   width: 124px;
+  padding: 13px 13px 14px;
+  border: 1px solid $border-range;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -46,5 +48,48 @@
 
   @media (min-width: $desktop-width) {
     background-color: $basic-grey;
+  }
+}
+
+.diet-indicators-item {
+  text-align: center;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / -1;
+    justify-self: end;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+.diet-indicators-item__definition,
+.diet-indicators-item__term {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.diet-indicators-item__term {
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
   }
 }

@@ -1,18 +1,32 @@
 .advertisement-section {
   font-family: "Oswald", "Arial", sans-serif;
-  background-image: url("../../img/lead-back-mobile.jpg");
-  background-position-x: center;
+  background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-mobile.jpg");
+  background-size: auto 302px;
+  background-position-x: 60%;
   background-repeat: no-repeat;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    background-position-x: 50%;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/lead-back-desktop.jpg");
+    background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-desktop.jpg");
+    background-size: 50% 694px;
     background-position-x: right;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -38,7 +52,7 @@
 .advertisement-section__content {
   @media (min-width: $tablet-width) {
     z-index: 3;
-    padding: 0 0 0 90px;
+    padding: 0 0 0 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,9 +153,9 @@
 }
 
 .advertisement-section__image-group {
-  margin: 0 0 30px;
   display: flex;
   justify-content: center;
+  margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     position: absolute;

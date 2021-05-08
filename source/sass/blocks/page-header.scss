@@ -6,43 +6,23 @@
 
 .page-header__container {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: max-content 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 17px 10px 0 10px;
-    margin: 0 20px 54px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    padding: 55px 0 10px;
-    width: 1240px;
-    margin: 0;
+    padding: 27px 0 0 0;
+    margin: 0 30px 63px;
   }
 }
 
-.page-header__container_position_absolute {
+.page-header__container_floating {
   @media (min-width: $desktop-width) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 55px 0 10px;
-    width: 1240px;
+    width: 1230px;
     position: absolute;
     margin: 0;
-    left: 100px;
-  }
-}
-
-.page-header__navigation {
-  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
-    grid-column: 2 / -1;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0 0 95px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 0 132px;
+    left: 7%;
   }
 }
 
@@ -52,7 +32,7 @@
   align-items: center;
   max-width: 190px;
   margin: 0;
-  padding: 0 70px 0 20px;
+  padding: 15px 70px 12px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -65,15 +45,26 @@
 
 .page-header__logo {
   display: block;
-  padding: 10px 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 13px 0 10px;
+    padding: 0;
     margin: 0;
+  }
+}
+
+.page-header__logo-text {
+  display: block;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 126px;
+    height: 26px;
+    padding: 0;
   }
 }
 
@@ -90,18 +81,5 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 60px;
-  }
-}
-
-.page-header__logo-text {
-  display: block;
-  width: 101px;
-  height: 18px;
-  padding: 10px 0;
-
-  @media (min-width: $desktop-width) {
-    width: 126px;
-    height: 26px;
-    padding: 0;
   }
 }

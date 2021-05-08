@@ -38,15 +38,16 @@
 
 .map__contacts-block {
   min-height: 114px;
-  padding: 26px 20px;
-  display: flex;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 19px;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    min-height: 201px;
-    padding: 10px 70px;
+    height: 201px;
+    padding: 10px 59px 10px 70px;
 
     .map__contacts-block__city {
       display: block;
@@ -85,10 +86,10 @@
   text-align: start;
 
   @media (min-width: $tablet-width) {
-    justify-content: stretch;
+    max-width: 159px;
+    justify-self: end;
     font-size: 16px;
     line-height: 18px;
-    width: 159px;
     text-align: end;
   }
 }
