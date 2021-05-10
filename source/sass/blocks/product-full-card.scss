@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "image title"
-    "image description"
+    "image-content title"
+    "image-content description"
     "button button";
 
   @media (min-width: $tablet-width) {
@@ -19,9 +19,12 @@
   }
 }
 
-.product-full-card__img-wrapper {
-  grid-area: image;
+.product-full-card-link {
+  grid-area: image-content;
   grid-row: 1 / 3;
+}
+
+.product-full-card__img-wrapper {
   padding-bottom: 23px;
   margin: 0;
   display: flex;
@@ -41,10 +44,11 @@
   align-self: center;
 }
 
-.product-full-card__title {
+.product-full-card__action {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
   color: $color-mine-shaft;
   font-weight: 400;
   text-transform: uppercase;

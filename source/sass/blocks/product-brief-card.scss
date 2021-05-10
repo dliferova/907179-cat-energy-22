@@ -15,11 +15,12 @@
   }
 }
 
-.product-brief-card__title {
+.product-brief-card__action {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  text-decoration: none;
   color: $color-mine-shaft;
   text-transform: uppercase;
   margin: 0;
