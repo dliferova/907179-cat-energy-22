@@ -15,7 +15,7 @@
 }
 
 .products-cards-list__item {
-  padding: 18px 20px;
+  padding: 21px 20px 25px;
   border-top: 1px solid $catalog-border-color;
   box-sizing: border-box;
 
@@ -34,6 +34,7 @@
 }
 
 .products-cards-list__item_additional_card {
+  padding: 25px 20px 25px;
   @media (min-width: $tablet-width) {
     margin-top: 80px;
   }

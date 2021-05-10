@@ -23,8 +23,9 @@
   text-decoration: none;
   color: $color-mine-shaft;
   text-transform: uppercase;
-  margin: 0;
-  padding: 13px 10px 13px 0;
+  display: block;
+  margin: 0 0 10px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -37,7 +38,7 @@
 .product-brief-card__description {
   font-size: 14px;
   line-height: 20px;
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   display: flex;
   justify-content: space-between;
 
