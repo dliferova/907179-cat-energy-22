@@ -1,5 +1,3 @@
-//TODO Сделать список по алфавиту>
-
 //Global
 @import "global/variables.scss";
 @import "global/global.scss";
@@ -7,46 +5,42 @@
 @import "global/mixins.scss";
 
 //Blocks
-@import "blocks/page.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-navigation.scss";
-@import "blocks/page-main.scss";
-@import "blocks/advertisment-section.scss";
-@import "blocks/programs-section.scss";
-@import "blocks/program-card.scss";
+@import "blocks/additional-fieldset.scss";
 @import "blocks/advantages-section.scss";
 @import "blocks/advantage-card.scss";
-@import "blocks/example-section.scss";
-@import "blocks/range-content.scss";
-@import "blocks/diet-results-list.scss";
-@import "blocks/diet-indicators-block.scss";
-@import "blocks/range-example";
-@import "blocks/range-demo-slider.scss";
-@import "blocks/result-range.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/map.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
-
-//Form page
-@import "blocks/page-form.scss";
-@import "blocks/form.scss";
-@import "blocks/fieldset-section.scss";
-@import "blocks/contacts-data-list.scss";
-@import "blocks/additional-fieldset.scss";
-@import "blocks/initial-data-list.scss";
-@import "blocks/purpose-data-list.scss";
-@import "blocks/form-field.scss";
-@import "blocks/input-radio.scss";
-@import "blocks/form-input.scss";
-@import "blocks/input-check.scss";
+@import "blocks/advertisment-section.scss";
 @import "blocks/button.scss";
-
-//Catalog page
 @import "blocks/catalog-main.scss";
-@import "blocks/products-cards-list.scss";
-@import "blocks/product-full-card.scss";
-@import "blocks/show-more-card.scss";
+@import "blocks/contacts-data-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/diet-indicators-block.scss";
+@import "blocks/diet-results-list.scss";
+@import "blocks/example-section.scss";
+@import "blocks/fieldset-section.scss";
+@import "blocks/form.scss";
+@import "blocks/form-field.scss";
+@import "blocks/form-input.scss";
+@import "blocks/initial-data-list.scss";
+@import "blocks/input-check.scss";
+@import "blocks/input-radio.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/map.scss";
+@import "blocks/page.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-form.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
 @import "blocks/products-brief-cards-list.scss";
 @import "blocks/product-brief-card.scss";
+@import "blocks/products-cards-list.scss";
+@import "blocks/product-full-card.scss";
+@import "blocks/program-card.scss";
+@import "blocks/programs-section.scss";
 @import "blocks/promotional-offer-content.scss";
+@import "blocks/purpose-data-list.scss";
+@import "blocks/range-content.scss";
+@import "blocks/range-demo-slider.scss";
+@import "blocks/range-example";
+@import "blocks/result-range.scss";
+@import "blocks/show-more-card.scss";
+@import "blocks/social.scss";
