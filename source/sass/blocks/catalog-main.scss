@@ -12,6 +12,10 @@
 
 .catalog-main__title {
   padding: 27px 10px 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .catalog-main__container {
@@ -29,11 +33,17 @@
 
 .catalog-main__section {
   @media (min-width: $tablet-width) {
-    padding: 40px 0 0;
+    padding: 84px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 60px 0 0;
+  }
+}
+
+.catalog-main__additional-section {
+  @media (min-width: $tablet-width) {
+    padding: 66px 0 0;
   }
 }
 

@@ -5,7 +5,7 @@
     grid-template-areas:
       "title goods-descpiptions"
       "button button";
-    row-gap: 25px;
+    row-gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +30,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
     padding: 0;
     grid-area: title;
   }
