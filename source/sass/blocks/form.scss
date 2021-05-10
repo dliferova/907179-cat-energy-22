@@ -3,6 +3,8 @@
 }
 
 .form__group-fieldsets {
+  margin: 0 0 27px;
+
   @media (min-width: $tablet-width) {
     margin: 0 0 34px 0;
   }
@@ -27,15 +29,6 @@
   border: none;
   box-sizing: border-box;
   padding: 0;
-  margin: 0 0 24px;
-
-  //&:nth-child(4) {
-  //  margin-bottom: 23px;
-  //}
-  //
-  //&:last-child {
-  //  margin-bottom: 0;
-  //}
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -51,6 +44,12 @@
 }
 
 .form__fieldset-wrapper {
+  margin: 0 0 23px;
+
+  &:nth-child(2) {
+    margin-bottom: 17px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 88px;
     border-top: 1px solid green;
@@ -100,7 +99,7 @@
   text-align: start;
   width: 100%;
   padding: 0;
-  margin: 0 0 34px;
+  margin: 0 0 36px;
 
   @media (max-width: 767px) {
     &::after {

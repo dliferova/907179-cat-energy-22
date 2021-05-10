@@ -9,7 +9,7 @@
 }
 
 .form-field__input-container {
-  margin-left: 14px;
+  margin-left: 10px;
   grid-column: 2 / - 1;
   position: relative;
 }
@@ -35,7 +35,7 @@
 }
 
 .form-field__icon_phone {
-  width: 20px;
+  width: 17px;
   height: 20px;
   fill: $basic-black;
 }
@@ -49,7 +49,7 @@
   border: 1px solid $basic-grey;
   box-sizing: border-box;
   text-transform: uppercase;
-  padding: 14px 48px 14px 14px;
+  padding: 13px 48px 13px 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
