@@ -54,7 +54,7 @@
 .range-controls__bar {
   @media (max-width: 767px) {
     background-color: $basic-white;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-range;
     width: 84px;
     height: 14px;
     border-radius: 8px;
@@ -87,7 +87,7 @@
     width: 34px;
     height: 34px;
     padding: 0;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-range;
     background-color: $basic-white;
     border-radius: 50%;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);

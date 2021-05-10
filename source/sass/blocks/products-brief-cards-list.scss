@@ -13,21 +13,21 @@
 
 .products-brief-cards-list__item {
   padding: 13px 0 17px;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $border-table;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-table;
     border-bottom: none;
     padding: 26px 37px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $border-table;
     padding: 15px 0 17px;
   }
 
   &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-table;
   }
 }
