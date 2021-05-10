@@ -12,6 +12,10 @@
   margin-left: 10px;
   grid-column: 2 / - 1;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+  }
 }
 
 .form-field__icon {

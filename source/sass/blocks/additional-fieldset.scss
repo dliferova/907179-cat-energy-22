@@ -2,9 +2,11 @@
   margin-bottom: 31px;
 }
 
-//.additional-fieldset {
-//  padding-bottom: 31px;
-//}
+.additional-fieldset {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+  }
+}
 
 .additional-fieldset__list {
   @include resetting-styles-list;
