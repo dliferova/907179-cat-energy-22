@@ -13,7 +13,7 @@
     justify-content: flex-end;
     position: relative;
     background: linear-gradient(0deg, $basic-grey 84%, rgba(0, 0, 0, 0) 20%);
-    padding: 0 36px 40px;
+    padding: 0 38px 40px;
     box-sizing: border-box;
     height: 511px;
   }
@@ -66,6 +66,10 @@
     line-height: 24px;
     max-width: 155px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 38px 0 22px;
   }
 }
 

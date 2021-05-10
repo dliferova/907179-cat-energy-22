@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 0 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .products-brief-cards-list__item {
@@ -20,7 +24,7 @@
   @media (min-width: $desktop-width) {
     border: none;
     border-top: 1px solid #cdcdcd;
-    padding: 15px 20px 17px;
+    padding: 14px 0 17px;
   }
 
   &:last-child {

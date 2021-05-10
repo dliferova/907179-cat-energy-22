@@ -8,8 +8,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
+    row-gap: 62px;
     max-width: 1220px;
   }
 }
@@ -38,5 +39,9 @@
     border: 1px solid $basic-grey;
     padding: 52px 22px 38px 22px;
     margin-top: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 37px 40px;
   }
 }
