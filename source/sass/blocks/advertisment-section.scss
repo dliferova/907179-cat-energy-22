@@ -143,11 +143,11 @@
   }
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $deep-green;
   }
 
   &:active {
-    background-color: #5eaa2f;
+    background-color: $deep-green;
     color: rgba(255, 255, 255, 0.3);
   }
 }

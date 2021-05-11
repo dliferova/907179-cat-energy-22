@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "image title"
-    "image description"
+    "image-content title"
+    "image-content description"
     "button button";
 
   @media (min-width: $tablet-width) {
@@ -13,24 +13,29 @@
     justify-content: flex-end;
     position: relative;
     background: linear-gradient(0deg, $basic-grey 84%, rgba(0, 0, 0, 0) 20%);
-    padding: 0 36px 40px;
+    padding: 0 38px 40px;
     box-sizing: border-box;
     height: 511px;
   }
 }
 
-.product-full-card__img-wrapper {
-  grid-area: image;
+.product-full-card-link {
+  grid-area: image-content;
   grid-row: 1 / 3;
-  padding-bottom: 23px;
+  align-self: end;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding: 0;
+  }
+}
+
+.product-full-card__img-wrapper {
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  @media (min-width: $tablet-width) {
-    padding: 14px 30px;
-  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -41,25 +46,30 @@
   align-self: center;
 }
 
-.product-full-card__title {
+.product-full-card__action {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: $color-mine-shaft;
+  text-decoration: none;
+  color: $brown-black;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 0 18px;
+  padding: 0 0 14px;
   max-width: 76px;
   grid-area: title;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-top: 34px;
+    margin: 34px 0 21px;
     font-size: 20px;
     line-height: 24px;
     max-width: 155px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 38px 0 22px;
   }
 }
 
@@ -72,7 +82,8 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 23px 0 29px 0;
+    padding: 0;
+    margin: 0 0 33px;
   }
 }
 
@@ -82,9 +93,12 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $border-table;
-    max-width: 247px;
-    padding: 0 0 7px;
-    margin: 0 0 5px;
+    max-width: 250px;
+    padding: 8px 0 7px;
+
+    &:first-child {
+      padding: 0 0 5px;
+    }
   }
 }
 
