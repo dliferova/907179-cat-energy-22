@@ -3,16 +3,19 @@
 }
 
 .form__group-fieldsets {
+  margin: 0 0 27px;
+
   @media (min-width: $tablet-width) {
     margin: 0 0 34px 0;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 569px);
     max-width: 1220px;
-    column-gap: 82px;
-    margin: 0 auto 70px;
+    column-gap: 80px;
+    padding: 0 10px;
+    margin: 0 auto 93px;
   }
 }
 
@@ -27,7 +30,6 @@
   border: none;
   box-sizing: border-box;
   padding: 0;
-  margin: 0 0 24px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -38,17 +40,39 @@
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0 0 60px;
+    padding: 0;
   }
 }
 
 .form__fieldset-wrapper {
+  margin: 0 0 23px;
+
+  &:nth-child(2) {
+    margin-bottom: 17px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 88px;
     border-top: 1px solid green;
 
+    &:nth-child(2) {
+      margin-bottom: 75px;
+    }
+
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 94px;
+
+    &:nth-child(2) {
+      margin-bottom: 75px;
+    }
+
+    &:last-child {
+      margin-bottom: 31px;
     }
   }
 }
@@ -61,7 +85,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 20px;
+    margin: 0 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -76,7 +104,7 @@
   text-align: start;
   width: 100%;
   padding: 0;
-  margin: 0 0 34px;
+  margin: 0 0 36px;
 
   @media (max-width: 767px) {
     &::after {
@@ -108,11 +136,12 @@
     background-color: $basic-white;
     position: absolute;
     top: -25px;
-    padding: 0 40px;
-    left: 28px;
+    padding: 0 34px;
+    left: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 52px;
     left: -44px;
   }
 }
@@ -128,11 +157,12 @@
     max-width: 630px;
     margin: 0 auto;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     max-width: 1220px;
     justify-content: flex-start;
   }
@@ -140,14 +170,18 @@
 
 .form__button {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 63px 0 0;
     max-width: 282px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 80px 0 0;
+    margin: 0 89px 0 0;
     max-width: 568px;
   }
 }

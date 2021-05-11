@@ -25,7 +25,7 @@
   position: relative;
   margin: 0;
   display: block;
-  height: 362px;
+  min-height: 362px;
 
   @media (min-width: $tablet-width) {
     height: 40px;
@@ -47,7 +47,7 @@
 
   @media (min-width: $tablet-width) {
     height: 201px;
-    padding: 10px 59px 10px 70px;
+    padding: 10px 72px 10px 70px;
 
     .map__contacts-block__city {
       display: block;
@@ -64,8 +64,8 @@
     background-color: $basic-white;
     top: 50%;
     transform: translateY(-50%);
-    left: 7%;
-    padding: 68px 70px;
+    left: 8%;
+    padding: 68px 88px 53px 70px;
   }
 }
 
@@ -74,7 +74,9 @@
 }
 
 .map__contacts-block_theme_grey {
-  background-color: $basic-grey;
+  @media (max-width: 1439px) {
+    background-color: $basic-grey;
+  }
 }
 
 .map__contacts-block__link-address {
@@ -91,6 +93,10 @@
     font-size: 16px;
     line-height: 18px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
