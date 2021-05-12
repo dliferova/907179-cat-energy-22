@@ -1,6 +1,5 @@
 .program-card {
   background-color: #f2f2f2;
-  //padding: 21px 33px 21px 13px;
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-areas:
@@ -11,18 +10,18 @@
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
+    min-height: 372px;
     grid-template-columns: 1fr max-content;
-    grid-template-rows: min-content 1fr min-content;
-    padding: 78px 28px 34px 52px;
-    height: 372px;
+    grid-template-rows: repeat(3, min-content);
+    padding: 0;
     grid-template-areas:
       "title icon"
       "description icon"
-      "link link";
+      "link icon";
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 51px 60px 52px;
+    min-height: 374px;
     grid-template-columns: max-content 1fr;
     grid-template-areas:
       "icon title"
@@ -31,9 +30,23 @@
   }
 }
 
-.program-card_weight_gain {
+.program-card_weight_loss {
+  @media (min-width: $tablet-width) {
+    padding: 64px 28px 34px 52px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 45px 61px 63px 33px;
+    padding: 39px 28px 34px 53px;
+  }
+}
+
+.program-card_weight_gain {
+  @media (min-width: $tablet-width) {
+    padding: 69px 28px 34px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 61px 63px 33px;
 
     .program-card__action {
       margin-left: 19px;
@@ -73,7 +86,7 @@
   padding: 21px 19px 22px 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 35px 21px;
+    padding: 17px 34px 20px 20px;
     width: 200px;
     height: 211px;
   }
@@ -93,7 +106,7 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
-    padding: 13px 0 0 0;
+    padding: 25px 0 16px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,14 +125,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    max-width: 377px;
+    width: 372px;
     border: none;
-    padding: 24px 0 0 0;
+    padding: 12px 0 0 0;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 467px;
+    width: 100%;
     padding: 36px 0 30px 0;
   }
 }
@@ -152,11 +165,17 @@
     font-size: 20px;
     line-height: 24px;
     padding: 0;
+    align-self: end;
   }
 
   &:hover .program-card__icon-arrow {
     width: 32px;
     height: 10px;
+
+    @media (min-width: $desktop-width) {
+      height: 13px;
+      width: 40px;
+    }
   }
 
   &:active {
@@ -178,5 +197,9 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 37px;
   }
 }

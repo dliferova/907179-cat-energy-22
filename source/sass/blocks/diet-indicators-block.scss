@@ -10,7 +10,11 @@
   @media (min-width: $tablet-width) {
     width: 162px;
   }
-}
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 15px 21px;
+  }
+ }
 
 .diet-indicators-block__definition {
   font-family: "Oswald", "Arial", sans-serif;
@@ -56,12 +60,14 @@
   grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
+    padding-top: 8px;
     grid-column: 3 / -1;
     justify-self: end;
     text-align: end;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     grid-column: 1 / -1;
     justify-self: start;
   }
