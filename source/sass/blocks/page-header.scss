@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 707px;
-    margin: 0 auto 36px;
+    margin: 0 auto 63px;
     padding: 27px 0 0 0;
   }
 
@@ -28,10 +28,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 55px 0 10px;
-    width: 1230px;
+    width: 1220px;
     position: absolute;
     margin: 0;
-    left: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .page-header__logos-wrapper {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      max-width: 202px;
+    }
   }
 }
 

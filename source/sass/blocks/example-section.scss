@@ -3,8 +3,14 @@
     background-color: $basic-grey;
     box-sizing: border-box;
     min-height: 462px;
-    padding: 70px 110px;
-    height: 462px;
+    padding: 74px 0 30px;
+  }
+}
+
+.example-section__title-wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -16,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 20px 74px;
+    padding: 0 0 74px;
     margin: 0 90px;
   }
 }
