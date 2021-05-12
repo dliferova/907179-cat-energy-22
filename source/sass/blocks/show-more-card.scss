@@ -5,15 +5,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    height: 341px;
     box-sizing: content-box;
-    padding: 52px 22px 38px 22px;
-    border: 1px solid $basic-grey;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 51px 37px 40px;
-    border: 1px solid $basic-grey;
   }
 }
 
@@ -25,6 +17,7 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
+    margin-bottom: 49px;
   }
 }
 
@@ -41,13 +34,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    margin: 49px 0 0 0;
+    margin: 0;
     max-width: 136px;
   }
 
-
   @media (min-width: $desktop-width) {
-    margin: 0 0 23px;
+    padding: 0 0 23px;
   }
 }
 
@@ -60,9 +52,15 @@
     line-height: 18px;
     max-width: 167px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0 0 88px;
+  }
 }
 
 .show-more-card__button {
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
   color: $special-dark-grey;
@@ -70,10 +68,12 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    width: 248px;
     margin: 87px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
+    margin: 0;
   }
 }

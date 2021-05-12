@@ -2,6 +2,12 @@
   margin-bottom: 31px;
 }
 
+.additional-fieldset {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+  }
+}
+
 .additional-fieldset__list {
   @include resetting-styles-list;
   padding: 0 20px;
@@ -11,13 +17,14 @@
     grid-template-columns: repeat(2, 221px);
     row-gap: 30px;
     column-gap: 122px;
-    padding: 65px 0 40px 0;
+    padding: 65px 0 24px 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     column-gap: 80px;
+    padding: 65px 0 0;
   }
 }
 

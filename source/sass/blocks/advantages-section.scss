@@ -14,36 +14,13 @@
     counter-reset: section;
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    grid-template-rows: repeat(2, 233px);
     column-gap: 58px;
-    row-gap: 89px;
+    row-gap: 86px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 280px;
-  }
-}
-
-.advantage-card__counter {
-  @media (min-width: $tablet-width) {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
-    position: absolute;
-    z-index: -1;
-    left: 36%;
-    top: -17%;
-
-    &::before {
-      counter-increment: section;
-      content: counters(section, ".");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 50%;
+    column-gap: 76px;
   }
 }
 

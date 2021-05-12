@@ -1,21 +1,25 @@
 .initial-data-list {
   @include resetting-styles-list;
-  padding: 0 20px;
+  padding: 0 20px 25px;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 72px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .initial-data-list__item {
-  margin: 0 0 11px;
+  margin: 0 0 14px;
 
   &:last-child {
     margin: 0;
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 21px;
+    margin: 0 0 13px;
   }
 
   @media (min-width: $desktop-width) {

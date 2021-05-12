@@ -1,5 +1,7 @@
 .range-content__wrapper {
   @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content max-content;
@@ -40,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-bottom: 245px;
+    padding-bottom: 259px;
   }
 
   @media (min-width: $desktop-width) {

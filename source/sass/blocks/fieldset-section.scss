@@ -3,17 +3,17 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 87px 0 0 0;
+    padding: 84px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 86px;
   }
 }
 
 .fieldset-section__radio-list {
   @include resetting-styles-list;
-  padding: 22px 20px 17px 20px;
+  padding: 19px 20px 17px 20px;
   margin: 0;
 
   @media (min-width: $tablet-width) {

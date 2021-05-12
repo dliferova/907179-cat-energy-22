@@ -10,12 +10,14 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
     background-color: inherit;
+    top: -31px;
+    right: 10px;
   }
 }
 
 .range-example__image-wrapper {
   text-align: center;
-  margin: 0 23px 34px 0;
+  margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     margin: 0;
@@ -26,6 +28,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.range-example__image {
+  @media (max-width: 767px) {
+    width: 280px;
+    height: 232px;
   }
 }
 
@@ -43,7 +52,7 @@
 
   @media (min-width: $desktop-width) {
     width: 584px;
-    left: 71%;
-    bottom: -27%;
+    left: 74%;
+    bottom: -28%;
   }
 }

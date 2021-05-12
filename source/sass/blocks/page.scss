@@ -41,36 +41,6 @@
   }
 }
 
-.page__subtitle_decorated_with-lines {
-  display: flex;
-  align-items: center;
-  text-align: start;
-  width: 100%;
-
-  &::after {
-    content: "";
-    height: 2px;
-    background: $basic-green;
-    margin-left: 25px;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      height: 2px;
-      background: $basic-green;
-      margin-right: 39px;
-      width: 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      max-width: 70px;
-    }
-  }
-}
-
 .page__container {
   padding: 0 20px;
 

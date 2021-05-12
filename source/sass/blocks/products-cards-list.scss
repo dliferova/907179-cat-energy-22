@@ -8,14 +8,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
+    row-gap: 62px;
     max-width: 1220px;
   }
 }
 
 .products-cards-list__item {
-  padding: 18px 20px;
+  padding: 21px 20px 25px;
   border-top: 1px solid $catalog-border-color;
   box-sizing: border-box;
 
@@ -27,14 +28,19 @@
 
 .products-cards-list__item:last-child {
   border-bottom: 1px solid $border-grey;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
 }
 
 .products-cards-list__item_additional_card {
+  padding: 25px 20px 25px;
+
   @media (min-width: $tablet-width) {
-    margin-top: 80px;
+    max-height: 429px;
+    border: 1px solid $basic-grey;
+    padding: 52px 22px 38px 22px;
+    margin-top: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 37px 40px;
   }
 }

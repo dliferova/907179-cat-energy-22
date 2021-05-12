@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 148px;
+  width: 144px;
   padding: 14px 0 12px;
   margin: 0 auto;
 
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 163px;
+    width: 149px;
   }
 }
 
@@ -38,6 +38,11 @@
 
   @media (min-width: $tablet-width) {
     width: 13px;
+    height: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
     height: 27px;
   }
 }

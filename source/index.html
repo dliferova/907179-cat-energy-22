@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg">
@@ -28,9 +30,7 @@
         </picture>
       </a>
     </div>
-    <button
-      class="main-navigation__button"
-      type="button">
+    <button class="main-navigation__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
       <svg class="main-navigation__icon-menu" width="24" height="18">
         <use xlink:href="sprite.svg#icon-menu"></use>
@@ -166,7 +166,9 @@
 
   <section class="page-main__example-section">
     <div class="example-section">
+      <div class="example-section__title-wrapper">
       <h2 class="page-main__title example-section__title">Живой пример</h2>
+      </div>
       <div class="example-section__content">
         <div class="range-content">
           <div class="range-content__wrapper">
@@ -193,13 +195,13 @@
               <div class="range-example">
                 <div class="range-example__container">
                   <p class="range-example__image-wrapper">
-                    <picture class="range-demo-example__image-group">
+                    <picture class="range-example__image-group">
                       <source type="image/webp" media="(min-width:1440px)" srcset="img/cat-promo-desktop.webp 1x, img/cat-promo-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width:768px)" srcset="img/cat-promo-tablet.webp 1x, img/cat-promo-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/cat-promo-mobile.webp 1x, img/cat-promo-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/cat-promo-desktop.png 1x, img/cat-promo-desktop@2x.png 2x">
                       <source media="(min-width: 768px)" srcset="img/cat-promo-tablet.png 1x, img/cat-promo-tablet@2x.png 2x">
-                      <img class="range-demo-example__image" src="img/cat-promo-mobile.png" srcset="img/cat-promo-mobile@2x.png 2x" alt="Преображение кота после диеты">
+                      <img class="range-example__image" src="img/cat-promo-mobile.png" srcset="img/cat-promo-mobile@2x.png 2x" alt="Преображение кота после диеты">
                     </picture>
                   </p>
                   <div class="range-example__slider-wrapper">
