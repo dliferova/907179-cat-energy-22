@@ -6,7 +6,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   resize: none;
   overflow: auto;
   width: 278px;
@@ -26,8 +26,8 @@
 
   @media (min-width: $desktop-width) {
     min-height: 169px;
-    margin: 70px 0 0;
-    padding: 15px 12px;
+    margin: 88px 0 0;
+    padding: 9px 25px;
   }
 
   &::placeholder {

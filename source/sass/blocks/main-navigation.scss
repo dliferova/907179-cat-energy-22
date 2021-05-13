@@ -1,11 +1,10 @@
-//TODO после завершения стилизации в header добавить амперсанд
-
 .main-navigation_closed {
   @media (max-width: 767px) {
     display: none;
   }
 }
 
+//Стилизация навигации для главной
 .main-navigation_theme_dark .main-navigation__item-content {
   @media (min-width: $desktop-width) {
     color: $basic-white;
@@ -42,6 +41,8 @@
   }
 }
 
+//Стилизация навигации для страниц без фона
+
 .main-navigation_theme_light .main-navigation__item-content:hover {
   color: rgba(0, 0, 0, 0.7);
 }
@@ -57,7 +58,9 @@
 }
 
 .main-navigation_theme_light .main-navigation__item-content_active:active {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
 }
 
 .main-navigation__list {
