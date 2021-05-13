@@ -118,8 +118,6 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form__group-fieldsets_with_titles">
-
       <div class="form__fieldset-wrapper">
           <fieldset class="form__fieldset fieldset-section">
             <div class="form__subtitle-wrapper">
@@ -154,8 +152,10 @@
             <div class="form__subtitle-wrapper">
               <h2 class="form__subtitle">Комментарий</h2>
             </div>
-            <label class="form-field__label" for="comments-field"></label>
-            <textarea class="form-field__textarea" id="comments-field" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="textarea-block">
+              <label class="textarea-block__label" for="comments-field"></label>
+              <textarea class="textarea-block__field" id="comments-field" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
         </div>
       <div class="form__fieldset-wrapper">
@@ -199,7 +199,6 @@
               </ul>
             </fieldset>
         </div>
-      </div>
       <div class="form__button-section">
           <button class="button button_primary form__button" type="submit" value="Отправить форму">Отправить заявку
           </button>
@@ -208,7 +207,7 @@
     </form>
   </section>
 
-  <section class="page-main__map-section">
+  <section class="page__map-section">
     <div class="map">
       <h2 class="visually-hidden">Кэт Энерджи на карте</h2>
       <div class="map__contacts-block map__contacts-block_theme_grey">
@@ -229,15 +228,14 @@
         </picture>
       </div>
     </div>
-    </div>
   </section>
 </main>
 
 <footer class="page-footer">
   <div class="page-footer__container">
     <div class="page-footer__logo-wrapper">
-      <a class="footer__logo">
-        <img class="footer__logo-image" src="img/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
       </a>
     </div>
     <div class="page-footer__social">

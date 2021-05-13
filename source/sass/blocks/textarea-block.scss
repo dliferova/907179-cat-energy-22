@@ -1,0 +1,46 @@
+.textarea-block__label {
+  text-transform: uppercase;
+}
+
+.textarea-block__field {
+  box-sizing: content-box;
+  resize: none;
+  overflow: auto;
+  width: 278px;
+  margin: 0 20px;
+  min-height: 151px;
+  border: 1px solid $basic-grey;
+  font-family: inherit;
+  color: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 176px;
+    margin: 86px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 169px;
+    margin: 70px 0 0;
+    padding: 15px 12px;
+  }
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    padding: 10px 12px 0 15px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
