@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   min-height: 100%;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
   background-color: $basic-white;
   color: $special-dark-grey;
   position: relative;
