@@ -1,17 +1,17 @@
-.map__iframe-block {
-  min-height: 362px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 400px;
-  }
-}
+//.map__iframe-block {
+//  min-height: 362px;
+//
+//  @media (min-width: $tablet-width) {
+//    min-height: 400px;
+//  }
+//}
 
 .map__iframe {
   position: absolute;
   z-index: 2;
   width: 100%;
   border: none;
-  min-height: 362px;
+  min-height: 367px;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
@@ -25,7 +25,7 @@
   position: relative;
   margin: 0;
   display: block;
-  min-height: 362px;
+  min-height: 367px;
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -66,7 +66,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 110px;
-    padding: 52px 88px 53px 68px;
+    padding: 46px 88px 53px 76px;
   }
 }
 

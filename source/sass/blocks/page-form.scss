@@ -16,6 +16,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 630px;
+    padding: 0;
     margin: 0 auto 56px;
   }
 
@@ -30,6 +31,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 78px;
   }
 }
 

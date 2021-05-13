@@ -8,6 +8,10 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 0 0 0;
+  }
 }
 
 .catalog-main__title {

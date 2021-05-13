@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="fonts" type="font/woff2">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="fonts" type="font/woff2">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
@@ -17,25 +17,25 @@
     <div class="page-header__logos-wrapper">
       <a class="page-header__logo" href="index.html">
         <picture class="page-header__logo-group">
-          <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-          <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="34" height="38" alt="Логотип кэт энерджи">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип кэт энерджи">
         </picture>
       </a>
       <a class="page-header__logo-text" href="index.html">
         <picture class="page-header__logo-text-group">
-          <source media="(min-width: 1440px)" srcset="img/svg/logo-text-desk.svg">
-          <img class="page-header__logo-text-img" src="img/svg/logo-text-mobile.svg" width="101" height="18" alt="Кэт энержди">
+          <source media="(min-width: 1440px)" srcset="img/logo-text-desk.svg">
+          <img class="page-header__logo-text-img" src="img/logo-text-mobile.svg" width="101" height="18" alt="Кэт энержди">
         </picture>
       </a>
     </div>
     <button class="main-navigation__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
       <svg class="main-navigation__icon-menu" width="24" height="18">
-        <use xlink:href="sprite.svg#icon-menu"></use>
+        <use xlink:href="img/sprite.svg#icon-menu"></use>
       </svg>
       <svg class="main-navigation__icon-cross" width="20" height="20">
-        <use xlink:href="sprite.svg#icon-cross"></use>
+        <use xlink:href="img/sprite.svg#icon-cross"></use>
       </svg>
     </button>
     <nav class="page-header__navigation main-navigation main-navigation_theme_light">
@@ -66,9 +66,10 @@
             <a class="product-full-card-link" href="#">
             <p class="product-full-card__img-wrapper">
               <picture class="product-full-card__img-group">
-                <source media="(min-width: 768px)"
-                        srcset="img/chicken-500-tablet.png 1x, img/chicken-500-tablet@2x.png 2x">
-                <img class="product-full-card__img" src="img/chicken-500-mobile.png" srcset="img/chicken-500-mobile@2x.png 2x">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/chicken-500-mobile.webp 1x, img/chicken-500-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png 1x, img/chicken-500-tablet@2x.png 2x">
+                <img class="product-full-card__img" src="img/chicken-500-mobile.png" srcset="img/chicken-500-mobile@2x.png 2x" alt="Продукт с курицей 500 грамм">
               </picture>
             </p>
             </a>
@@ -95,9 +96,10 @@
             <a class="product-full-card-link" href="#">
             <p class="product-full-card__img-wrapper">
               <picture class="product-full-card__img-group">
-                <source media="(min-width: 768px)"
-                        srcset="img/chicken-1000-tablet.png 1x, img/chicken-1000-tablet@2x.png 2x">
-                <img class="product-full-card__img" src="img/chicken-1000-mobile.png" srcset="img/chicken-1000-mobile@2x.png 2x">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/chicken-1000-tablet.webp 1x, img/chicken-1000-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/chicken-1000-mobile.webp 1x, img/chicken-1000-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-1000-tablet.png 1x, img/chicken-1000-tablet@2x.png 2x">
+                <img class="product-full-card__img" src="img/chicken-1000-mobile.png" srcset="img/chicken-1000-mobile@2x.png 2x" alt="Продукт с курицей 1000 грамм">
               </picture>
             </p>
             </a>
@@ -124,8 +126,10 @@
             <a class="product-full-card-link" href="#">
             <p class="product-full-card__img-wrapper">
               <picture class="product-full-card__img-group">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/fish-500-tablet.webp 1x, img/fish-500-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/fish-500-mobile.webp 1x, img/fish-500-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/fish-500-tablet.png 1x, img/fish-500-tablet@2x.png 2x">
-                <img class="product-full-card__img" src="img/fish-500-mobile.png" srcset="img/fish-500-mobile@2x.png 2x">
+                <img class="product-full-card__img" src="img/fish-500-mobile.png" srcset="img/fish-500-mobile@2x.png 2x" alt="Продукт с рыбой 500 грамм">
               </picture>
             </p>
             </a>
@@ -152,8 +156,10 @@
             <a class="product-full-card-link" href="#">
             <p class="product-full-card__img-wrapper">
               <picture class="product-full-card__img-group">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/fish-1000-tablet.webp 1x, img/fish-1000-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/fish-1000-mobile.webp 1x, img/fish-1000-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/fish-1000-tablet.png 1x, img/fish-1000-tablet@2x.png 2x">
-                <img class="product-full-card__img" src="img/fish-1000-mobile.png" srcset="img/fish-1000-mobile@2x.png 2x">
+                <img class="product-full-card__img" src="img/fish-1000-mobile.png" srcset="img/fish-1000-mobile@2x.png 2x" alt="Продукт с рыбой 1000 грамм">
               </picture>
             </p>
             </a>
@@ -180,9 +186,10 @@
             <a class="product-full-card-link" href="#">
             <p class="product-full-card__img-wrapper">
               <picture class="product-full-card__img-group">
-                <source media="(min-width: 768px)"
-                        srcset="img/buckwheat-500-tablet.png 1x, img/buckwheat-500-tablet@2x.png 2x">
-                <img class="product-full-card__img" src="img/buckwheat-500-mobile.png" srcset="img/buckwheat-500-mobile@2x.png 2x">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/buckwheat-500-tablet.webp 1x, img/buckwheat-500-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/buckwheat-500-mobile.webp 1x, img/buckwheat-500-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-500-tablet.png 1x, img/buckwheat-500-tablet@2x.png 2x">
+                <img class="product-full-card__img" src="img/buckwheat-500-mobile.png" srcset="img/buckwheat-500-mobile@2x.png 2x" alt="Продукт с гречкой 500 грамм">
               </picture>
             </p>
             </a>
@@ -209,9 +216,10 @@
             <a class="product-full-card-link" href="#">
             <p class="product-full-card__img-wrapper">
               <picture class="product-full-card__img-group">
-                <source media="(min-width: 768px)"
-                        srcset="img/buckwheat-1000-tablet.png 1x, img/buckwheat-1000-tablet@2x.png 2x">
-                <img class="product-full-card__img" src="img/buckwheat-1000-mobile.png" srcset="img/buckwheat-1000-mobile@2x.png 2x">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/buckwheat-1000-tablet.webp 1x, img/buckwheat-1000-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/buckwheat-1000-mobile.webp 1x, img/buckwheat-1000-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-1000-tablet.png 1x, img/buckwheat-1000-tablet@2x.png 2x">
+                <img class="product-full-card__img" src="img/buckwheat-1000-mobile.png" srcset="img/buckwheat-1000-mobile@2x.png 2x" alt="Продукт с гречкой 1000 грамм">
               </picture>
             </p>
             </a>
@@ -238,8 +246,10 @@
             <a class="product-full-card-link" href="#">
             <p class="product-full-card__img-wrapper">
               <picture class="product-full-card__img-group">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/rice-tablet.webp 1x, img/rice-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/rice-mobile.webp 1x, img/rice-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/rice-tablet.png 1x, img/rice-tablet@2x.png 2x">
-                <img class="product-full-card__img" src="img/rice-mobile.png" srcset="img/rice-mobile@2x.png 2x">
+                <img class="product-full-card__img" src="img/rice-mobile.png" srcset="img/rice-mobile@2x.png 2x" alt="Продукт с рисом 500 грамм">
               </picture>
             </p>
             </a>
@@ -264,7 +274,7 @@
         <li class="products-cards-list__item products-cards-list__item_additional_card">
           <div class="show-more-card">
             <svg class="show-more-card__icon" width="30" height="30">
-              <use xlink:href="sprite.svg#icon-plus" x="0" y="0"></use>
+              <use xlink:href="img/sprite.svg#icon-plus" x="0" y="0"></use>
             </svg>
             <h3 class="show-more-card__title">Показать еще 100500 товаров</h3>
             <p class="show-more-card__description">На самом деле вкусов гораздо больше!</p>
@@ -326,7 +336,7 @@
         <div class="catalog-main__special-offer-wrapper">
           <div class="promotional-offer-content">
             <svg class="promotional-offer-content__icon" width="78" height="80">
-              <use xlink:href="sprite.svg#gift-icon" x="0" y="0"></use>
+              <use xlink:href="img/sprite.svg#icon-gift" x="0" y="0"></use>
             </svg>
             <p class="promotional-offer-content__description">Закажите все<br> и получите чехол для кота в подарок!</p>
           </div>
@@ -335,7 +345,7 @@
   </section>
   </div>
 
-  <section class="page-main__map-section">
+  <section class="page__map-section">
     <div class="map">
       <h2 class="visually-hidden">Кэт Энерджи на карте</h2>
       <div class="map__contacts-block map__contacts-block_theme_grey">
@@ -348,7 +358,7 @@
       <div class="map__iframe-block">
         <iframe class="map__iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz"
-                width="100%" style="border: none;" allowfullscreen=""></iframe>
+                style="border: none;" allowfullscreen=""></iframe>
         <picture class="map__img-group">
           <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2px.jpg 2x">
@@ -356,15 +366,13 @@
         </picture>
       </div>
     </div>
-    </div>
   </section>
 </main>
-
 <footer class="page-footer">
   <div class="page-footer__container">
     <div class="page-footer__logo-wrapper">
       <a class="page-footer__logo">
-        <img class="footer__logo-image" src="img/svg/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
+        <img class="page-footer__logo-image" src="img/logo-text-mobile.svg" width="128" height="24" alt="Кэт энержди">
       </a>
     </div>
     <div class="page-footer__social">
@@ -373,21 +381,21 @@
           <li class="social__item">
             <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
               <svg class="social__link-icon social__link-icon_vk" width="23" height="16">
-                <use xlink:href="sprite.svg#icon-vk" x="0" y="0"></use>
+                <use xlink:href="img/sprite.svg#icon-vkontakte" x="0" y="0"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link_instagram" href="https://www.instagram.com/htmlacademy">
               <svg class="social__link-icon social__link-icon_inst" width="16" height="16">
-                <use xlink:href="sprite.svg#icon-inst" x="0" y="0"></use>
+                <use xlink:href="img/sprite.svg#icon-instagram" x="0" y="0"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">
               <svg class="social__link-icon social__link-icon_fb" width="11" height="18">
-                <use xlink:href="sprite.svg#icon-fb" x="0" y="0"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook" x="0" y="0"></use>
               </svg>
             </a>
           </li>
@@ -399,13 +407,13 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">
           <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__icon" width="27" height="34" fill="none">
-            <use xlink:href="sprite.svg#academy-icon"></use>
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
           </svg>
         </a>
       </div>
     </div>
   </div>
 </footer>
-<script src="js/main-navigation-animation.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
