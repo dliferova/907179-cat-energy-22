@@ -1,6 +1,6 @@
 .promotional-offer-content {
   background-color: #68b738;
-  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-image: url("/img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -10,11 +10,11 @@
   justify-content: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    background-image: url("/img/gift-photo-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
-    background-image: url("../../img/gift-photo-tablet.jpg");
+    background-image: url("/img/gift-photo-tablet.jpg");
     min-height: 200px;
     margin: 0;
     flex-direction: row;
@@ -22,17 +22,17 @@
     padding: 0 124px 0 76px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-image: url("/img/gift-photo-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/gift-photo-desktop.jpg");
+    background-image: url("/img/gift-photo-desktop.jpg");
     margin: 0;
     width: 245px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      background-image: url("/img/gift-photo-desktop@2x.jpg");
     }
   }
 }

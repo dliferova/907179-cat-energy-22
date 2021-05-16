@@ -71,15 +71,15 @@
     outline: 1px solid $border-input-hover;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline: 1px solid $border-input-error;
   }
 
-  &:invalid ~ .form-field__icon_email {
+  &:invalid:not(:placeholder-shown) ~ .form-field__icon_email {
     stroke: $border-input-error;
   }
 
-  &:invalid ~ .form-field__icon_phone {
+  &:invalid:not(:placeholder-shown) ~ .form-field__icon_phone {
     fill: $border-input-error;
   }
 

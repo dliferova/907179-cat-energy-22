@@ -1,13 +1,13 @@
 .advertisement-section {
   font-family: "Oswald", "Arial", sans-serif;
-  background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-mobile.jpg");
+  background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("/img/index-background-mobile.jpg");
   background-size: auto 302px;
   background-position-x: 65%;
   background-repeat: no-repeat;
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("/img/index-background-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
@@ -15,13 +15,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-desktop.jpg");
+    background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("/img/index-background-desktop.jpg");
     background-size: 50% 694px;
     background-position-x: right;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("../../img/index-background-desktop@2x.jpg");
+      background-image: linear-gradient(rgba(106, 171, 63, 0.8), rgba(106, 171, 63, 0.8)), url("/img/index-background-desktop@2x.jpg");
     }
   }
 }

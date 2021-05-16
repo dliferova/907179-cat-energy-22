@@ -1,6 +1,6 @@
 .example-section__content {
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    background: linear-gradient(to right, $basic-grey 72.8%, #eaeaea 30%);
     box-sizing: border-box;
     min-height: 462px;
     padding: 74px 0 30px;
