@@ -1,3 +1,11 @@
+.programs-section {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+}
+
 .programs-section__card-container {
   margin-bottom: 20px;
 
@@ -7,13 +15,5 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-  }
-}
-
-.programs-section {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
   }
 }

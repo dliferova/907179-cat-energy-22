@@ -16,20 +16,6 @@
   position: relative;
 }
 
-.page-heading {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  margin: 0;
-  color: $basic-black;
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-
 .page__subtitle {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;

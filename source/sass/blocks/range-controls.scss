@@ -1,0 +1,79 @@
+.range-controls {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 15px 0;
+  }
+}
+
+.range-controls__scale {
+  @media (min-width: $tablet-width) {
+    height: 6px;
+  }
+}
+
+.range-controls__bar {
+  @media (max-width: 767px) {
+    background-color: $basic-white;
+    border: 1px solid $border-range;
+    width: 84px;
+    height: 14px;
+    border-radius: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    background: $border-table;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+  }
+}
+
+.range-controls__toggle {
+  @media (max-width: 767px) {
+    width: 35px;
+    height: 6px;
+    border-radius: 6px;
+    margin: 4px 6px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 46%;
+    top: 0;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid $border-range;
+    background-color: $basic-white;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $basic-green;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
