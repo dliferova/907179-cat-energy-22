@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
@@ -29,15 +29,6 @@
         </picture>
       </a>
     </div>
-    <button class="main-navigation__button" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-      <svg class="main-navigation__icon-menu" width="24" height="18">
-        <use xlink:href="img/sprite.svg#icon-menu"></use>
-      </svg>
-      <svg class="main-navigation__icon-cross" width="20" height="20">
-        <use xlink:href="img/sprite.svg#icon-cross"></use>
-      </svg>
-    </button>
     <nav class="page-header__navigation main-navigation main-navigation_theme_light">
       <div class="main-navigation__content">
         <ul class="main-navigation__list">
@@ -53,6 +44,15 @@
         </ul>
       </div>
     </nav>
+    <button class="page-header__navigation-button navigation-button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <svg class="navigation-button__icon-menu" width="24" height="18">
+        <use xlink:href="img/sprite.svg#icon-menu"></use>
+      </svg>
+      <svg class="navigation-button__icon-cross" width="20" height="20">
+        <use xlink:href="img/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
   </div>
 </header>
 <main class="page-form">
@@ -91,28 +91,28 @@
         <fieldset class="form__fieldset fieldset-section">
           <ul class="fieldset-section__radio-list purpose-data-list">
             <li class="purpose-data-list__field form-field">
-              <input class="form-field__input-check input-radio visually-hidden" type="radio" name="goal" value="weightloss"
-                      id="weightloss-field" checked>
-                <label class="input-radio__label" for="weightloss-field">
-                  <span class="input-radio__pseudo-input" tabindex="0"></span>
+              <input class="purpose-data-list__input-check visually-hidden" type="radio" name="goal" value="weightloss"
+                     id="weightloss-field" checked>
+              <label class="purpose-data-list__label" for="weightloss-field">
+                <span class="purpose-data-list__pseudo-input" tabindex="0"></span>
                 Похудение
               </label>
             </li>
             <li class="purpose-data-list__field form-field">
-              <input class="form-field__input-check input-radio visually-hidden" type="radio" name="goal" value="weightgain"
-                      id="weightgain-field">
-              <label class="input-radio__label" for="weightgain-field">
-                <span class="input-radio__pseudo-input" tabindex="0"></span>
-                  Набор массы
+              <input class="purpose-data-list__input-check visually-hidden" type="radio" name="goal" value="weightgain"
+                     id="weightgain-field">
+              <label class="purpose-data-list__label" for="weightgain-field">
+                <span class="purpose-data-list__pseudo-input" tabindex="0"></span>
+                Набор массы
               </label>
             </li>
             <li class="purpose-data-list__field form-field">
-              <input class="form-field__input-check input-radio visually-hidden" type="radio" name="goal" value="undecided"
-                      id="undecided-field">
-              <label class="input-radio__label" for="undecided-field">
-                <span class="input-radio__pseudo-input" tabindex="0"></span>
-                  Не знаю (нужен ваш совет)
-                </label>
+              <input class="purpose-data-list__input-check visually-hidden" type="radio" name="goal" value="undecided"
+                     id="undecided-field">
+              <label class="purpose-data-list__label" for="undecided-field">
+                <span class="purpose-data-list__pseudo-input" tabindex="0"></span>
+                Не знаю (нужен ваш совет)
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -164,34 +164,34 @@
             </div>
             <ul class="additional-fieldset__list">
               <li class="additional-fieldset__list-item form-field">
-                <input class="form-field__input input-check visually-hidden" type="checkbox" id="sugarfree-field" name="additions"
-                        value="sugarfree" checked>
-                <label class="input-check__label" for="sugarfree-field">
-                  <span class="input-check__pseudo-input"></span>
+                <input class="form-field__input form-field__input-check visually-hidden" type="checkbox" id="sugarfree-field" name="additions"
+                       value="sugarfree" checked>
+                <label class="form-field__label-check" for="sugarfree-field">
+                  <span class="form-field__pseudo-check-input"></span>
                   Сахарозаменитель
                 </label>
               </li>
               <li class="additional-fieldset__list-item form-field">
-                <input class="form-field__input input-check visually-hidden" type="checkbox" id="water-field" name="additions"
+                <input class="form-field__input form-field__input-check visually-hidden" type="checkbox" id="water-field" name="additions"
                         value="water">
-                <label class="input-check__label" for="water-field">
-                  <span class="input-check__pseudo-input"></span>
+                <label class="form-field__label-check" for="water-field">
+                  <span class="form-field__pseudo-check-input"></span>
                   Питьевая вода
                   </label>
                 </li>
               <li class="additional-fieldset__list-item form-field">
-                <input class="form-field__input input-check visually-hidden" type="checkbox" id="milk-field" name="additions"
+                <input class="form-field__input form-field__input-check visually-hidden" type="checkbox" id="milk-field" name="additions"
                         value="milk">
-                <label class="input-check__label" for="milk-field">
-                  <span class="input-check__pseudo-input"></span>
+                <label class="form-field__label-check" for="milk-field">
+                  <span class="form-field__pseudo-check-input"></span>
                   Молоко
                 </label>
                 </li>
                 <li class="additional-fieldset__list-item form-field">
-                <input class="form-field__input input-check visually-hidden" type="checkbox" id="vitamins-field" name="additions"
+                <input class="form-field__input form-field__input-check visually-hidden" type="checkbox" id="vitamins-field" name="additions"
                         value="vitamins">
-                <label class="input-check__label" for="vitamins-field">
-                  <span class="input-check__pseudo-input"></span>
+                <label class="form-field__label-check" for="vitamins-field">
+                  <span class="form-field__pseudo-check-input"></span>
                   Витамины
                 </label>
               </li>
@@ -206,7 +206,7 @@
     </form>
   </section>
 
-  <section class="page__map-section">
+  <section class="page-form__map-section">
     <div class="map">
       <h2 class="visually-hidden">Кэт Энерджи на карте</h2>
       <div class="map__contacts-block map__contacts-block_theme_grey">

@@ -105,3 +105,20 @@
     height: 22px;
   }
 }
+
+.page-header__navigation-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  cursor: pointer;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

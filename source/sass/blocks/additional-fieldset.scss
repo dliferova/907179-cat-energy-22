@@ -1,11 +1,11 @@
-.additional-fieldset__subtitle {
-  margin-bottom: 31px;
-}
-
 .additional-fieldset {
   @media (min-width: $tablet-width) {
     padding-bottom: 31px;
   }
+}
+
+.additional-fieldset__subtitle {
+  margin-bottom: 31px;
 }
 
 .additional-fieldset__list {

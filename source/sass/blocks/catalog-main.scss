@@ -59,7 +59,6 @@
   }
 }
 
-
 .catalog-main__additional-section-wrapper {
   @media (min-width: $tablet-width) {
     border-top: 1px solid $basic-green;
@@ -131,4 +130,8 @@
     grid-template-columns: 1fr 245px;
     margin-bottom: 86px;
   }
+}
+
+.catalog-main__map-section {
+  width: 100%;
 }

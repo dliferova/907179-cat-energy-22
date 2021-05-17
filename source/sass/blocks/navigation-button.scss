@@ -1,0 +1,27 @@
+//Мобильное меню
+
+.navigation-button__icon-menu,
+.navigation-button__icon-cross {
+  display: none;
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation-button__icon-menu {
+  width: 21px;
+  height: 18px;
+}
+
+.navigation-button_closed .navigation-button__icon-menu,
+.navigation-button_opened .navigation-button__icon-cross {
+  display: block;
+}
+
+.navigation-button_opened .navigation-button__icon-menu,
+.navigation-button_closed .navigation-button__icon-cross {
+  display: none;
+}

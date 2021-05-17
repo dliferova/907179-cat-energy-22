@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
@@ -29,15 +29,6 @@
         </picture>
       </a>
     </div>
-    <button class="main-navigation__button" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-      <svg class="main-navigation__icon-menu" width="24" height="18">
-        <use xlink:href="img/sprite.svg#icon-menu"></use>
-      </svg>
-      <svg class="main-navigation__icon-cross" width="20" height="20">
-        <use xlink:href="img/sprite.svg#icon-cross"></use>
-      </svg>
-    </button>
     <nav class="page-header__navigation main-navigation main-navigation_theme_light">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
@@ -51,6 +42,15 @@
         </li>
       </ul>
     </nav>
+    <button class="page-header__navigation-button navigation-button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <svg class="navigation-button__icon-menu" width="24" height="18">
+        <use xlink:href="img/sprite.svg#icon-menu"></use>
+      </svg>
+      <svg class="navigation-button__icon-cross" width="20" height="20">
+        <use xlink:href="img/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
   </div>
 </header>
 <main class="catalog-main">
@@ -345,7 +345,7 @@
   </section>
   </div>
 
-  <section class="page__map-section">
+  <section class="catalog-main__map-section">
     <div class="map">
       <h2 class="visually-hidden">Кэт Энерджи на карте</h2>
       <div class="map__contacts-block map__contacts-block_theme_grey">

@@ -28,22 +28,3 @@
     line-height: 36px;
   }
 }
-
-.page-main__container {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    padding: 0;
-    margin: 0 auto;
-  }
-}
-
-.page__map-section {
-  width: 100%;
-  position: relative;
-}

@@ -99,10 +99,75 @@
   }
 }
 
-.form-field__input-check {
-  margin: 0 15px 0 0;
+//.form-field__input-check {
+//  margin: 0 15px 0 0;
+//
+//  &:last-child {
+//    margin: 0;
+//  }
+//}
 
-  &:last-child {
-    margin: 0;
+.form-field__input-check {
+  grid-column: 1 / 2;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-field__label-check {
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.form-field__pseudo-check-input {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $basic-white;
+  border: 1px solid #cdcdcd;
+  position: relative;
+  margin: 0 14px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 25px 0 0;
+  }
+}
+
+.form-field__label-check:hover > .form-field__pseudo-check-input {
+  border: 1px solid #bababa;
+}
+
+.form-field__input-check:disabled + .form-field__label-check {
+  opacity: 0.3;
+}
+
+.form-field__input-check:checked + .form-field__label-check > .form-field__pseudo-check-input {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: url("/img/input-check.svg");
   }
 }
