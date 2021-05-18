@@ -126,7 +126,7 @@
               <li class="form__field form-field">
                 <label class="form-field__label" for="email-field">E-mail:*</label>
                 <div class="form-field__input-container">
-                  <input class="form-field__input form-input-example" type="email" placeholder="kuklachev@gmail.com"
+                  <input class="form-field__input form-input" type="email" placeholder="kuklachev@gmail.com"
                           id="email-field" name="email" required>
                   <svg class="form-field__icon form-field__icon_email">
                     <use xlink:href="img/sprite.svg#icon-email"></use>
@@ -137,7 +137,7 @@
                 <label class="form-field__label" for="phone-field">Телефон:*</label>
                 <div class="form-field__input-container">
                   <input class="form-field__input form-input" type="tel" name="phone" id="phone-field"
-                          placeholder="8 (960) 900-60-90" required>
+                          placeholder="8 (960) 900-60-90" pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
                   <svg class="form-field__icon form-field__icon_phone" width="20" height="21">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
