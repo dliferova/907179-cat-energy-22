@@ -100,7 +100,6 @@
 }
 
 .form-field__input-check {
-  margin: 0 15px 0 0;
   grid-column: 1 / 2;
   cursor: pointer;
 
@@ -144,7 +143,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 25px 0 0;
+    margin: 0 17px 0 0;
   }
 }
 
