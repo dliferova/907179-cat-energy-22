@@ -23,7 +23,10 @@ const styles = () => {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
-      csso()
+      csso({
+        // отключение структурных оптимизаций для корректной работы :not(:placeholder-shown)
+        restructure: false
+      })
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
